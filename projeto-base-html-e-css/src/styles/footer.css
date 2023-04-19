@@ -1,0 +1,29 @@
+.footer {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.footer .main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.footer .bottom-footer {
+    background-color: rgb(0, 0, 0, 0.9);
+    color: white;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

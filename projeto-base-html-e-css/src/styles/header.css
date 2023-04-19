@@ -1,0 +1,115 @@
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+}
+.header .top-bar {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 900px;
+    height: 35px;
+    background-color: #DE560B;
+    border-radius: 0 0 7px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.header .top-bar .social {
+    margin-left: 40px;
+}
+.header .top-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.header .top-bar img {
+    width: 24px;
+    height: 24px;
+}
+.header .top-bar .announcement-bar {
+    cursor: default;
+}
+.header .top-bar .lang-select {
+    border-radius: 6px;
+    cursor: pointer;
+}
+.header .top-bar .lang-select option {
+    cursor: pointer;
+}
+.header .top-bar .language {
+    margin-right: 40px;
+}
+.header .menu-bar {
+    height: 65px;
+    display: flex;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .menu-bar .logo {
+    margin-left: 50px;
+}
+.header .menu-bar .logo img {
+    height: 50px;
+}
+
+.menu-bar .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-bar .search .search-bar {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 0 30px 0 15px;
+    font-size: 18px;
+    text-align: justify;
+    width: 280px;
+    height: 30px;
+}
+.menu-bar .search button {
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    margin-left: -29px;
+    border-radius: 7px;
+    width: 28px;
+    height: 28px;
+}
+.menu-bar .search button img {
+    width: 18px;
+}
+.menu {
+    background-color: #1771E6;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    border-radius: 5px;
+    width: 130px;
+    min-height: 25px;
+    cursor: default;
+    text-align: center;
+    color: white;
+}
+.menu menu {
+    display: none;
+}
+.menu:hover menu {
+    display: block;
+    margin: 10px 0;
+}
+.menu:hover {
+    margin-top: 170px;
+}
+.menu menu li {
+    margin-bottom: 10px;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
