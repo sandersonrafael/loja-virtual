@@ -1,0 +1,11 @@
+<header>
+
+<top bar>
+icones sociais              logo da loja                    icones(support, login, cart, etc)
+</top bar>
+
+<bottom-bar>
+menu (cor de fundo preta)                                     pesquisa
+</bottom-bar>
+
+</header>
