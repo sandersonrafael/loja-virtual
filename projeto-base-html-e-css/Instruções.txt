@@ -1,0 +1,1 @@
+banner será dinâmico. Fotos serão salvas no banco de dados, com uma url específica que é ancorada na imagem
