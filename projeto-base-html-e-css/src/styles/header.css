@@ -1,5 +1,5 @@
 .header {
-    width: 100vmax;
+    width: auto;
     height: 110px;
     background-color: rgb(22, 22, 22);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -61,23 +61,25 @@
 
 }
 .header .bottom-container .bottom-bar .navigation {
-    background-color: black;
     margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header .bottom-container .bottom-bar ul {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     color: white;
-    border-left: 1px solid #e7e7e7;
 }
 .header .bottom-container .bottom-bar li {
     margin: 0 1px;
-    height: 18px;
+    border-radius: 5px;
+    height: 12px;
     padding: 10px;
     background-color: #ea5b0c;
-    border-right: 1px solid #e7e7e7;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .header .bottom-container .bottom-bar .search-bar {
     display: flex;
@@ -86,7 +88,7 @@
     width: 180px;
     height: 28px;
     font-size: 14px;
-    border-radius: 3px;
+    border-radius: 5px;
     border: none;
     outline: 1px solid rgb(216, 214, 214);
     padding: 0 23px 0 5px;
