@@ -1,10 +1,12 @@
 .header {
     margin: 0 auto;
 }
+
 .header a:hover {
     color: #ea5b0c;
     transition: 250ms;
 }
+
 .header-announcement-bar {
     margin: 0 auto;
     height: 24px;
@@ -13,33 +15,39 @@
     text-align: center;
     color: white;
 }
+
 .header-user-bar {
     margin: 0 auto;
     padding: 0 25px;
     height: 40px;
     background-color: black;
 }
+
 .header-user-nav {
     display: flex;
     flex-direction: column;
     align-items: right;
 }
+
 .header-user-options {
     display: flex;
     align-items: center;
     justify-content: right;
     gap: 15px;
 }
+
 .header-user-clicable {
     margin: 8px 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .header-user-icon {
     width: 24px;
     height: 24px;
 }
+
 .header-user-clicable a {
     font-weight: 100;
     color: white;
@@ -57,6 +65,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .header-store {
     height: 74px;
     display: flex;
@@ -64,37 +73,44 @@
     justify-content: space-between;
 
 }
+
 .header-store-logo {
     width: 74px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .header-store-all {
     display: flex;
     align-items: center;
     margin: 0 25px;
 }
+
 .header-store-all a {
     color: white;
     font-weight: 400;
 
 }
+
 .navigation-options {
     padding: 7px 14px;
     height: 20px;
 }
+
 .header-store-skates {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .header-store-skates-options {
     display: none;
     position: absolute;
     top: 0;
 }
+
 .header-store-skates:hover .header-store-skates-options {
     display: flex;
     flex-direction: column;
@@ -105,6 +121,7 @@
     border-radius: 5px;
     width: 140px;
 }
+
 .header-store-skates-option {
     display: flex;
     align-items: center;
@@ -128,6 +145,7 @@
     padding: 5px 35px 5px 15px;
     font-size: 16px;
 }
+
 .header-search-button {
     position: absolute;
     border: none;
@@ -136,6 +154,7 @@
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
 }
+
 .header-search-button-icon {
     width: 24px;
 }

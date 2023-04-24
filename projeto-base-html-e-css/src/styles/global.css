@@ -11,3 +11,6 @@
     cursor: pointer;
     color: black;
 }
+.container {
+    width: auto;
+}
