@@ -2,104 +2,80 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SK8 Lifestyle</title>
-    <link rel="shortcut icon" href="src/img/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="./src/styles/global.css" />
-    <link rel="stylesheet" href="/src/styles/header.css" />
-    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/header-top-bar.css">
 </head>
 
-<body class="container">
+<body>
     <header class="header">
-        <div class="header-announcement-bar">
-            <p>FRETE GRÁTIS EM COMPRAS A PARTIR DE R$ 149,90</p>
-        </div>
-
-        <div class="header-user-bar">
-            <nav class="header-user-nav">
-                <ul class="header-user-options">
-                    <li class="header-user-clicable">
-                        <a href="/"><img class="header-user-icon" src="src/img/User/home-white.png" alt="início" />
-                            <p>Início</p>
-                        </a>
-                    </li>
-                    <li class="header-user-clicable">
-                        <a href="/login/"><img class="header-user-icon" src="src/img/User/login-white.png"
-                                alt="entrar" />
-                            <p>Entrar</p>
-                        </a>
-                    </li>
-                    <li class="header-user-clicable">
-                        <a href="/cart/"><img class="header-user-icon" src="src/img/User/cart-white.png"
-                                alt="carrinho" />
-                            <p>Carrinho</p>
-                            (0)
-                        </a>
-                    </li>
-                    <li class="header-user-clicable">
-                        <a href="/contact/"><img class="header-user-icon" src="src/img/User/support-white.png"
-                                alt="suporte" />
-                            <p>Suporte</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="header-navigation-bar">
-            <div class="header-store">
-                <a href="/"><img class="header-store-logo" src="src/img/logo.png" alt="SK8 Lifestyle" /></a>
-                <nav class="header-store-nav">
-                    <ul class="header-store-all">
-                        <li class="header-store-skates navigation-options">
-                            <a href="">SKATES ▾</a>
-                            <ul class="header-store-skates-options">
-                                <li class="header-store-skates-option">
-                                    <a href="">OURSTYLE</a>
-                                </li>
-                                <li class="header-store-skates-option">
-                                    <a href="">SK8 UNIVERSE</a>
-                                </li>
-                                <li class="header-store-skates-option">
-                                    <a href="">GENERIC</a>
-                                </li>
-                                <li class="header-store-skates-option">
-                                    <a href="">SUPREME</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header-store-acessories navigation-options">
-                            <a href="">ACESSÓRIOS ▾</a>
-                        </li>
-                        <li class="header-store-maintenance navigation-options">
-                            <a href="">MANUTENÇÃO</a>
-                        </li>
-                        <li class="header-store-custom navigation-options">
-                            <a href="">PERSONALIZADOS</a>
-                        </li>
-                        <li class="header-store-clothes navigation-options">
-                            <a href="">ROUPAS ▾</a>
-                        </li>
+        <div class="top-header">
+            <div class="header-top-bar">
+                <div class="header-logo">
+                    <a href="/"><img class="logo" src="/src/img/logo.png" alt="SK8 Lifestyle"></a>
+                </div>
+                <nav class="header-user">
+                    <ul class="user-options">
+                        <li><a href="/login/"><img class="user-img" src="/src/img/User/login-white.png" alt="Entrar">Entrar</a></li>
+                        <li><a href="/contactus/"><img class="user-img" src="/src/img/User/support-white.png" alt="Suporte">Suporte</a></li>
+                        <li><a href="/wishlist/"><img class="user-img" src="/src/img/User/favorites-white.png" alt="Favoritos">Favoritos</a></li>
+                        <li><a href="/cart/"><img class="user-img" src="/src/img/User/cart-white.png" alt="Carrinho">Carrinho</a></li>
                     </ul>
                 </nav>
             </div>
-            <form class="header-search">
-                <input type="text" class="header-search-bar" placeholder="O que você procura?" />
-                <button class="header-search-button">
-                    <img class="header-search-button-icon" src="src/img/search.png" alt="pesquisar" />
-                </button>
-            </form>
         </div>
+        <div class="bottom-header">
+            <div class="header-menu">
+                <div class="header-hamburguer">☰</div>
+                <nav class="header-navigation">
+                    <ul class="header-nav">
+                        <li><a href="/">Início</a></li>
+                        <li class="menu-expand"> <a href="">Categorias</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Skates</a></li>
+                                <li class="sub-menu-expand"> <a href="">Peças</a>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="">Pranchas</a></li>
+                                        <li><a href="">Rodinhas</a></li>
+                                        <li><a href="">Lixas</a></li>
+                                        <li><a href="">Trucks</a></li>
+                                        <li><a href="">Rolamentos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-expand"> <a href="">Acessórios</a>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="">Capacetes</a></li>
+                                        <li><a href="">Cotoveleiras</a></li>
+                                        <li><a href="">Joelheiras</a></li>
+                                        <li><a href="">Kits</a></li>
+                                        <li><a href="">Bags</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Manutenção</a></li>
+                                <li><a href="">Roupas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Rastreamento</a></li>
+                        <li><a href="">Perguntas Frequentes</a></li>
+                        <li><a href="">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            <div class="header-search">
+                <input class="search-bar" type="search" name="search" id="header-search" placeholder="Busque em nossa loja...">
+                <button class="search-button"><img src="/src/img/search.png" alt="Pesquisar"></button>
+            </div>
+            </div>
+        </div>
+
     </header>
-
-    <main class="main">
-
+    <main>
+        
     </main>
-
-    <footer></footer>
+    <script src="/src/js/index.js"></script>
 </body>
 
 </html>

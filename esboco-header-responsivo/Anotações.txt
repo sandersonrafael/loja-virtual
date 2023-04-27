@@ -1,31 +1,45 @@
 banner será dinâmico. Fotos serão salvas no banco de dados, com uma url específica que é ancorada na imagem
 
-header bar -> {
-
+Desktop {
+    header bar -> {
+    Simple Promo, ex: (Cupom PROMO10 = 10% OFF)
     Logo
-    User (Início, Entrar, Carrinho, Suporte)
+    User (icons)
+        Entrar
+        Suporte
+        Favoritos
+        Carrinho
+    }
+
+    header menu -> {
+        Início
+        Categorias:
+            Skates
+            Peças:
+                Pranchas
+                Rodinhas
+                Lixas
+                Trucks
+                Rolamentos
+            Acessórios:
+                Capacetes
+                Cotoveleiras
+                Joelheiras
+                Kits
+                Bags
+            Manutenção (óleos, parafusos, ferramentas e etc)
+            Roupas
+        Rastrear Pedidos
+        Perguntas Frequentes
+        Sobre nós
+
+        Search Bar
+    }
 }
 
-header menu -> {
-    Home
-    Categorias:
-        Skates
-        Peças:
-            Rodinhas
-            Pranchas
-            Trucks
-            Lixas
-            Rolamentos
-        Acessórios:
-            Kits
-            Capacetes
-            Cotoveleiras
-            Joelheiras
-            Bags
-        Acessórios de Manutenção (óleos, parafusos, ferramentas e etc);
-    Rastrear Pedidos
-    Perguntas Frequentes
-    Garantia
 
-    Search Bar
-}
+
+
+
+
+cookie consent bar
