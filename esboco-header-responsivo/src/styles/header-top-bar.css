@@ -291,6 +291,7 @@
         border-radius: 5px;
         cursor: pointer;
         z-index: 2;
+        top: 74px;
     }
     .header-hamburguer:hover {
         border-color: rgb(68, 68, 68);
