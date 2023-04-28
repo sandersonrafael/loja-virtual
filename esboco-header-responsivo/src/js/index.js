@@ -30,6 +30,9 @@ menuExpand.onclick = () => {
         spanAcessorios.innerHTML = '❯';
         subMenuAcessorios.style.display = 'none';
     }
+    if (hamburguerMenu.innerHTML === '✕') {
+        headerBack.style.display = 'block';
+    }
 }
 
 subMenuExpand1.onclick = () => {
@@ -61,18 +64,21 @@ subMenuExpand2.onclick = () => {
 }
 
 bottomHeader.onmouseleave = () => {
-    spanCategorias.innerHTML = '❯';
-    subMenu.style.display = 'none';
-    spanAcessorios.innerHTML = '❯';
-    subMenuAcessorios.style.display = 'none';
-    spanPecas.innerHTML = '❯';
-    subMenuPecas.style.display = 'none';
+        if (hamburguerMenu.innerHTML === '✕') hamburguerMenu.onclick();
+        spanCategorias.innerHTML = '❯';
+        subMenu.style.display = 'none';
+        spanAcessorios.innerHTML = '❯';
+        subMenuAcessorios.style.display = 'none';
+        spanPecas.innerHTML = '❯';
+        subMenuPecas.style.display = 'none';
 }
 
 // mobile
 
 const hamburguerMenu = document.querySelector('.header-hamburguer');
 const headerNavigation = document.querySelector('.header-navigation');
+
+const headerBack = document.querySelector('.header-back');
 
 hamburguerMenu.onclick = () => {
     if (hamburguerMenu.innerHTML === '☰') { 
@@ -81,5 +87,25 @@ hamburguerMenu.onclick = () => {
     } else { 
        hamburguerMenu.innerHTML = '☰';
        headerNavigation.style.display = 'none';
+
+       spanCategorias.innerHTML = '❯';
+       subMenu.style.display = 'none';
+       spanAcessorios.innerHTML = '❯';
+       subMenuAcessorios.style.display = 'none';
+       spanPecas.innerHTML = '❯';
+       subMenuPecas.style.display = 'none';
     }
 };
+
+headerBack.onclick = () => {
+    if (spanPecas.innerHTML === '❮' || spanAcessorios.innerHTML === '❮') {
+        spanAcessorios.innerHTML = '❯';
+        subMenuAcessorios.style.display = 'none';
+        spanPecas.innerHTML = '❯';
+        subMenuPecas.style.display = 'none';
+    } else if (spanCategorias.innerHTML === '❮') {
+        spanCategorias.innerHTML = '❯';
+        subMenu.style.display = 'none';
+        headerBack.style.display = 'none';
+    }
+}
