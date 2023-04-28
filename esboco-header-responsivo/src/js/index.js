@@ -94,6 +94,7 @@ hamburguerMenu.onclick = () => {
        subMenuAcessorios.style.display = 'none';
        spanPecas.innerHTML = '❯';
        subMenuPecas.style.display = 'none';
+       headerBack.style.display = 'none';
     }
 };
 
