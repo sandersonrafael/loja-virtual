@@ -77,6 +77,7 @@ bottomHeader.onmouseleave = () => {
 
 const hamburguerMenu = document.querySelector('.header-hamburguer');
 const headerNavigation = document.querySelector('.header-navigation');
+const searchBar = document.querySelector('.header-search');
 
 const headerBack = document.querySelector('.header-back');
 
@@ -84,9 +85,13 @@ hamburguerMenu.onclick = () => {
     if (hamburguerMenu.innerHTML === '☰') { 
         hamburguerMenu.innerHTML = '✕';
         headerNavigation.style.display = 'flex';
+        hamburguerMenu.style.position = 'fixed'
+        searchBar.style.display = 'none'
     } else { 
        hamburguerMenu.innerHTML = '☰';
        headerNavigation.style.display = 'none';
+       hamburguerMenu.style.position = 'static'
+       searchBar.style.display = 'flex'
 
        spanCategorias.innerHTML = '❯';
        subMenu.style.display = 'none';
