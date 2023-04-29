@@ -73,49 +73,6 @@ bottomHeader.onmouseleave = () => {
         subMenuPecas.style.display = 'none';
 };
 
-// header mobile
-
-const hamburguerMenu = document.querySelector('.header-hamburguer');
-const headerNavigation = document.querySelector('.header-navigation');
-const searchBar = document.querySelector('.header-search');
-
-const headerBack = document.querySelector('.header-back');
-
-hamburguerMenu.onclick = () => {
-    if (hamburguerMenu.innerHTML === '☰') { 
-        hamburguerMenu.innerHTML = '✕';
-        headerNavigation.style.display = 'flex';
-        hamburguerMenu.style.position = 'fixed'
-        searchBar.style.display = 'none'
-    } else { 
-       hamburguerMenu.innerHTML = '☰';
-       headerNavigation.style.display = 'none';
-       hamburguerMenu.style.position = 'static'
-       searchBar.style.display = 'flex'
-
-       spanCategorias.innerHTML = '❯';
-       subMenu.style.display = 'none';
-       spanAcessorios.innerHTML = '❯';
-       subMenuAcessorios.style.display = 'none';
-       spanPecas.innerHTML = '❯';
-       subMenuPecas.style.display = 'none';
-       headerBack.style.display = 'none';
-    }
-};
-
-headerBack.onclick = () => {
-    if (spanPecas.innerHTML === '❮' || spanAcessorios.innerHTML === '❮') {
-        spanAcessorios.innerHTML = '❯';
-        subMenuAcessorios.style.display = 'none';
-        spanPecas.innerHTML = '❯';
-        subMenuPecas.style.display = 'none';
-    } else if (spanCategorias.innerHTML === '❮') {
-        spanCategorias.innerHTML = '❯';
-        subMenu.style.display = 'none';
-        headerBack.style.display = 'none';
-    }
-};
-
 // banner desktop
 
 const banner1 = document.querySelector('.banner-option-1');
@@ -188,4 +145,52 @@ bannerOption3.onclick = () => {
 
     banner3.style.display = 'block';
     bannerOption3.style['background-color'] = '#000000';
+};
+
+
+
+// header mobile
+
+const hamburguerMenu = document.querySelector('.header-hamburguer');
+const headerNavigation = document.querySelector('.header-navigation');
+const searchBar = document.querySelector('.header-search');
+
+const headerBack = document.querySelector('.header-back');
+const banners = document.querySelector('.banners');
+
+hamburguerMenu.onclick = () => {
+    if (hamburguerMenu.innerHTML === '☰') { 
+        banners.style['z-index'] = '-1';
+        hamburguerMenu.innerHTML = '✕';
+        headerNavigation.style.display = 'flex';
+        hamburguerMenu.style.position = 'fixed';
+        searchBar.style.display = 'none';
+    } else { 
+        banners.style['z-index'] = '0';
+        hamburguerMenu.innerHTML = '☰';
+        headerNavigation.style.display = 'none';
+        hamburguerMenu.style.position = 'static';
+        searchBar.style.display = 'flex';
+
+        spanCategorias.innerHTML = '❯';
+        subMenu.style.display = 'none';
+        spanAcessorios.innerHTML = '❯';
+        subMenuAcessorios.style.display = 'none';
+        spanPecas.innerHTML = '❯';
+        subMenuPecas.style.display = 'none';
+        headerBack.style.display = 'none';
+    }
+};
+
+headerBack.onclick = () => {
+    if (spanPecas.innerHTML === '❮' || spanAcessorios.innerHTML === '❮') {
+        spanAcessorios.innerHTML = '❯';
+        subMenuAcessorios.style.display = 'none';
+        spanPecas.innerHTML = '❯';
+        subMenuPecas.style.display = 'none';
+    } else if (spanCategorias.innerHTML === '❮') {
+        spanCategorias.innerHTML = '❯';
+        subMenu.style.display = 'none';
+        headerBack.style.display = 'none';
+    }
 };

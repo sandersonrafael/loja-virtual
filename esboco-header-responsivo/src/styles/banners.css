@@ -1,6 +1,6 @@
 .banners {
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 .banner-option-1,
 .banner-option-2,
@@ -45,4 +45,5 @@
     height: 18px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 1;
 }
