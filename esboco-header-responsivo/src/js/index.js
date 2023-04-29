@@ -114,7 +114,7 @@ window.onload = () => {
             banner3.style.display = 'none';
             bannerOption3.style['background-color'] = 'transparent';
         }
-    }, 4000);
+    }, 5000);
 };
 
 bannerOption1.onclick = () => {
