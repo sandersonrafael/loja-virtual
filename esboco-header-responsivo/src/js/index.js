@@ -75,6 +75,7 @@ bottomHeader.onmouseleave = () => {
 
 // banner desktop
 
+const banners = document.querySelector('.banners');
 const banner1 = document.querySelector('.banner-option-1');
 const banner2 = document.querySelector('.banner-option-2');
 const banner3 = document.querySelector('.banner-option-3');
@@ -82,6 +83,7 @@ const bannerOption1 = document.querySelectorAll('.banner-option-button')[0];
 const bannerOption2 = document.querySelectorAll('.banner-option-button')[1];
 const bannerOption3 = document.querySelectorAll('.banner-option-button')[2];
 bannerOption1.style['background-color'] = '#000000'
+banners.swipleft = () => alert('Ok!');
 
 window.onload = () => {
     setInterval(() => {
@@ -156,7 +158,6 @@ const headerNavigation = document.querySelector('.header-navigation');
 const searchBar = document.querySelector('.header-search');
 
 const headerBack = document.querySelector('.header-back');
-const banners = document.querySelector('.banners');
 
 hamburguerMenu.onclick = () => {
     if (hamburguerMenu.innerHTML === '☰') { 
