@@ -83,7 +83,7 @@ const bannerOption1 = document.querySelectorAll('.banner-option-button')[0];
 const bannerOption2 = document.querySelectorAll('.banner-option-button')[1];
 const bannerOption3 = document.querySelectorAll('.banner-option-button')[2];
 bannerOption1.style['background-color'] = '#000000'
-banners.swipleft = () => alert('Ok!');
+banners.swipeleft = () => alert('Ok!');
 
 window.onload = () => {
     setInterval(() => {
