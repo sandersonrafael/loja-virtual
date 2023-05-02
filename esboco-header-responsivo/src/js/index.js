@@ -194,3 +194,27 @@ headerBack.onclick = () => {
         headerBack.style.display = 'none';
     }
 };
+
+
+// footer mobile
+
+
+
+
+
+
+
+
+
+// cookies e json para o site
+
+/* console.log(document.cookie) */
+/* fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(response => response.json())
+      .then(json => console.log(json)) */
+
+/* no json, para adicionar produtos, pode-se utilizar o método push dos arrays para adicionar produtos ao json
+pode-se utilizar o método slice para apagar determinados produtos
+necessário proteger o json para acessos externos
+
+*/

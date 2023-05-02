@@ -1,0 +1,148 @@
+.no-wrap {
+    white-space: nowrap;
+}
+
+.footer-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer {
+    color: white;
+    background-color: #222;
+    width: 100%;
+}
+
+.footer-top span {
+    display: none;
+}
+
+.footer-top {
+    gap: 20px;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 40px;
+}
+
+.footer-top a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-top a:hover {
+    color: #DE560B;
+    transition: all 300ms ease-in-out;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-input {
+    width: 100%;
+    max-width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    outline: none;
+    color: white;
+    border-radius: 3px 0 0 3px;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+.newsletter-button {
+    min-width: 32px;
+    height: 32px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 0 3px 3px 0;
+    background-color: #DE560B;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+.footer-block {
+    padding: 20px 0;
+    width: 100%;
+    max-width: 280px;
+}
+
+.footer-block p {
+    margin-bottom: 18px;
+}
+
+.footer-block ul li {
+    padding: 5px 0;
+}
+
+.footer-bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer-bottom a {
+    text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+    color: #DE560B;
+    transition: all 300ms ease-in-out;
+}
+
+.footer img {
+    width: 18px;
+}
+
+/* Fazer menu expansível para versão mobile 400px */
+
+@media (max-width: 800px) {
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+        font-size: 16px;
+    }
+
+    .footer-block {
+        margin: 0 auto;
+    }
+
+    .no-element {
+        display: block;
+        background-color: transparent;
+        width: 100%;
+        height: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-top span {
+        display: block;
+        transform: rotate(90deg);
+    }
+
+    .footer-block {
+        margin: 0 auto;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
