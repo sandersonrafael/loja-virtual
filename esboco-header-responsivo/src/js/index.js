@@ -150,6 +150,45 @@ bannerOption3.onclick = () => {
 
 
 
+// footer mobile
+
+const footerCustomerExpand = document.querySelector('.footer-customer-area-expand');
+const footerCustomerSubMenu = document.querySelector('.footer-customer-area-sub');
+const footerCustomerSpan = document.querySelector('.footer-customer-area-expand>span');
+
+footerCustomerExpand.onclick = function() {
+    if (footerCustomerSubMenu.style.display === '')
+    footerCustomerSubMenu.style.display = 'none';
+
+    if (footerCustomerSubMenu.style.display === 'none') {
+        footerCustomerSubMenu.style.display = 'block';
+        footerCustomerSpan.innerHTML = '❮'
+    }
+    else {
+        footerCustomerSubMenu.style.display = 'none'
+        footerCustomerSpan.innerHTML = '❯'
+    }
+}
+
+const footerPolicyExpand = document.querySelector('.footer-policy-expand');
+const footerPolicySubMenu = document.querySelector('.footer-policy-sub');
+const footerPolicySpan = document.querySelector('.footer-policy-expand>span');
+
+footerPolicyExpand.onclick = function() {
+    if (footerPolicySubMenu.style.display === '')
+    footerPolicySubMenu.style.display = 'none';
+
+    if (footerPolicySubMenu.style.display === 'none') {
+        footerPolicySubMenu.style.display = 'block';
+        footerPolicySpan.innerHTML = '❮'
+    }
+    else {
+        footerPolicySubMenu.style.display = 'none'
+        footerPolicySpan.innerHTML = '❯'
+    }
+}
+
+
 // header mobile
 
 const hamburguerMenu = document.querySelector('.header-hamburguer');
@@ -161,12 +200,16 @@ const headerBack = document.querySelector('.header-back');
 hamburguerMenu.onclick = () => {
     if (hamburguerMenu.innerHTML === '☰') { 
         banners.style['z-index'] = '-1';
+        footerCustomerSpan.style['z-index'] = '-1';
+        footerPolicySpan.style['z-index'] = '-1';
         hamburguerMenu.innerHTML = '✕';
         headerNavigation.style.display = 'flex';
         hamburguerMenu.style.position = 'fixed';
         searchBar.style.display = 'none';
     } else { 
         banners.style['z-index'] = '0';
+        footerPolicySpan.style['z-index'] = '0';
+        footerCustomerSpan.style['z-index'] = '0';
         hamburguerMenu.innerHTML = '☰';
         headerNavigation.style.display = 'none';
         hamburguerMenu.style.position = 'static';
@@ -194,16 +237,6 @@ headerBack.onclick = () => {
         headerBack.style.display = 'none';
     }
 };
-
-
-// footer mobile
-
-
-
-
-
-
-
 
 
 // cookies e json para o site
