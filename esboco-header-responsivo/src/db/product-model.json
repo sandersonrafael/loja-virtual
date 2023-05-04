@@ -1,9 +1,9 @@
 {
     "id": "",
-    "title": "",
+    "name": "",
     "description": "",
     "price": "",
-    "promotional-price": "",
+    "price-no-discount": "",
     "main-img": "",
     "aditional-imgs": [],
     "colors": [],
