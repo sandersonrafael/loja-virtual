@@ -4,64 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>Modelo Produto E-commerce</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         * {
             margin: 0;
             padding: 0;
-            border: none;
-            outline: none;
         }
     </style>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="product-container">
-        <section class="product-view">
 
-            <div class="product-imgs">
+    <main class="product-container">
+
+        <section class="product-general">
+
+            <div class="product-images">
+
                 <div class="product-main-img">
-                    <img src="img/products/prancha-de-skate-santa-cruz-ryb-color/main-image.jpeg">
+                    <img src="img/products/prancha-de-skate-santa-cruz-ryb-color/main-image.jpeg" alt="">
                 </div>
-                <div class="product-aditional-imgs"><!-- Obtidos dinamicamente com javascript:  <div class="product-aditional-img"><img class="product-img" src="/img/products/"" alt="nome-do-produto"></div> 
+
+                <div class="product-aditional-imgs"><!-- 
+                    injetado via JavaScript
                     <div class="product-aditional-img">
-                        <img class="product-img" src="/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-1.jpeg">
+                        <img class="aditional-img" src="" alt="">
                     </div> 
-                    <div class="product-aditional-img">
-                        <img class="product-img" src="/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-2.jpeg">
-                    </div> 
-                    <div class="product-aditional-img">
-                        <img class="product-img" src="/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-3.jpeg">
-                    </div>
-                    
-                    <div class="product-aditional-img">
-                        <img class="product-img" src="/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-4.jpeg">
-                    </div> --></div>
+                --></div>
+
             </div>
 
-            <div class="product-buy">
-                <div class="product-infos">
-                    <div class="product-name"><p>Prancha de Skate Santa Cruz Ryb Color</p></div>
-                    <div class="product-price">
-                        <span class="product-final-price">R$ 124,90</span>
-                        <span class="product-no-discount">R$ 144,90</span>
-                    </div>
-                    <div class="product-payments"></div>
-                    <div class="product-payments-modal"></div>
+            <div class="product-cart">
+
+                <div class="product-data">
+
+                    <strong class="product-name"></strong>
+
+                    <strong class="product-real-price"></strong>
+
+                    <small class="product-price-no-discount"></small>
+
+                    <span class="product-payments"></span>
+
                 </div>
-                <div class="product-cart">
-                    <div class="product-add-quantity"></div>
+
+                <div class="product-buy">
+
+                    <div class="product-quantity"></div>
+
                     <div class="product-add-cart"></div>
+
                 </div>
+
             </div>
 
         </section>
-        <section class="product-informations">
-            <div class="product-description">
-                <p>Apresentamos a Prancha de Skate Ryb Color da marca Santa Cruz, uma peça de qualidade superior e design impressionante. Com dimensões de 80cm x 31,5cm, esta prancha é construída com corpo em madeira Maple, garantindo a durabilidade e resistência necessárias para o uso intenso no skate.</p><p>O modelo Ryb Color apresenta uma combinação de cores vibrantes, incluindo vermelho, azul, amarelo e preto, que se destacam e chamam a atenção em qualquer pista de skate. A prancha também conta com a marca da Santa Cruz em destaque, garantindo a autenticidade do produto.</p><p>Se você está procurando uma prancha de skate de alta qualidade, resistente e com um design único e marcante, a Ryb Color da Santa Cruz é a escolha perfeita para você. Prepare-se para conquistar novos desafios e se destacar na pista com esta incrível prancha de skate.</p>
+
+        <section class="product-information">
+
+            <div class="option-select">
+
+                <div class="description-option"></div>
+
+                <div class="shipping-option"></div>
+
+                <div class="guarantee-option"></div>
+
             </div>
+
+            <div class="product-description"></div>
+
+            <div class="product-shipping"></div>
+
+            <div class="product-guarantee"></div>
+
         </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
