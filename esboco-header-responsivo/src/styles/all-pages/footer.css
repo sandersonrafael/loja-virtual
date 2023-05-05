@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-bottom: 40px;
-    max-width: 1160px;
+    max-width: 1120px;
 }
 
 .footer-top a {
