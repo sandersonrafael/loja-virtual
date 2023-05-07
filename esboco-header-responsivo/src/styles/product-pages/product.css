@@ -112,6 +112,11 @@
     cursor: pointer;
     height: 100%;
     width: 30%;
+    font-size: 22px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quantity-sub:hover,
@@ -135,6 +140,11 @@
 .quantity-actual {
     height: 100%;
     width: 40%;
+    font-size: 22px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-add-cart {
@@ -153,6 +163,7 @@
     cursor: pointer;
     height: 100%;
     width: 100%;
+    font-size: 18px;
 }
 
 .product-add-cart>button:hover {

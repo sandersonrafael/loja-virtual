@@ -12,3 +12,16 @@ if (aditionalImg.length === 1) {
 } else if (aditionalImg.length > 1 && aditionalImg.length <= 4) {
     aditionalImgs.style['justify-content'] = 'center';
 }
+
+
+// quantity add cart
+
+const addQuantity = document.querySelectorAll('.product-quantity *');
+addQuantity[0].onclick = function() {
+    if (Number(addQuantity[1].innerHTML) > 1) {
+        addQuantity[1].innerHTML = Number(addQuantity[1].innerHTML) - 1
+    }
+}
+addQuantity[2].onclick = function() {
+    addQuantity[1].innerHTML = Number(addQuantity[1].innerHTML) + 1
+}
