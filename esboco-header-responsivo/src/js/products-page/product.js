@@ -49,6 +49,7 @@ if (aditionalImg.length === 1) {
 
 
 // installments
+
 const paymentCards = document.querySelector('.payment-cards');
 const paymentOptionCards = document.querySelector('.all-payments-options');
 paymentOptionCards.innerHTML = paymentCards.innerHTML;
@@ -67,11 +68,15 @@ const paymentOptions = document.querySelector('.all-payments-and-installments');
 const closePaymentOptions = document.querySelector('.all-payments-close');
 
 
-
+// show or hide payment installments
 
 seePaymentOptions.onclick = () => paymentOptions.style.display = 'flex';
 closePaymentOptions.onclick = () => paymentOptions.style.display = 'none';
-
+paymentOptions.onclick = function(event) {
+    if (event.target === this) {
+        if (this.style.display === 'flex') this.style.display = 'none';
+    }
+} 
 
 
 // quantity add cart
