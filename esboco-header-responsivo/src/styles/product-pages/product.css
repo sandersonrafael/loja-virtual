@@ -141,10 +141,11 @@
 }
 .x-all-installments > span:hover {
     color: #DE560B;
-    transition: all 100ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 .x-all-installments > span:active {
-    color: #b6470b;
+    color: #a1400c;
+    transition: none;
 }
 
 .product-buy {
