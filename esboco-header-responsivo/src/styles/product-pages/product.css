@@ -344,8 +344,8 @@
 }
 
 .option-select>label:hover {
-    border-bottom: 1px solid #DE560B;
-    background-color: #DE560B;
+    border-bottom: 1px solid #222;
+    background-color: #222;
     color: white;
     transition: all 300ms ease-in-out;
 }
@@ -365,8 +365,8 @@
 #description:checked~div>.description-option,
 #shipping:checked~div>.shipping-option,
 #guarantee:checked~div>.guarantee-option {
-    border-bottom: 1px solid #DE560B;
-    background-color: #DE560B;
+    border-bottom: 1px solid #222;
+    background-color: #222;
     color: white;
 }
 

@@ -46,6 +46,15 @@ if (aditionalImg.length === 1) {
     aditionalImgs.style['justify-content'] = 'center';
 }
 
+// product price
+
+const productRealPrice = document.querySelector('.product-real-price');
+const productPriceNoDiscount = document.querySelector('.product-price-no-discount');
+const productPrice12Times = document.querySelectorAll('.x-12>span')[1];
+
+productRealPrice.innerHTML = product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+productPriceNoDiscount.innerHTML = product['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+productPrice12Times.innerHTML = (product.price * taxMercadoPago[11] / 12).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
 
 // installments
