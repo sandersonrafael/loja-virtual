@@ -132,20 +132,91 @@
     display: flex;
     justify-content: space-between;
 }
-.x-12 > span {
+
+.x-12>span {
     font-weight: bold;
 }
-.x-all-installments > span {
+
+.x-all-installments>span {
     text-decoration: underline;
     cursor: pointer;
 }
-.x-all-installments > span:hover {
+
+.x-all-installments>span:hover {
     color: #DE560B;
     transition: all 300ms ease-in-out;
 }
-.x-all-installments > span:active {
+
+.x-all-installments>span:active {
     color: #a1400c;
     transition: none;
+}
+
+.all-payments-and-installments {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.94);
+    z-index: 2;
+    transition: all 300ms ease-in-out;
+}
+.all-payments {
+    position: relative;
+    background-color: white;
+    border-radius: 4px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: auto;
+}
+.all-payments-close {
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 10px;
+    border: none;
+    outline: none;
+    background-color: #ffffff00;
+}
+
+.all-payments-close:hover {
+    transition: all 300ms ease-in-out;
+    transform: scale(1.15);
+}
+
+.all-payments p {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.all-payments-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.all-payments-table > table {
+    width: 100%;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 4px;
+}
+.all-payments-table td {
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.all-payments-table .no-border {
+    border: none;
+}
+
+.all-payments-table span {
+    font-weight: bold;
 }
 
 .product-buy {
@@ -255,7 +326,7 @@
 }
 
 .product-information * {
-    margin: 0 auto 30px;
+    margin: 0 auto 25px;
     width: calc(100% - 40px);
 }
 
