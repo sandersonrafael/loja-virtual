@@ -1,13 +1,17 @@
 {
-    "id": "",
+    "id": 0,
     "name": "",
     "description": "",
-    "price": "",
-    "price-no-discount": "",
-    "main-img": "",
+    "price": 0,
+    "price-no-discount": null,
+    "main-img": "/src/img/products/url-param/main-image.extension",
     "aditional-imgs": [],
-    "colors": [],
-    "availability": "",
+    "colors": {
+        "color-n(pt-BR)": ["code-color", "relative-image-path"]
+    },
+    "url-param": "url-param",
+    "url": "https://sk8-lifestyle.netlify.app/products/?url=url-param",
+    "availability": 0,
     "collection": "",
     "brand": ""
 }
