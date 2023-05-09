@@ -13,25 +13,26 @@ const loadProduct = () => fetch('/src/db/products.json')
         // product images
 
         const mainImg = document.querySelector('.product-main-img');
-        const aditionalImgs = document.querySelector('.product-aditional-imgs');
-
+        const aditionalImgs = document.querySelectorAll('.product-aditional-img');
+        
         mainImg.innerHTML = `<img src="${product['main-img']}" alt="${product.name}">`;
         if (product['aditional-imgs'].length > 0) {
-            aditionalImgs.innerHTML = `<div class="product-aditional-img"><img class="aditional-img" src="${product['main-img']}" alt="${product.name}"></div>`;
+            aditionalImgs[0].innerHTML = `<img class="aditional-img" src="${product['main-img']}" alt="${product.name}">`;
             for (let i in product['aditional-imgs']) {
-                aditionalImgs.innerHTML += `<div class="product-aditional-img"><img class="aditional-img" src="${product['aditional-imgs'][i]}" alt="${product.name}"></div>`;
+                aditionalImgs[1 + Number(i)].innerHTML += `<img class="aditional-img" src="${product['aditional-imgs'][i]}" alt="${product.name} Imagem Adicional ${1 + Number(i)}">`;
+            }
+            for (let image of aditionalImgs) {
+                image.onclick = function () {
+                    mainImg.querySelector('img').src = image.querySelector('img').src
+                };
+            };
+            for (let div of aditionalImgs) {
+                if (div.innerHTML === '') div.style.display = 'none';
             }
         };
-
-        // aditional img align
-
-        const aditionalImg = document.querySelectorAll('.product-aditional-img');
-
-        if (aditionalImg.length === 1) {
-            aditionalImgs.style.display = 'none';
-        } else if (aditionalImg.length > 1 && aditionalImg.length <= 4) {
-            aditionalImgs.style['justify-content'] = 'center';
-        }
+        
+        if (product['aditional-imgs'].length === 0) document.querySelector('.product-aditional-imgs').style.display = 'none';
+        
 
         // product name
 
@@ -59,7 +60,7 @@ const loadProduct = () => fetch('/src/db/products.json')
         }
 
         // product description
-        
+
         const productDescription = document.querySelector('.product-description');
         productDescription.innerHTML = product.description;
 });

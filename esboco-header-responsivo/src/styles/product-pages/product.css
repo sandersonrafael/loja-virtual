@@ -32,13 +32,12 @@
 .product-aditional-imgs {
     width: 100%;
     margin: 0 auto;
-    max-width: 460px;
-    min-width: 289px;
+    max-width: 550px;
 
-    overflow: hidden;
+    overflow: auto;
 
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
     padding: 15px 0;
 }
 
@@ -47,8 +46,8 @@
 }
 
 .product-aditional-img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     margin: 0 10px;
 }
 
@@ -389,6 +388,12 @@
 
     .option-select {
         width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-aditional-imgs {
+        justify-content: flex-start;
     }
 }
 
