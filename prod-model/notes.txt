@@ -1,5 +1,0 @@
-botões para rolar imagens adicionais
-funcionalidade número de produtos
-valor dos produtos atualiza com o aumento da quantidade do carrinho (?)
-
-botões de descrição do produto alteram ao selecionar (fazer com label for e select único com 3 opções. Checked = display: flex)

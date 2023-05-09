@@ -8,9 +8,9 @@ const loadProduct = () => fetch('/src/db/products.json')
     .then(res => res.json())
     .then(products => {
         const urlParam = new URL(window.location.href).searchParams.get('url');
-        const product = products.filter(product => product.url === urlParam)[0];
+        const product = products.filter(product => product['url-param'] === urlParam)[0];
 
-        // product images
+        // product images -> max 4 aditional imgs
 
         const mainImg = document.querySelector('.product-main-img');
         const aditionalImgs = document.querySelectorAll('.product-aditional-img');

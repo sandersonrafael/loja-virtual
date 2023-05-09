@@ -13,7 +13,8 @@
             "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-4.jpeg"
         ],
         "colors": [],
-        "url": "prancha-de-skate-santa-cruz-ryb-color",
+        "url-param": "prancha-de-skate-santa-cruz-ryb-color",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-santa-cruz-ryb-color",
         "availability": 34,
         "collection": "pranchas",
         "brand": "Santa Cruz"
