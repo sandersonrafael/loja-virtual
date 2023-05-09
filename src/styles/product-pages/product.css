@@ -49,13 +49,15 @@
     width: 50px;
     height: 50px;
     margin: 0 10px;
+    border-radius: 6px;
+    border: 2px solid transparent;
 }
 
 .aditional-img {
+    border-radius: 4px;
     cursor: pointer;
     max-height: 100%;
     min-width: 100%;
-    border-radius: 4px;
 }
 
 .product-cart {
@@ -433,8 +435,8 @@
     }
 
     .payment-card {
-        height: 18px;
-        width: 27px;
+        height: 20px;
+        width: 30px;
     }
 
     .payment-options {
@@ -442,8 +444,12 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
     .payment-cards {
         flex-wrap: wrap;
+    }
+    .payment-card {
+        height: 18px;
+        width: 27px;
     }
 }

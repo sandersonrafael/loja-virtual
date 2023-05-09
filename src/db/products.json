@@ -4,7 +4,7 @@
         "name": "Prancha de Skate Santa Cruz Ryb Color",
         "description": "<p>Apresentamos a Prancha de Skate Ryb Color da marca Santa Cruz, uma peça de qualidade superior e design impressionante. Com dimensões de 80cm x 31,5cm, esta prancha é construída com corpo em madeira Maple, garantindo a durabilidade e resistência necessárias para o uso intenso no skate.</p><p>O modelo Ryb Color apresenta uma combinação de cores vibrantes, incluindo vermelho, azul, amarelo e preto, que se destacam e chamam a atenção em qualquer pista de skate. A prancha também conta com a marca da Santa Cruz em destaque, garantindo a autenticidade do produto.</p><p>Se você está procurando uma prancha de skate de alta qualidade, resistente e com um design único e marcante, a Ryb Color da Santa Cruz é a escolha perfeita para você. Prepare-se para conquistar novos desafios e se destacar na pista com esta incrível prancha de skate.</p>",
         "price": 124.90,
-        "price-no-discount": 144.9,
+        "price-no-discount": null,
         "main-img": "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/main-image.jpeg",
         "aditional-imgs": [
             "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-1.jpeg",
@@ -12,11 +12,76 @@
             "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-3.jpeg",
             "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-4.jpeg"
         ],
-        "colors": [],
+        "colors": {},
         "url-param": "prancha-de-skate-santa-cruz-ryb-color",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-santa-cruz-ryb-color",
         "availability": 34,
         "collection": "pranchas",
         "brand": "Santa Cruz"
+    },
+    {
+        "id": 2,
+        "name": "Rodinhas de Skate Pro Ugin SHR-100A",
+        "description": "<p>Apresentamos as incríveis Rodinhas de Skate Pro Ugin SHR-100A da renomada marca Ugin, projetadas especialmente para os skatistas mais exigentes em busca de uma experiência de skate de alto nível. Essas rodinhas revolucionárias combinam a qualidade superior da Ugin com a inovadora tecnologia Stitching Wheel, proporcionando uma performance excepcional nas ruas e nas pistas de skate. Se você está em busca de rodinhas duráveis, com excelente aderência e deslizamento suave, as Rodinhas de Skate Pro Ugin SHR-100A são a escolha perfeita.</p> <p>Com dimensões de 30mm por 54mm, essas rodinhas são ideais para manobras técnicas e precisas. Seu tamanho versátil oferece um equilíbrio perfeito entre estabilidade e agilidade, permitindo que os skatistas explorem todo o seu potencial. As Rodinhas de Skate Pro Ugin SHR-100A são fabricadas com materiais de alta qualidade, garantindo resistência e durabilidade excepcionais mesmo nos terrenos mais desafiadores. Prepare-se para dominar o skatepark com confiança e estilo!</p> <p>A tecnologia Stitching Wheel presente nas Rodinhas de Skate Pro Ugin SHR-100A é o que as diferencia das demais. Desenvolvida pela Ugin, essa inovação revolucionária oferece uma aderência superior ao solo, garantindo uma tração firme durante manobras complexas e curvas fechadas. Com as Rodinhas de Skate Pro Ugin SHR-100A, você poderá explorar novos limites e elevar seu desempenho a um novo patamar, desfrutando de uma experiência de skate suave e precisa.</p> <p>Além de sua funcionalidade excepcional, as Rodinhas de Skate Pro Ugin SHR-100A também são esteticamente atraentes. Seu design moderno e arrojado complementa qualquer estilo de skate e reflete a paixão pela cultura do skateboarding. Sinta-se confiante enquanto você se destaca na multidão, mostrando sua personalidade única e seu amor pelo skate. Não perca a oportunidade de adquirir as Rodinhas de Skate Pro Ugin SHR-100A e leve seu skate para um novo nível de desempenho e estilo. A Ugin está pronta para acompanhá-lo em todas as suas aventuras nas quatro rodas!</p>",
+        "price": 88.90,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/rodinhas-de-skate-pro-ugin-shr-100a/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/rodinhas-de-skate-pro-ugin-shr-100a/aditional-image-1.jpg",
+            "/src/img/products/rodinhas-de-skate-pro-ugin-shr-100a/aditional-image-2.jpg",
+            "/src/img/products/rodinhas-de-skate-pro-ugin-shr-100a/aditional-image-3.jpg",
+            "/src/img/products/rodinhas-de-skate-pro-ugin-shr-100a/aditional-image-4.jpg"
+        ],
+        "colors": {
+            "Branco": ["white", "/src/img/products/rodinhas-de-skate-pro-ugin-shr-100a/aditional-image-1.jpg"],
+            "Azul": ["blue", "/src/img/products/rodinhas-de-skate-pro-ugin-shr-100a/aditional-image-2.jpg"],
+            "Vermelho": ["red", "/src/img/products/rodinhas-de-skate-pro-ugin-shr-100a/aditional-image-3.jpg"],
+            "Rosa": ["pink", "/src/img/products/rodinhas-de-skate-pro-ugin-shr-100a/aditional-image-4.jpg"]
+        },
+        "url-param": "rodinhas-de-skate-pro-ugin-shr-100a",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=rodinhas-de-skate-pro-ugin-shr-100a",
+        "availability": 76,
+        "collection": "rodinhas",
+        "brand": "Ugin"
+    },
+    {
+        "id": 3,
+        "name": "Prancha de Skate Baker Simple Layer 8.0",
+        "description": "<p>Apresentamos a incrível Prancha de Skate Baker Simple Layer 8.0, da renomada marca Baker, a escolha perfeita para skatistas que buscam desempenho e estilo. Disponível nas cores preto, azul, rosa e verde, essa prancha é uma verdadeira expressão de personalidade e individualidade.</p><p>A Prancha de Skate Baker Simple Layer 8.0 foi projetada com a inovadora tecnologia Hard Motion Resistance, proporcionando uma resistência excepcional para suportar as manobras mais radicais e os impactos mais intensos. Essa tecnologia garante durabilidade e confiabilidade, permitindo que você se concentre totalmente nas suas habilidades de skate.</p><p>Com uma largura de 8.0 polegadas, essa prancha oferece uma plataforma estável e versátil para realizar manobras precisas e controladas. Seu shape de alta qualidade proporciona um equilíbrio perfeito entre pop e resposta, elevando o seu desempenho a novos patamares. Sinta-se no controle total enquanto domina o skatepark com a Prancha de Skate Baker Simple Layer 8.0.</p><p>Além do seu desempenho excepcional, a Prancha de Skate Baker Simple Layer 8.0 também se destaca pelo seu design moderno e estiloso. Com gráficos únicos e vibrantes, essa prancha é uma verdadeira obra de arte sobre rodas. Mostre sua personalidade e estilo único com essa prancha de skate que é uma verdadeira declaração de autenticidade.</p>",
+        "price": 149.9,
+        "price-no-discount": 229.9,
+        "main-img": "/src/img/products/prancha-de-skate-baker-simple-layer-80/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-1.jpg",
+            "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-2.jpg",
+            "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-3.jpg",
+            "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-4.jpg"
+        ],
+        "colors": {
+            "Preto": ["black", "/src/img/products/prancha-de-skate-baker-simple-layer-80/main-image.jpg"],
+            "Azul": ["cian", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-2.jpg"],
+            "Rosa": ["pink", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-3.jpg"],
+            "Verde": ["green", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-4.jpg"]
+        },
+        "url-param": "prancha-de-skate-baker-simple-layer-80",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-baker-simple-layer-80",
+        "availability": 51,
+        "collection": "pranchas",
+        "brand": "Baker"
+    },
+    {
+        "id": 4,
+        "name": "Prancha de Skate Baker Ultra Layer 9.0",
+        "description": "<p>Apresentamos a incrível Prancha de Skate Baker Ultra Layer 9.0, da renomada marca Baker, a escolha perfeita para skatistas que buscam desempenho e estilo. Disponível nas cores preto, azul, rosa e verde, essa prancha é uma verdadeira expressão de personalidade e individualidade.</p><p>A Prancha de Skate Baker Ultra Layer 9.0 foi projetada com a inovadora tecnologia Hard Motion Resistance, proporcionando uma resistência excepcional para suportar as manobras mais radicais e os impactos mais intensos. Essa tecnologia garante durabilidade e confiabilidade, permitindo que você se concentre totalmente nas suas habilidades de skate.</p><p>Com uma largura de 8.0 polegadas, essa prancha oferece uma plataforma estável e versátil para realizar manobras precisas e controladas. Seu shape de alta qualidade proporciona um equilíbrio perfeito entre pop e resposta, elevando o seu desempenho a novos patamares. Sinta-se no controle total enquanto domina o skatepark com a Prancha de Skate Baker Ultra Layer 9.0.</p><p>Além do seu desempenho excepcional, a Prancha de Skate Baker Ultra Layer 9.0 também se destaca pelo seu design moderno e estiloso. Com gráficos únicos e vibrantes, essa prancha é uma verdadeira obra de arte sobre rodas. Mostre sua personalidade e estilo único com essa prancha de skate que é uma verdadeira declaração de autenticidade.</p>",
+        "price": 229.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/prancha-de-skate-baker-ultra-layer-90/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "prancha-de-skate-baker-ultra-layer-90",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-baker-ultra-layer-90",
+        "availability": 22,
+        "collection": "pranchas",
+        "brand": "Baker"
     }
 ]
