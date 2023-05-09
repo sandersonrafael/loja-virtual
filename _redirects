@@ -1,1 +1,5 @@
-/src/*.* https://sk8-lifestyle.netlify.app/
+/src/* https://sk8-lifestyle.netlify.app/
+/src/*.json https://sk8-lifestyle.netlify.app/
+/src/*.html https://sk8-lifestyle.netlify.app/
+/src/*.js https://sk8-lifestyle.netlify.app/
+/src/*.css https://sk8-lifestyle.netlify.app/
