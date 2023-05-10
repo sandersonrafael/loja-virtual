@@ -6,12 +6,7 @@
         "price": 124.90,
         "price-no-discount": null,
         "main-img": "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/main-image.jpeg",
-        "aditional-imgs": [
-            "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-1.jpeg",
-            "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-2.jpeg",
-            "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-3.jpeg",
-            "/src/img/products/prancha-de-skate-santa-cruz-ryb-color/aditional-image-4.jpeg"
-        ],
+        "aditional-imgs": [],
         "colors": {},
         "url-param": "prancha-de-skate-santa-cruz-ryb-color",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-santa-cruz-ryb-color",
@@ -83,5 +78,48 @@
         "availability": 22,
         "collection": "pranchas",
         "brand": "Baker"
+    },
+    {
+        "id": 5,
+        "name": "Rodinhas de Skate Frosted Cruiser Longboard",
+        "description": "<p>O conjunto de 4 rodinhas Frosted Cruiser Longboard é perfeito para os entusiastas do skate que desejam uma experiência suave e controlada em suas sessões de longboard. Com um design elegante e contemporâneo, essas rodinhas vão elevar o estilo do seu skate para um novo patamar.</p><p>Cada rodinha possui dimensões de 70mm por 51mm, proporcionando uma combinação ideal de velocidade e estabilidade. O tamanho generoso das rodinhas permite uma excelente aderência em diferentes tipos de superfícies, garantindo uma resposta rápida e precisa em cada manobra.</p><p>A construção de alta qualidade das rodinhas Frosted Cruiser Longboard oferece durabilidade excepcional, resistindo ao desgaste constante do uso intenso. Seu material resistente e de alto desempenho garante uma experiência confiável e consistente ao longo do tempo, permitindo que você desfrute de sessões de skate sem preocupações.</p><p>Com as rodinhas Frosted Cruiser Longboard, você poderá explorar novos terrenos e conquistar novos desafios. Seja você um iniciante ou um skatista experiente, essas rodinhas são a escolha ideal para quem busca uma combinação perfeita de estilo, desempenho e durabilidade. Prepare-se para sentir a emoção de deslizar com fluidez e confiança em seu skate longboard.</p>",
+        "price": 99.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/rodinhas-de-skate-frosted-cruiser-longboard/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/rodinhas-de-skate-frosted-cruiser-longboard/aditional-image-1.jpg",
+            "/src/img/products/rodinhas-de-skate-frosted-cruiser-longboard/aditional-image-2.jpg"
+        ],
+        "colors": {
+            "Preto": ["black", "/src/img/products/rodinhas-de-skate-frosted-cruiser-longboard/main-image.jpg"],
+            "Verde": ["lightgreen", "/src/img/products/rodinhas-de-skate-frosted-cruiser-longboard/aditional-image-2.jpg"]
+        },
+        "url-param": "rodinhas-de-skate-frosted-cruiser-longboard",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=rodinhas-de-skate-frosted-cruiser-longboard",
+        "availability": 27,
+        "collection": "rodinhas",
+        "brand": "Frosted"
+    },
+    {
+        "id": 6,
+        "name": "Rolamenos de Skate Profissionais Redz Precision",
+        "description": "<p>Os Rolamentos de Skate Profissionais Redz Precision são a escolha perfeita para skatistas que buscam desempenho excepcional e durabilidade incomparável. Com seu nome reconhecido no mundo do skate, a marca Redz entrega qualidade e precisão em cada produto.</p><p>Cada pacote contém 8 unidades de rolamentos, proporcionando o conjunto completo para o seu skate. Esses rolamentos foram projetados para oferecer uma rotação suave e consistente, permitindo que você desfrute de manobras precisas e rápidas em qualquer terreno.</p><p>Aproveite esta promoção especial e adquira os Rolamentos de Skate Profissionais Redz Precision por um preço incrível. Não perca a oportunidade de elevar o desempenho do seu skate e superar seus limites com a confiabilidade e a qualidade que apenas a Redz pode oferecer.</p>",
+        "price": 87.7,
+        "price-no-discount": 100,
+        "main-img": "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/aditional-image-1.jpg",
+            "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/aditional-image-2.jpg",
+            "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/aditional-image-3.jpg"
+        ],
+        "colors": {
+            "Preto": ["black", "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/main-image.jpg"],
+            "Branco": ["white", "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/aditional-image-1.jpg"]
+        },
+        "url-param": "rolamenos-de-skate-profissionais-redz-precision",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=rolamenos-de-skate-profissionais-redz-precision",
+        "availability": 22,
+        "collection": "rolamentos",
+        "brand": "Redz"
     }
 ]
