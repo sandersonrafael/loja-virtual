@@ -54,7 +54,7 @@
         ],
         "colors": {
             "Preto": ["black", "/src/img/products/prancha-de-skate-baker-simple-layer-80/main-image.jpg"],
-            "Azul": ["cian", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-2.jpg"],
+            "Azul": ["cyan", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-2.jpg"],
             "Rosa": ["pink", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-3.jpg"],
             "Verde": ["green", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-4.jpg"]
         },
