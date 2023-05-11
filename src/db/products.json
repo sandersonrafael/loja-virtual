@@ -121,5 +121,62 @@
         "availability": 22,
         "collection": "rolamentos",
         "brand": "Redz"
+    },
+    {
+        "id": 7,
+        "name": "Skate Rocker Seven Layer Chess Pro",
+        "description": "<p>Apresentamos o incrível Skate Profissional Rocker Seven Layer Chess, o companheiro perfeito para skatistas que buscam alto desempenho e estilo. Com um adesivo em padrão xadrez, essa prancha é uma verdadeira obra de arte sobre rodas, adicionando um toque único ao seu visual.</p><p>O Skate Profissional Rocker Seven Layer Chess apresenta a tecnologia inovadora Seven Hard Layer Resistance, que garante uma resistência excepcional para suportar até mesmo as manobras mais intensas e os impactos mais pesados. Com essa tecnologia, você pode confiar na durabilidade e confiabilidade dessa prancha, permitindo que você se concentre totalmente em aprimorar suas habilidades de skate.</p><p>Com dimensões de 79cm x 20cm x 13,5cm, esse skate oferece um tamanho versátil que atende às necessidades de skatistas de todos os níveis de habilidade. Sua construção em sete camadas de alta qualidade proporciona uma combinação perfeita de estabilidade e resposta, permitindo que você execute manobras precisas e tenha um ótimo controle sobre a prancha.</p><p>Além do seu desempenho excepcional, o Skate Profissional Rocker Seven Layer Chess também é uma declaração de estilo. Com seu adesivo em cor xadrez, esse skate se destaca em qualquer ambiente. Mostre sua personalidade e paixão pelo skate com esse skate que combina desempenho, durabilidade e estilo em um único produto.</p>",
+        "price": 379.9,
+        "price-no-discount": 500,
+        "main-img": "/src/img/products/skate-rocker-seven-layer-chess-pro/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/skate-rocker-seven-layer-chess-pro/aditional-image-1.jpg",
+            "/src/img/products/skate-rocker-seven-layer-chess-pro/aditional-image-2.jpg",
+            "/src/img/products/skate-rocker-seven-layer-chess-pro/aditional-image-3.jpg"
+        ],
+        "colors": {},
+        "url-param": "skate-rocker-seven-layer-chess-pro",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-rocker-seven-layer-chess-pro",
+        "availability": 13,
+        "collection": "skates",
+        "brand": "Rocker"
+    },
+    {
+        "id": 8,
+        "name": "Skate Rocker Seven Layer Space Hart",
+        "description": "<p>Apresentamos o Skate Rocker Seven Layer Space Hart, um verdadeiro símbolo de estilo e performance no mundo do skate. Com seu design inovador e qualidade excepcional, este skate irá elevá-lo a novos patamares em suas sessões de skate.</p><p>O Skate Rocker Seven Layer Space Hart é equipado com a tecnologia avançada Seven Hard Layer Resistance, oferecendo uma resistência excepcional para suportar as demandas intensas das manobras radicais. Essa tecnologia de camadas rígidas proporciona durabilidade e estabilidade, permitindo que você se concentre em aprimorar suas habilidades sem preocupações.</p><p>Com dimensões de 79cm x 20cm x 13,5cm, este skate possui o tamanho perfeito para uma experiência equilibrada de skate. Sua construção robusta e precisa oferece uma plataforma sólida para manobras precisas e uma resposta ágil, permitindo que você execute movimentos com confiança e fluidez.</p><p>O Skate Rocker Seven Layer Space Hart destaca-se também pelo seu visual impressionante. Seu design único e futurista, combinado com detalhes gráficos exclusivos, fazem dele um verdadeiro objeto de desejo para os amantes do skate. Mostre seu estilo autêntico e destaque-se nas pistas com este skate que é uma verdadeira obra de arte sobre rodas.</p><p>Prepare-se para conquistar novos desafios e explorar o espaço infinito do skate com o Skate Rocker Seven Layer Space Hart. Ele oferece uma experiência incomparável, unindo tecnologia de ponta, qualidade superior e estilo marcante. Não perca a oportunidade de elevar seu skate para um novo patamar e conquistar a admiração de todos ao redor. Seu próximo nível de skate começa aqui.</p>",
+        "price": 330,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/skate-rocker-seven-layer-space-hart/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-1.jpg",
+            "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-2.jpg",
+            "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-3.jpg"
+        ],
+        "colors": {
+            "Azul": ["blue", "/src/img/products/skate-rocker-seven-layer-space-hart/main-image.jpg"],
+            "Rosa": ["lightpink", "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-2.jpg"],
+            "Cinza": ["gray", "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-3.jpg"]
+        },
+        "url-param": "skate-rocker-seven-layer-space-hart",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-rocker-seven-layer-space-hart",
+        "availability": 12,
+        "collection": "skates",
+        "brand": "Rocker"
+    },
+    {
+        "id": 9,
+        "name": "Skate Rocker Seven Layer Mystic Tiger",
+        "description": "<p>Apresentamos o Skate Rocker Seven Layer Mystic Tiger, uma verdadeira fera do skate que combina estilo e desempenho em uma única prancha. Se você procura um skate que destaque sua personalidade e ofereça alta performance, este é o modelo ideal para você.</p><p>O Skate Rocker Seven Layer Mystic Tiger conta com a tecnologia inovadora Seven Hard Layer Resistance, garantindo uma resistência excepcional para suportar as sessões mais intensas e as manobras mais radicais. Com essa tecnologia avançada, você pode se concentrar totalmente nas suas habilidades de skate, sem se preocupar com a durabilidade da prancha.</p><p>Com dimensões de 79cm x 20cm x 13,5cm, este skate possui o tamanho perfeito para uma experiência de skate equilibrada. Sua construção em sete camadas proporciona uma combinação perfeita de estabilidade e resposta, permitindo que você execute manobras com precisão e tenha um ótimo controle sobre a prancha.</p>",
+        "price": 349.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/skate-rocker-seven-layer-mystic-tiger/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "skate-rocker-seven-layer-mystic-tiger",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-rocker-seven-layer-mystic-tiger",
+        "availability": 19,
+        "collection": "skates",
+        "brand": "Rocker"
     }
 ]
