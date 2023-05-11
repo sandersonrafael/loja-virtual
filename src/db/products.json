@@ -178,5 +178,110 @@
         "availability": 19,
         "collection": "skates",
         "brand": "Rocker"
+    },
+    {
+        "id": 10,
+        "name": "Skate Longboard Seeth Ink SSG Cruiser Black Cat",
+        "description": "<p>Apresentamos o Skate Longboard Seeth Ink SSG Cruiser Black Cat, uma verdadeira obra de arte sobre rodas para os amantes do longboard. Com seu design elegante e desempenho excepcional, este longboard é perfeito para quem busca estilo e adrenalina em suas sessões de skate.</p><p>O Skate Longboard Seeth Ink SSG Cruiser Black Cat oferece uma experiência de cruzeiro suave e estável, permitindo que você deslize pelas ruas e calçadas com total conforto. Sua construção de alta qualidade e shape cuidadosamente projetado garantem uma resposta ágil e uma ótima capacidade de curvas, proporcionando uma sensação de surfar no asfalto.</p><p>Com seu adesivo exclusivo de um gato preto, o Skate Longboard Seeth Ink SSG Cruiser Black Cat é uma verdadeira declaração de estilo e individualidade. Seja você um skatista experiente ou um iniciante, este longboard vai te acompanhar em todas as suas aventuras, trazendo diversão e emoção a cada passeio.</p>",
+        "price": 449.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/skate-longboard-seeth-ink-ssg-cruiser-black-cat/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/skate-longboard-seeth-ink-ssg-cruiser-black-cat/aditional-image-1.jpg",
+            "/src/img/products/skate-longboard-seeth-ink-ssg-cruiser-black-cat/aditional-image-2.jpg"
+        ],
+        "colors": {},
+        "url-param": "skate-longboard-seeth-ink-ssg-cruiser-black-cat",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-longboard-seeth-ink-ssg-cruiser-black-cat",
+        "availability": 9,
+        "collection": "skates",
+        "brand": "Seeth Ink"
+    },
+    {
+        "id": 11,
+        "name": "Lixa de Skate Griptape Yellow Prism",
+        "description": "<p>Descubra a incrível lixa de skate Griptape Yellow Prism, da renomada marca Griptape. Essa lixa adesiva é perfeita para os skatistas que buscam aderência e estilo em suas manobras.</p><p>Com dimensões de 85cm x 24cm, a Griptape Yellow Prism oferece uma cobertura ampla e generosa para o seu shape de skate. Sua aderência de alta qualidade proporciona uma excelente tração, garantindo que seus pés fiquem firmemente plantados na prancha durante as manobras mais intensas.</p><p>A lixa de skate Griptape Yellow Prism apresenta um design exclusivo em amarelo prismático, adicionando um toque de estilo e personalidade ao seu skate. Com essa lixa, você estará preparado para enfrentar qualquer desafio e mostrar suas habilidades com confiança.</p>",
+        "price": 34.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/lixa-de-skate-griptape-yellow-prism/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/lixa-de-skate-griptape-yellow-prism/aditional-image-1.jpg",
+            "/src/img/products/lixa-de-skate-griptape-yellow-prism/aditional-image-2.jpg",
+            "/src/img/products/lixa-de-skate-griptape-yellow-prism/aditional-image-3.jpg"
+        ],
+        "colors": {},
+        "url-param": "lixa-de-skate-griptape-yellow-prism",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-griptape-yellow-prism",
+        "availability": 34,
+        "collection": "lixas",
+        "brand": "Griptape"
+    },
+    {
+        "id": 12,
+        "name": "Lixa de Skate Griptape Red Prism",
+        "description": "<p>Explore a incrível lixa de skate Griptape Red Prism, da renomada marca Griptape. Essa lixa adesiva é perfeita para os skatistas que buscam aderência e estilo em suas manobras.</p><p>Com dimensões de 85cm x 24cm, a Griptape Red Prism oferece uma cobertura ampla e generosa para o seu shape de skate. Sua aderência de alta qualidade proporciona uma excelente tração, garantindo que seus pés fiquem firmemente plantados na prancha durante as manobras mais intensas.</p><p>A lixa de skate Griptape Red Prism apresenta um design exclusivo em vermelho prismático, adicionando um toque de estilo e personalidade ao seu skate. Com essa lixa, você estará preparado para enfrentar qualquer desafio e mostrar suas habilidades com confiança.</p>",
+        "price": 34.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/lixa-de-skate-griptape-red-prism/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/lixa-de-skate-griptape-red-prism/aditional-image-1.jpg"
+        ],
+        "colors": {},
+        "url-param": "lixa-de-skate-griptape-red-prism",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-griptape-red-prism",
+        "availability": 28,
+        "collection": "lixas",
+        "brand": "Griptape"
+    },
+    {
+        "id": 13,
+        "name": "Lixa de Skate Griptape Splashed Paint",
+        "description": "<p>Conheça a impressionante Lixa de Skate Griptape Splashed Paint, da renomada marca Griptape. Essa lixa adesiva é perfeita para os skatistas que buscam aderência e estilo em suas manobras.</p><p>Com dimensões de 85cm x 24cm, a Griptape Splashed Paint oferece uma cobertura ampla e generosa para o seu shape de skate. Sua aderência de alta qualidade proporciona uma excelente tração, garantindo que seus pés fiquem firmemente plantados na prancha durante as manobras mais intensas.</p><p>A lixa de skate Griptape Splashed Paint apresenta um design único de respingos de tinta, adicionando um toque de originalidade e estilo ao seu skate. Com essa lixa, você estará pronto para enfrentar qualquer desafio e mostrar suas habilidades com confiança.</p>",
+        "price": 24.9,
+        "price-no-discount": 34.9,
+        "main-img": "/src/img/products/lixa-de-skate-griptape-splashed-paint/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/lixa-de-skate-griptape-splashed-paint/aditional-image-1.jpg"
+        ],
+        "colors": {},
+        "url-param": "lixa-de-skate-griptape-splashed-paint",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-griptape-splashed-paint",
+        "availability": 16,
+        "collection": "lixas",
+        "brand": "Griptape"
+    },
+    {
+        "id": 14,
+        "name": "Lixa de Skate SGD Red Moon",
+        "description": "<p>Eleve seu skate para um novo nível com a Lixa de Skate Griptape Red Moon, da renomada marca SGD. Projetada para oferecer aderência superior e estilo excepcional, essa lixa adesiva é perfeita para skatistas que buscam performance e personalidade em suas sessões.</p><p>Com dimensões de 84cm x 25cm, a Griptape Red Moon fornece uma ampla cobertura para o seu shape de skate. Sua aderência de alta qualidade garante uma tração confiável, mantendo seus pés firmemente plantados na prancha durante as manobras mais desafiadoras.</p><p>A lixa de skate Griptape Red Moon apresenta um design cativante de uma lua vermelha, adicionando um toque de mistério e estilo ao seu skate. Essa lixa não apenas melhora o desempenho do seu skate, mas também destaca sua individualidade nas pistas e nas ruas.</p><p>Construída com materiais duráveis e resistentes, a Griptape Red Moon foi projetada para suportar o desgaste diário e proporcionar uma aderência consistente ao longo do tempo. Seja você um skatista profissional ou iniciante, essa lixa é o complemento perfeito para elevar suas habilidades e se destacar no cenário do skate.</p>",
+        "price": 39.9,
+        "price-no-discount": 44.9,
+        "main-img": "/src/img/products/lixa-de-skate-sgd-red-moon/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/lixa-de-skate-sgd-red-moon/aditional-image-1.jpg"
+        ],
+        "colors": {},
+        "url-param": "lixa-de-skate-sgd-red-moon",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-sgd-red-moon",
+        "availability": 11,
+        "collection": "lixas",
+        "brand": "SGD"
+    },
+    {
+        "id": 15,
+        "name": "Lixa de Skate SGD Galaxy View",
+        "description": "<p>Aprimore sua experiência no skate com a Lixa de Skate SGD Galaxy View, da marca SGD. Desenvolvida para proporcionar aderência excepcional e estilo único, essa lixa adesiva é ideal para skatistas que buscam alto desempenho e personalidade em suas manobras.</p><p>Com dimensões de 84cm x 25cm, a Lixa de Skate SGD Galaxy View oferece ampla cobertura para o seu shape, garantindo estabilidade e controle durante as sessões. Sua aderência de alta qualidade proporciona tração confiável, mantendo seus pés firmemente fixados na prancha, mesmo nas manobras mais intensas.</p><p>O design da lixa SGD Galaxy View é inspirado no fascinante universo, com uma estética única que se destaca. Seu visual impressionante adiciona um toque de estilo individual ao seu skate, permitindo que você expresse sua personalidade nas pistas e nas ruas.</p><p>Construída com materiais duráveis e resistentes, a Lixa de Skate SGD Galaxy View foi projetada para suportar o uso intenso e manter a aderência ao longo do tempo. Seja você um skatista profissional ou amador, essa lixa proporcionará uma experiência de skate excepcional, combinando funcionalidade e estilo.</p>",
+        "price": 44.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/lixa-de-skate-sgd-galaxy-view/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/lixa-de-skate-sgd-galaxy-view/aditional-image-1.jpg"
+        ],
+        "colors": {},
+        "url-param": "lixa-de-skate-sgd-galaxy-view",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-sgd-galaxy-view",
+        "availability": 19,
+        "collection": "lixas",
+        "brand": "SGD"
     }
 ]
