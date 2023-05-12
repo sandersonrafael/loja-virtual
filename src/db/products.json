@@ -82,7 +82,7 @@
     {
         "id": 5,
         "name": "Rodas de Skate Frosted Cruiser Longboard",
-        "description": "<p>O conjunto de 4 rodas Frosted Cruiser Longboard é perfeito para os entusiastas do skate que desejam uma experiência suave e controlada em suas sessões de longboard. Com um design elegante e contemporâneo, essas rodas vão elevar o estilo do seu skate para um novo patamar.</p><p>Cada rodinha possui dimensões de 70mm por 51mm, proporcionando uma combinação ideal de velocidade e estabilidade. O tamanho generoso das rodas permite uma excelente aderência em diferentes tipos de superfícies, garantindo uma resposta rápida e precisa em cada manobra.</p><p>A construção de alta qualidade das rodas Frosted Cruiser Longboard oferece durabilidade excepcional, resistindo ao desgaste constante do uso intenso. Seu material resistente e de alto desempenho garante uma experiência confiável e consistente ao longo do tempo, permitindo que você desfrute de sessões de skate sem preocupações.</p><p>Com as rodas Frosted Cruiser Longboard, você poderá explorar novos terrenos e conquistar novos desafios. Seja você um iniciante ou um skatista experiente, essas rodas são a escolha ideal para quem busca uma combinação perfeita de estilo, desempenho e durabilidade. Prepare-se para sentir a emoção de deslizar com fluidez e confiança em seu skate longboard.</p>",
+        "description": "<p>O conjunto de 4 rodas Frosted Cruiser Longboard é perfeito para os entusiastas do skate que desejam uma experiência suave e controlada em suas sessões de longboard. Com um design elegante e contemporâneo, essas rodas vão elevar o estilo do seu skate para um novo patamar.</p><p>Cada roda possui dimensões de 70mm por 51mm, proporcionando uma combinação ideal de velocidade e estabilidade. O tamanho generoso das rodas permite uma excelente aderência em diferentes tipos de superfícies, garantindo uma resposta rápida e precisa em cada manobra.</p><p>A construção de alta qualidade das rodas Frosted Cruiser Longboard oferece durabilidade excepcional, resistindo ao desgaste constante do uso intenso. Seu material resistente e de alto desempenho garante uma experiência confiável e consistente ao longo do tempo, permitindo que você desfrute de sessões de skate sem preocupações.</p><p>Com as rodas Frosted Cruiser Longboard, você poderá explorar novos terrenos e conquistar novos desafios. Seja você um iniciante ou um skatista experiente, essas rodas são a escolha ideal para quem busca uma combinação perfeita de estilo, desempenho e durabilidade. Prepare-se para sentir a emoção de deslizar com fluidez e confiança em seu skate longboard.</p>",
         "price": 99.9,
         "price-no-discount": null,
         "main-img": "/src/img/products/rodas-de-skate-frosted-cruiser-longboard/main-image.jpg",
@@ -102,22 +102,22 @@
     },
     {
         "id": 6,
-        "name": "Rolamenos de Skate Profissionais Redz Precision",
+        "name": "Rolamentos de Skate Profissionais Redz Precision",
         "description": "<p>Os Rolamentos de Skate Profissionais Redz Precision são a escolha perfeita para skatistas que buscam desempenho excepcional e durabilidade incomparável. Com seu nome reconhecido no mundo do skate, a marca Redz entrega qualidade e precisão em cada produto.</p><p>Cada pacote contém 8 unidades de rolamentos, proporcionando o conjunto completo para o seu skate. Esses rolamentos foram projetados para oferecer uma rotação suave e consistente, permitindo que você desfrute de manobras precisas e rápidas em qualquer terreno.</p><p>Aproveite esta promoção especial e adquira os Rolamentos de Skate Profissionais Redz Precision por um preço incrível. Não perca a oportunidade de elevar o desempenho do seu skate e superar seus limites com a confiabilidade e a qualidade que apenas a Redz pode oferecer.</p>",
         "price": 87.7,
         "price-no-discount": 100,
-        "main-img": "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/main-image.jpg",
+        "main-img": "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/main-image.jpg",
         "aditional-imgs": [
-            "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/aditional-image-1.jpg",
-            "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/aditional-image-2.jpg",
-            "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/aditional-image-3.jpg"
+            "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/aditional-image-1.jpg",
+            "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/aditional-image-2.jpg",
+            "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/aditional-image-3.jpg"
         ],
         "colors": {
-            "Preto": ["black", "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/main-image.jpg"],
-            "Branco": ["white", "/src/img/products/rolamenos-de-skate-profissionais-redz-precision/aditional-image-1.jpg"]
+            "Preto": ["black", "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/main-image.jpg"],
+            "Branco": ["white", "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/aditional-image-1.jpg"]
         },
-        "url-param": "rolamenos-de-skate-profissionais-redz-precision",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=rolamenos-de-skate-profissionais-redz-precision",
+        "url-param": "rolamentos-de-skate-profissionais-redz-precision",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=rolamentos-de-skate-profissionais-redz-precision",
         "availability": 22,
         "collection": "rolamentos",
         "brand": "Redz"
@@ -283,5 +283,43 @@
         "availability": 19,
         "collection": "lixas",
         "brand": "SGD"
+    },
+    {
+        "id": 16,
+        "name": "Rolamentos de Skate ABEC BSB Pro 16 Und",
+        "description": "<p>Eleve o desempenho do seu skate com o conjunto de Rolamentos de Skate ABEC BSB Pro 16 Und, da marca ABEC. Projetados para proporcionar velocidade e suavidade, esses rolamentos são ideais para skatistas que buscam alta performance em suas sessões.</p><p>Com dimensões de 22mm x 7mm e furo de 8mm, os Rolamentos de Skate ABEC BSB Pro 16 Und oferecem um encaixe perfeito em suas rodas, garantindo um deslize suave e preciso. Sua construção de alta qualidade e precisão assegura uma durabilidade excepcional, mesmo em condições adversas.</p><p>Os rolamentos ABEC BSB Pro 16 Und são conhecidos por sua velocidade e resposta rápida. Com classificação ABEC 16, eles proporcionam uma rotação suave e eficiente, permitindo que você atinja altas velocidades e execute manobras com total controle.</p><p>Seja você um skatista profissional ou amador, o conjunto de Rolamentos de Skate ABEC BSB Pro 16 Und irá elevar o seu jogo. Com esses rolamentos de alta qualidade, você estará preparado para enfrentar qualquer desafio e explorar novos limites em suas sessões de skate.</p>",
+        "price": 127.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/rolamentos-de-skate-abec-bsb-pro-16-und/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/rolamentos-de-skate-abec-bsb-pro-16-und/aditional-image-1.jpg",
+            "/src/img/products/rolamentos-de-skate-abec-bsb-pro-16-und/aditional-image-2.jpg",
+            "/src/img/products/rolamentos-de-skate-abec-bsb-pro-16-und/aditional-image-3.jpg"
+        ],
+        "colors": {},
+        "url-param": "rolamentos-de-skate-abec-bsb-pro-16-und",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=rolamentos-de-skate-abec-bsb-pro-16-und",
+        "availability": 23,
+        "collection": "rolamentos",
+        "brand": "ABEC"
+    },
+    {
+        "id": 17,
+        "name": "Rolamentos de Skate ABEC Ceramic Blackred",
+        "description": "<p>Eleve a performance do seu skate com o conjunto de Rolamentos de Skate ABEC Ceramic Blackred, da marca ABEC. Esses rolamentos de alta qualidade são projetados para proporcionar uma experiência suave e duradoura nas suas sessões de skate.</p><p>Com dimensões de 22mm x 7mm e furo de 8mm, os Rolamentos de Skate ABEC Ceramic Blackred oferecem um ajuste preciso nas suas rodas, garantindo um deslize suave e eficiente. Sua construção em cerâmica de alta qualidade oferece uma durabilidade excepcional, resistindo ao desgaste e às condições adversas.</p><p>Os rolamentos ABEC Ceramic Blackred são conhecidos pela sua velocidade e resistência ao calor. Com rolamentos de cerâmica de alta performance, esses rolamentos proporcionam uma rotação suave e eficiente, permitindo que você alcance altas velocidades e execute manobras com precisão.</p><p>Seja você um skatista profissional ou amador, o conjunto de Rolamentos de Skate ABEC Ceramic Blackred elevará o seu skate para um novo nível. Com esses rolamentos de cerâmica de alta qualidade, você estará pronto para enfrentar qualquer desafio e dominar as pistas com confiança.</p>",
+        "price": 88.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/rolamentos-de-skate-abec-ceramic-blackred/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/rolamentos-de-skate-abec-ceramic-blackred/aditional-image-1.jpg",
+            "/src/img/products/rolamentos-de-skate-abec-ceramic-blackred/aditional-image-2.jpg",
+            "/src/img/products/rolamentos-de-skate-abec-ceramic-blackred/aditional-image-3.jpg"
+        ],
+        "colors": {},
+        "url-param": "rolamentos-de-skate-abec-ceramic-blackred",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=rolamentos-de-skate-abec-ceramic-blackred",
+        "availability": 31,
+        "collection": "rolamentos",
+        "brand": "ABEC"
     }
 ]
