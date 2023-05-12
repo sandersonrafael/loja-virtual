@@ -376,5 +376,79 @@
         "availability": 35,
         "collection": "rodas",
         "brand": "Puente"
+    },
+    {
+        "id": 21,
+        "name": "Capacete Para Skatistas Beon B-115 ABS",
+        "description": "<p>Eleve a sua segurança durante as suas sessões de skate com o Capacete Para Skatistas Beon B-115 ABS, da renomada marca Beon. Projetado para oferecer proteção e conforto, esse capacete é essencial para skatistas de todos os níveis.</p><p>O Capacete Para Skatistas Beon B-115 ABS é fabricado com material de plástico ABS resistente, garantindo durabilidade e proteção contra impactos. Sua estrutura robusta e de alta qualidade oferece uma camada adicional de segurança, permitindo que você se concentre totalmente nas suas manobras.</p><p>Além da proteção, o Capacete Beon B-115 ABS também oferece conforto excepcional. Seu design ergonômico e ajuste personalizável permitem um encaixe perfeito na cabeça, evitando desconforto durante longas sessões de skate.</p><p>Com uma variedade de cores e estilos disponíveis, o Capacete Para Skatistas Beon B-115 ABS permite que você escolha aquele que melhor combina com o seu estilo pessoal. Dê um toque de personalidade ao seu equipamento de proteção e ande com confiança e estilo nas pistas de skate.</p>",
+        "price": 197,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/capacete-para-skatistas-beon-b-115-abs/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-1.jpg",
+            "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-2.jpg",
+            "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-3.jpg",
+            "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-4.jpg"
+        ],
+        "colors": {
+            "Preto": ["black", "/src/img/products/capacete-para-skatistas-beon-b-115-abs/main-image.jpg"],
+            "Branco": ["white", "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-1.jpg"],
+            "Rosa": ["lightpink", "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-2.jpg"]
+        },
+        "url-param": "capacete-para-skatistas-beon-b-115-abs",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=capacete-para-skatistas-beon-b-115-abs",
+        "availability": 17,
+        "collection": "capacetes",
+        "brand": "Beon"
+    },
+    {
+        "id": 22,
+        "name": "Capacete Para Skatista Sea Wind Simple PE",
+        "description": "<p>Eleve o seu nível de segurança e proteção enquanto pratica skate com o Capacete Para Skatistas Sea Wind Simple PE, da renomada marca Sea Wind. Projetado para oferecer conforto e resistência, esse capacete é indispensável para skatistas de todas as idades e níveis de experiência.</p><p>O Capacete Para Skatistas Sea Wind Simple PE é fabricado com material de plástico PE resistente, proporcionando uma proteção sólida contra impactos. Sua estrutura robusta e durável é capaz de absorver choques e proporcionar a segurança necessária para você se concentrar completamente em suas manobras.</p><p>Além de oferecer proteção confiável, o Capacete Sea Wind Simple PE também é projetado com foco no conforto. Seu design ergonômico e leve proporciona um ajuste preciso e confortável, permitindo que você desfrute de sessões de skate prolongadas sem desconforto.</p><p>Disponível em uma variedade de cores vibrantes e estilos modernos, o Capacete Para Skatistas Sea Wind Simple PE permite que você escolha aquele que melhor combina com o seu estilo pessoal. Adicione um toque de personalidade ao seu equipamento de proteção e ande com confiança e estilo nas pistas de skate.</p>",
+        "price": 147,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-1.jpg",
+            "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-2.jpg",
+            "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-3.jpg",
+            "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-4.jpg"
+        ],
+        "colors": {
+            "Preto": ["black", "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/main-image.jpg"],
+            "Branco": ["white", "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-1.jpg"],
+            "Rosa": ["lightpink", "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-2.jpg"],
+            "Azul": ["blue", "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-3.jpg"]
+        },
+        "url-param": "capacete-para-skatista-sea-wind-simple-pe",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=capacete-para-skatista-sea-wind-simple-pe",
+        "availability": 27,
+        "collection": "capacetes",
+        "brand": "Sea Wind"
+    },
+    {
+        "id": 23,
+        "name": "Capacete Para Skatista Infantil Sea Wind Cave",
+        "description": "<p>Proporcione segurança e proteção aos pequenos skatistas com o Capacete Para Skatistas Sea Wind Cave infantil, da renomada marca Sea Wind. Desenvolvido especialmente para crianças, esse capacete garante uma prática de skate divertida e segura.</p><p>O Capacete Para Skatistas Sea Wind Cave infantil apresenta um design moderno e colorido, perfeito para atrair a atenção dos pequenos. Com materiais de alta qualidade e resistência, esse capacete oferece uma proteção confiável contra impactos e quedas.</p><p>Além de seu desempenho de segurança, o Capacete Sea Wind Cave infantil também prioriza o conforto. Sua estrutura leve e ajustável permite um encaixe preciso e confortável na cabeça das crianças, garantindo que elas possam aproveitar suas sessões de skate com total liberdade de movimento.</p>",
+        "price": 117,
+        "price-no-discount": 149.9,
+        "main-img": "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-1.jpg",
+            "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-2.jpg",
+            "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-3.jpg",
+            "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-4.jpg"
+        ],
+        "colors": {
+            "Vermelho": ["red", "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/main-image.jpg"],
+            "Cinza": ["gray", "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-1.jpg"],
+            "Azul": ["blue", "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-2.jpg"],
+            "Preto": ["black", "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-3.jpg"]
+        },
+        "url-param": "capacete-para-skatista-infantil-sea-wind-cave",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=capacete-para-skatista-infantil-sea-wind-cave",
+        "availability": 25,
+        "collection": "capacetes",
+        "brand": "Sea Wind"
     }
 ]
