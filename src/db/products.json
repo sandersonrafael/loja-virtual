@@ -356,5 +356,25 @@
         "availability": 11,
         "collection": "trucks",
         "brand": "Thrasher"
+    },
+    {
+        "id": 20,
+        "name": "Rodas de Skate Puente Ollie Punk Cruiser",
+        "description": "<p>Aprimore a performance do seu skate com o conjunto de Rodas de Skate Ollie Punk Cruiser, da marca Puente. Essas rodas são projetadas para oferecer um deslize suave e uma aderência excepcional em diferentes superfícies, garantindo uma experiência de skate única.</p><p>O conjunto de Rodas de Skate Ollie Punk Cruiser é fabricado com materiais de alta qualidade, proporcionando durabilidade e resistência para enfrentar os desafios do skate. Com um diâmetro ideal e uma largura adequada, essas rodas oferecem estabilidade e controle em todas as suas manobras.</p><p>As Rodas de Skate Ollie Punk Cruiser são perfeitas para skatistas que buscam versatilidade. Seja você um skatista de rua ou um praticante de cruising, essas rodas oferecem um desempenho excepcional em diferentes terrenos, desde as ruas até as pistas de skate.</p><p>Com um design único e estiloso, o conjunto de Rodas de Skate Ollie Punk Cruiser vai dar um toque especial ao seu skate. Além da performance, elas vão adicionar um visual arrojado e autêntico à sua prancha, destacando-se entre os demais skatistas.</p>",
+        "price": 77.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/rodas-de-skate-puente-ollie-punk-cruiser/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/rodas-de-skate-puente-ollie-punk-cruiser/aditional-image-1.jpg",
+            "/src/img/products/rodas-de-skate-puente-ollie-punk-cruiser/aditional-image-2.jpg",
+            "/src/img/products/rodas-de-skate-puente-ollie-punk-cruiser/aditional-image-3.jpg",
+            "/src/img/products/rodas-de-skate-puente-ollie-punk-cruiser/aditional-image-4.jpg"
+        ],
+        "colors": {},
+        "url-param": "rodas-de-skate-puente-ollie-punk-cruiser",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=rodas-de-skate-puente-ollie-punk-cruiser",
+        "availability": 35,
+        "collection": "rodas",
+        "brand": "Puente"
     }
 ]
