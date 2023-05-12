@@ -321,5 +321,40 @@
         "availability": 31,
         "collection": "rolamentos",
         "brand": "ABEC"
+    },
+    {
+        "id": 18,
+        "name": "Truck de Skate Carver Cx4 Alumínio",
+        "description": "<p>Eleve a performance e a manobrabilidade do seu skate com o conjunto de Trucks de Skate Carver Cx4 Alumínio, da marca Carver. Esses trucks de alta qualidade são projetados para proporcionar um desempenho excepcional nas suas sessões de skate.</p><p>O conjunto de Trucks de Skate Carver Cx4 Alumínio oferece durabilidade e resistência, sendo fabricado em alumínio de alta qualidade. Esses trucks são projetados para suportar o impacto das manobras mais intensas e proporcionar estabilidade durante os movimentos do seu skate.</p><p>Com um design inovador e preciso, os trucks Carver Cx4 permitem uma inclinação maior, facilitando as curvas e os movimentos de surf no asfalto. Você terá uma experiência de surf no skate, permitindo explorar um estilo único de pilotagem e realizar manobras com mais fluidez e controle.</p><p>Seja você um skatista experiente ou iniciante, o conjunto de Trucks de Skate Carver Cx4 Alumínio é a escolha ideal para elevar o seu skate para um novo patamar. Aproveite a qualidade e a performance desses trucks e experimente novas possibilidades nas suas sessões de skate.</p>",
+        "price": 149.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/truck-de-skate-carver-cx4-aluminio/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/truck-de-skate-carver-cx4-aluminio/aditional-image-1.jpg",
+            "/src/img/products/truck-de-skate-carver-cx4-aluminio/aditional-image-2.jpg",
+            "/src/img/products/truck-de-skate-carver-cx4-aluminio/aditional-image-3.jpg",
+            "/src/img/products/truck-de-skate-carver-cx4-aluminio/aditional-image-4.jpg"
+        ],
+        "colors": {},
+        "url-param": "truck-de-skate-carver-cx4-aluminio",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=truck-de-skate-carver-cx4-aluminio",
+        "availability": 22,
+        "collection": "trucks",
+        "brand": "Carver"
+    },
+    {
+        "id": 19,
+        "name": "Truck de Skate Thrasher Hollow 5.5",
+        "description": "<p>Eleve o desempenho e a estabilidade do seu skate com o Truck de Skate Thrasher Hollow 5.5, da renomada marca Thrasher. Projetado para skatistas que buscam alta performance, esse truck oferece durabilidade e precisão nas suas manobras.</p><p>O Truck de Skate Thrasher Hollow 5.5 é fabricado com materiais de alta qualidade, garantindo resistência e leveza. Sua construção oca proporciona um peso reduzido, tornando-o ideal para manobras mais técnicas e ágeis.</p><p>Com um design robusto e funcional, o Truck de Skate Thrasher Hollow 5.5 oferece uma combinação perfeita de estabilidade e responsividade. Sua largura de 5.5 polegadas proporciona uma base sólida para a sua prancha, permitindo que você execute manobras com precisão e controle.</p><p>Seja você um skatista de rua ou um amante do skatepark, o Truck de Skate Thrasher Hollow 5.5 irá elevar o seu skate para um novo patamar. Aproveite a qualidade e o desempenho desse truck e explore todo o potencial das suas sessões de skate.</p>",
+        "price": 129.9,
+        "price-no-discount": 179.9,
+        "main-img": "/src/img/products/truck-de-skate-thrasher-hollow-55/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "truck-de-skate-thrasher-hollow-55",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=truck-de-skate-thrasher-hollow-55",
+        "availability": 11,
+        "collection": "trucks",
+        "brand": "Thrasher"
     }
 ]
