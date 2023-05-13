@@ -82,15 +82,19 @@ fetch('/src/db/products.json')
                 
                 body.innerText += `"main-img": "${product['main-img']}",\n`;
 
-                body.innerText += '"aditional-imgs": [\n'
+                body.innerText += '"aditional-imgs": ';
+                if (addImgs.value > 0) {
+                    body.innerText += '[\n';
+                } else {
+                    body.innerText += '[],\n';
+                }
                 for (let c = 0; c < addImgs.value; c++) {
                     if (c < addImgs.value - 1) {
                         body.innerText += `"${product['aditional-imgs'][c]}",\n`;
                     } else {
-                        body.innerText += `"${product['aditional-imgs'][c]}"\n`;
+                        body.innerText += `"${product['aditional-imgs'][c]}"\n],\n`;
                     }
                 }
-                body.innerText += '],\n'
 
                 body.innerText += `"colors": {},\n`;
                 
@@ -105,13 +109,7 @@ fetch('/src/db/products.json')
                 body.innerText += `"brand": "${product.brand}"\n`;
 
                 body.innerText += '}'
-
-
-
         }
-
-
-
     })
-    .catch(() => console.log('Falha na conexão...\nVerifique se o servidor está conectado corretamente.'))
+    .catch(() => console.log('Falha na conexão...\nVerifique se o servidor está conectado corretamente.'));
     
