@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Add</title>
+    <link rel="stylesheet" href="/src/styles/product-add/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Cadastrar Produto</h1>
+        <section class="product-data">
+
+            <h2>Nome:</h2>
+            <input type="text" class="name">
+
+            <h2>Descrição:</h2>
+            <textarea class="description"></textarea>
+            
+            <div class="product-price">
+                <h2>Preço:</h2>
+                <input type="number" class="price">
+
+                <h2>Preço S/D:</h2>
+                <input type="number" class="price-no-discount">
+
+                <h2>Estoque:</h2>
+                <input type="number" class="availability">
+            </div>
+            
+            <h2>Imagens Adicionais:</h2>
+            <button class="sub">-</button>
+            <button class="add">+</button>
+            <input type="number" id="imgadd" disabled value="0">
+
+            <div class="aditional-images"></div>
+
+            <h2>Coleção</h2>
+            <select class="collection">
+                <option value="" class="remove"></option>
+                <option value="skates">Skates</option>
+                <option value="pranchas">Pranchas</option>
+                <option value="rodas">Rodas</option>
+                <option value="lixas">Lixas</option>
+                <option value="trucks">Trucks</option>
+                <option value="rolamentos">Rolamentos</option>
+                <option value="capacetes">Capacetes</option>
+                <option value="cotoveleiras">Cotoveleiras</option>
+                <option value="joelheiras">Joelheiras</option>
+                <option value="kits">Kits</option>
+                <option value="bags">Bags</option>
+                <option value="manutenção">Manutenção</option>
+                <option value="roupas">Roupas</option>
+            </select>
+
+            <h2>Marca:</h2>
+            <input type="text" class="brand">
+
+            <input type="button" value="Enviar" id="enviar">
+        </section>
+    </main>
+    
+    <script src="/src/js/product-add/index.js"></script>
+</body>
+</html>
