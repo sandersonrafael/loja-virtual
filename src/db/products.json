@@ -28,10 +28,22 @@
             "/src/img/products/rodas-de-skate-pro-ugin-shr-100a/aditional-image-4.jpg"
         ],
         "colors": {
-            "Branco": ["white", "/src/img/products/rodas-de-skate-pro-ugin-shr-100a/aditional-image-1.jpg"],
-            "Azul": ["blue", "/src/img/products/rodas-de-skate-pro-ugin-shr-100a/aditional-image-2.jpg"],
-            "Vermelho": ["red", "/src/img/products/rodas-de-skate-pro-ugin-shr-100a/aditional-image-3.jpg"],
-            "Rosa": ["pink", "/src/img/products/rodas-de-skate-pro-ugin-shr-100a/aditional-image-4.jpg"]
+            "Branco": [
+                "white",
+                "/src/img/products/rodas-de-skate-pro-ugin-shr-100a/aditional-image-1.jpg"
+            ],
+            "Azul": [
+                "blue",
+                "/src/img/products/rodas-de-skate-pro-ugin-shr-100a/aditional-image-2.jpg"
+            ],
+            "Vermelho": [
+                "red",
+                "/src/img/products/rodas-de-skate-pro-ugin-shr-100a/aditional-image-3.jpg"
+            ],
+            "Rosa": [
+                "pink",
+                "/src/img/products/rodas-de-skate-pro-ugin-shr-100a/aditional-image-4.jpg"
+            ]
         },
         "url-param": "rodas-de-skate-pro-ugin-shr-100a",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=rodas-de-skate-pro-ugin-shr-100a",
@@ -53,10 +65,22 @@
             "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-4.jpg"
         ],
         "colors": {
-            "Preto": ["black", "/src/img/products/prancha-de-skate-baker-simple-layer-80/main-image.jpg"],
-            "Azul": ["cyan", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-2.jpg"],
-            "Rosa": ["pink", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-3.jpg"],
-            "Verde": ["green", "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-4.jpg"]
+            "Preto": [
+                "black",
+                "/src/img/products/prancha-de-skate-baker-simple-layer-80/main-image.jpg"
+            ],
+            "Azul": [
+                "cyan",
+                "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-2.jpg"
+            ],
+            "Rosa": [
+                "pink",
+                "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-3.jpg"
+            ],
+            "Verde": [
+                "green",
+                "/src/img/products/prancha-de-skate-baker-simple-layer-80/aditional-image-4.jpg"
+            ]
         },
         "url-param": "prancha-de-skate-baker-simple-layer-80",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-baker-simple-layer-80",
@@ -91,8 +115,14 @@
             "/src/img/products/rodas-de-skate-frosted-cruiser-longboard/aditional-image-2.jpg"
         ],
         "colors": {
-            "Preto": ["black", "/src/img/products/rodas-de-skate-frosted-cruiser-longboard/main-image.jpg"],
-            "Verde": ["lightgreen", "/src/img/products/rodas-de-skate-frosted-cruiser-longboard/aditional-image-2.jpg"]
+            "Preto": [
+                "black",
+                "/src/img/products/rodas-de-skate-frosted-cruiser-longboard/main-image.jpg"
+            ],
+            "Verde": [
+                "lightgreen",
+                "/src/img/products/rodas-de-skate-frosted-cruiser-longboard/aditional-image-2.jpg"
+            ]
         },
         "url-param": "rodas-de-skate-frosted-cruiser-longboard",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=rodas-de-skate-frosted-cruiser-longboard",
@@ -113,8 +143,14 @@
             "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/aditional-image-3.jpg"
         ],
         "colors": {
-            "Preto": ["black", "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/main-image.jpg"],
-            "Branco": ["white", "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/aditional-image-1.jpg"]
+            "Preto": [
+                "black",
+                "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/main-image.jpg"
+            ],
+            "Branco": [
+                "white",
+                "/src/img/products/rolamentos-de-skate-profissionais-redz-precision/aditional-image-1.jpg"
+            ]
         },
         "url-param": "rolamentos-de-skate-profissionais-redz-precision",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=rolamentos-de-skate-profissionais-redz-precision",
@@ -154,9 +190,18 @@
             "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-3.jpg"
         ],
         "colors": {
-            "Azul": ["blue", "/src/img/products/skate-rocker-seven-layer-space-hart/main-image.jpg"],
-            "Rosa": ["lightpink", "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-2.jpg"],
-            "Cinza": ["gray", "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-3.jpg"]
+            "Azul": [
+                "blue",
+                "/src/img/products/skate-rocker-seven-layer-space-hart/main-image.jpg"
+            ],
+            "Rosa": [
+                "lightpink",
+                "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-2.jpg"
+            ],
+            "Cinza": [
+                "gray",
+                "/src/img/products/skate-rocker-seven-layer-space-hart/aditional-image-3.jpg"
+            ]
         },
         "url-param": "skate-rocker-seven-layer-space-hart",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-rocker-seven-layer-space-hart",
@@ -391,9 +436,18 @@
             "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-4.jpg"
         ],
         "colors": {
-            "Preto": ["black", "/src/img/products/capacete-para-skatistas-beon-b-115-abs/main-image.jpg"],
-            "Branco": ["white", "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-1.jpg"],
-            "Rosa": ["lightpink", "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-2.jpg"]
+            "Preto": [
+                "black",
+                "/src/img/products/capacete-para-skatistas-beon-b-115-abs/main-image.jpg"
+            ],
+            "Branco": [
+                "white",
+                "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-1.jpg"
+            ],
+            "Rosa": [
+                "lightpink",
+                "/src/img/products/capacete-para-skatistas-beon-b-115-abs/aditional-image-2.jpg"
+            ]
         },
         "url-param": "capacete-para-skatistas-beon-b-115-abs",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=capacete-para-skatistas-beon-b-115-abs",
@@ -415,10 +469,22 @@
             "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-4.jpg"
         ],
         "colors": {
-            "Preto": ["black", "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/main-image.jpg"],
-            "Branco": ["white", "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-1.jpg"],
-            "Rosa": ["lightpink", "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-2.jpg"],
-            "Azul": ["blue", "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-3.jpg"]
+            "Preto": [
+                "black",
+                "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/main-image.jpg"
+            ],
+            "Branco": [
+                "white",
+                "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-1.jpg"
+            ],
+            "Rosa": [
+                "lightpink",
+                "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-2.jpg"
+            ],
+            "Azul": [
+                "blue",
+                "/src/img/products/capacete-para-skatista-sea-wind-simple-pe/aditional-image-3.jpg"
+            ]
         },
         "url-param": "capacete-para-skatista-sea-wind-simple-pe",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=capacete-para-skatista-sea-wind-simple-pe",
@@ -440,15 +506,115 @@
             "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-4.jpg"
         ],
         "colors": {
-            "Vermelho": ["red", "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/main-image.jpg"],
-            "Cinza": ["gray", "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-1.jpg"],
-            "Azul": ["blue", "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-2.jpg"],
-            "Preto": ["black", "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-3.jpg"]
+            "Vermelho": [
+                "red",
+                "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/main-image.jpg"
+            ],
+            "Cinza": [
+                "gray",
+                "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-1.jpg"
+            ],
+            "Azul": [
+                "blue",
+                "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-2.jpg"
+            ],
+            "Preto": [
+                "black",
+                "/src/img/products/capacete-para-skatista-infantil-sea-wind-cave/aditional-image-3.jpg"
+            ]
         },
         "url-param": "capacete-para-skatista-infantil-sea-wind-cave",
         "url": "https://sk8-lifestyle.netlify.app/products/?url=capacete-para-skatista-infantil-sea-wind-cave",
         "availability": 25,
         "collection": "capacetes",
         "brand": "Sea Wind"
+    },
+    {
+        "id": 24,
+        "name": "Skate Hwc Seven Layer Silence Skull",
+        "description": "<p>Introduzindo o Skate Hwc Seven Layer Silence, um verdadeiro símbolo de qualidade e estilo desenvolvido pela renomada marca Hwc. Com um design excepcional e construção impecável, esse skate encanta tanto os iniciantes entusiasmados quanto os profissionais experientes. Feito para aqueles que buscam aventura e liberdade sobre as rodas, este skate oferece uma experiência única de deslizar pelas ruas, pistas e rampas.</p><p>O corpo do Skate Hwc Seven Layer Silence é cuidadosamente construído em maple, um tipo de madeira conhecido por sua durabilidade e flexibilidade. Com sete camadas de maple prensadas juntas, ele oferece uma estrutura sólida e resistente, capaz de suportar as demandas de manobras radicais e altos impactos. A combinação perfeita entre leveza e resistência faz com que esse skate seja ideal para alcançar velocidades impressionantes e realizar manobras precisas.</p><p>Além de sua construção robusta, o Skate Hwc Seven Layer Silence se destaca por seu design elegante e moderno. O acabamento impecável e as cores vibrantes dão a esse skate uma aparência arrojada, tornando-o não apenas um equipamento funcional, mas também uma verdadeira expressão de estilo. Seu shape bem projetado oferece uma base estável para os pés, permitindo um controle preciso e facilitando a execução de manobras complexas.</p><p>Um dos aspectos mais notáveis do Skate Hwc Seven Layer Silence é a sua capacidade de proporcionar uma experiência de pilotagem suave e silenciosa. As camadas de maple absorvem vibrações e impactos, reduzindo o ruído gerado ao andar sobre superfícies irregulares. Isso significa que você pode desfrutar de uma sessão de skate tranquila, sem perturbar a paz ao seu redor. O silêncio do skate combinado com a liberdade de movimento é uma combinação perfeita para aproveitar a cidade como sua pista pessoal.</p><p>Em resumo, o Skate Hwc Seven Layer Silence é uma obra-prima da Hwc, oferecendo desempenho excepcional, durabilidade e estilo em um único pacote. Sua construção em maple de sete camadas proporciona a combinação ideal de resistência e flexibilidade, enquanto seu design moderno e acabamento impecável o tornam uma verdadeira peça de arte sobre rodas. Deslize pelas ruas com suavidade e silêncio, aproveitando a adrenalina e a liberdade que o skate proporciona. Com esse skate, você estará preparado para levar sua habilidade e estilo para o próximo nível.</p>",
+        "price": 449.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/skate-hwc-seven-layer-silence-skull/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/skate-hwc-seven-layer-silence-skull/aditional-image-1.jpg"
+        ],
+        "colors": {},
+        "url-param": "skate-hwc-seven-layer-silence-skull",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-hwc-seven-layer-silence-skull",
+        "availability": 7,
+        "collection": "skates",
+        "brand": "Hwc"
+    },
+    {
+        "id": 25,
+        "name": "Rodas de Skate Frosted Punk Jumper",
+        "description": "<p>Apresentando as incríveis Rodas de Skate Frosted Punk Jumper, uma adição essencial para todos os skatistas apaixonados por estilo e desempenho. Com um nome que evoca uma atitude rebelde e uma estética ousada, essas rodas são projetadas para proporcionar uma experiência de skate emocionante e única. Seja deslizando pelas ruas ou dominando as pistas, as Rodas de Skate Frosted Punk Jumper estão prontas para elevar suas habilidades a novos patamares.</p><p>O destaque dessas rodas é o seu acabamento fosco, que confere a elas um visual distinto e moderno. Com uma paleta de cores vibrantes e tons ousados, elas adicionam um toque de personalidade à sua prancha. Além do estilo marcante, essas rodas também são construídas para proporcionar desempenho excepcional. Feitas com materiais de alta qualidade, elas oferecem uma combinação ideal de durabilidade, aderência e velocidade.</p><p>As Rodas de Skate Frosted Punk Jumper foram projetadas para suportar as demandas das manobras mais radicais. Com um diâmetro e uma dureza cuidadosamente selecionados, elas garantem um deslize suave e estável, facilitando a execução de truques e manobras complexas. Sua fórmula especial de uretano garante uma aderência confiável, permitindo que você se sinta conectado à superfície, mesmo durante movimentos rápidos e ágeis.</p><p>Além do desempenho superior, essas rodas também se destacam pela sua durabilidade excepcional. Elas são construídas para resistir a impactos e desgaste, garantindo uma vida útil prolongada mesmo nas sessões de skate mais intensas. Você pode contar com as Rodas de Skate Frosted Punk Jumper para acompanhar sua jornada skatista, oferecendo confiabilidade e desempenho consistentes a cada manobra.</p><p>Em resumo, as Rodas de Skate Frosted Punk Jumper são o complemento perfeito para qualquer skatista que busca um visual ousado e desempenho excepcional. Com seu acabamento fosco e cores vibrantes, elas agregam estilo à sua prancha. Além disso, sua construção durável e fórmula de uretano de alta qualidade garantem deslizes suaves, aderência confiável e resistência ao desgaste. Prepare-se para elevar sua experiência de skate para o próximo nível com as incríveis Rodas de Skate Frosted Punk Jumper.</p>",
+        "price": 84.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/rodas-de-skate-frosted-punk-jumper/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/rodas-de-skate-frosted-punk-jumper/aditional-image-1.jpg",
+            "/src/img/products/rodas-de-skate-frosted-punk-jumper/aditional-image-2.jpg"
+        ],
+        "colors": {},
+        "url-param": "rodas-de-skate-frosted-punk-jumper",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=rodas-de-skate-frosted-punk-jumper",
+        "availability": 32,
+        "collection": "rodas",
+        "brand": "Frosted"
+    },
+    {
+        "id": 26,
+        "name": "Joelheira Wosawe Anti Derrapante Gear MTB",
+        "description": "<p>A Joelheira Wosawe Anti Derrapante Gear MTB é um equipamento de proteção projetado especialmente para skatistas. Essa joelheira foi desenvolvida para oferecer proteção aos joelhos durante a prática do skate, ajudando a prevenir lesões e proporcionando maior segurança ao skatista.</p><p>A característica principal da Joelheira Wosawe Anti Derrapante Gear MTB é a sua capacidade de evitar derrapagens. Ela possui uma superfície antiderrapante na parte interna, que garante um ajuste firme e estável, mesmo durante manobras mais intensas e movimentos bruscos. Isso ajuda o skatista a manter o equilíbrio e a estabilidade durante as sessões de skate.</p><p>Além disso, essa joelheira foi projetada levando em consideração o conforto e a liberdade de movimento. Ela é flexível e permite uma ampla gama de movimentos, sem restringir os movimentos naturais do joelho. A joelheira é leve e possui um sistema de ventilação para evitar o superaquecimento durante a prática.</p><p>A Joelheira Wosawe Anti Derrapante Gear MTB possui um design ergonômico que se adapta à forma do joelho, proporcionando um ajuste confortável e seguro. Ela é ajustável e conta com fechos de velcro, permitindo um ajuste personalizado de acordo com o tamanho e a preferência do skatista.</p><p>Em resumo, a Joelheira Wosawe Anti Derrapante Gear MTB é uma opção ideal para skatistas que desejam proteger seus joelhos durante as sessões de skate. Com sua superfície antiderrapante, design ergonômico e ajuste personalizável, essa joelheira oferece proteção, conforto e liberdade de movimento, ajudando os skatistas a se sentirem mais seguros e confiantes em suas manobras.</p>",
+        "price": 123.7,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/joelheira-wosawe-anti-derrapante-gear-mtb/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/joelheira-wosawe-anti-derrapante-gear-mtb/aditional-image-1.jpg"
+        ],
+        "colors": {},
+        "url-param": "joelheira-wosawe-anti-derrapante-gear-mtb",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=joelheira-wosawe-anti-derrapante-gear-mtb",
+        "availability": 34,
+        "collection": "joelheiras",
+        "brand": "Wosawe"
+    },
+    {
+        "id": 27,
+        "name": "Cotoveleira Wosawe Anti Derrapante Gear MTB",
+        "description": "<p>A Cotoveleira Wosawe Anti Derrapante Gear MTB é um equipamento de proteção essencial para skatistas que desejam garantir a segurança de seus cotovelos durante as sessões de skate. Essa cotoveleira foi especialmente desenvolvida para oferecer proteção eficiente contra impactos e quedas, ajudando a prevenir lesões.</p><p>A principal característica da Cotoveleira Wosawe Anti Derrapante Gear MTB é a sua capacidade de evitar derrapagens. Ela possui uma superfície antiderrapante na parte interna, que proporciona um ajuste seguro e estável, mesmo durante manobras intensas e movimentos bruscos. Isso permite que os skatistas mantenham o equilíbrio e a estabilidade durante suas manobras.</p><p>Além disso, a cotoveleira é feita com materiais de alta qualidade, que oferecem resistência e durabilidade para suportar o desgaste do skate. Ela é projetada com um design ergonômico que se adapta confortavelmente à forma do cotovelo, proporcionando um ajuste seguro e confortável.</p><p>A Cotoveleira Wosawe Anti Derrapante Gear MTB é ajustável e conta com fechos de velcro, permitindo um ajuste personalizado de acordo com o tamanho e a preferência do skatista. Isso garante que a cotoveleira fique firmemente no lugar durante a prática do skate, sem restringir os movimentos naturais do cotovelo.</p><p>Em resumo, a Cotoveleira Wosawe Anti Derrapante Gear MTB é um item indispensável para skatistas que buscam proteger seus cotovelos durante as sessões de skate. Com sua superfície antiderrapante, design ergonômico e ajuste personalizável, essa cotoveleira oferece proteção eficiente, conforto e liberdade de movimento, permitindo que os skatistas se concentrem em suas manobras com mais confiança e segurança.</p>",
+        "price": 132.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/cotoveleira-wosawe-anti-derrapante-gear-mtb/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/cotoveleira-wosawe-anti-derrapante-gear-mtb/aditional-image-1.jpg"
+        ],
+        "colors": {},
+        "url-param": "cotoveleira-wosawe-anti-derrapante-gear-mtb",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=cotoveleira-wosawe-anti-derrapante-gear-mtb",
+        "availability": 33,
+        "collection": "cotoveleiras",
+        "brand": "Wosawe"
+    },
+    {
+        "id": 28,
+        "name": "Kit Cotoveleira e Joelheira Wosawe Gear MTB",
+        "description": "<p>O Kit Cotoveleira e Joelheira Wosawe Gear MTB é um conjunto de equipamentos de proteção projetados especialmente para skatistas. Esse kit inclui uma cotoveleira e uma joelheira, proporcionando proteção completa para os membros superiores e inferiores durante as sessões de skate.</p><p>As cotoveleiras e joelheiras são fabricadas com materiais de alta qualidade, garantindo resistência e durabilidade para suportar o impacto e o desgaste associados à prática do skate. Esses equipamentos oferecem proteção eficiente contra quedas, impactos e abrasões, ajudando a prevenir lesões graves.</p><p>Tanto a cotoveleira quanto a joelheira do Kit Wosawe Gear MTB possuem superfícies antiderrapantes na parte interna, garantindo um ajuste seguro e estável durante as manobras. Isso é essencial para manter o equilíbrio e a estabilidade durante as sessões de skate, proporcionando confiança ao skatista.</p><p>As cotoveleiras e joelheiras são projetadas com um design ergonômico que se adapta confortavelmente à forma dos cotovelos e joelhos, oferecendo um ajuste seguro e confortável. Além disso, elas são ajustáveis e possuem fechos de velcro, permitindo um ajuste personalizado de acordo com o tamanho e a preferência do skatista.</p><p>O Kit Cotoveleira e Joelheira Wosawe Gear MTB é uma escolha ideal para skatistas que desejam proteção completa e confiável para os membros superiores e inferiores. Com sua resistência, design ergonômico, ajuste personalizável e superfícies antiderrapantes, esse kit oferece a proteção necessária para aproveitar o skate com segurança e confiança.</p>",
+        "price": 199.9,
+        "price-no-discount": 256.6,
+        "main-img": "/src/img/products/kit-cotoveleira-e-joelheira-wosawe-gear-mtb/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/kit-cotoveleira-e-joelheira-wosawe-gear-mtb/aditional-image-1.jpg",
+            "/src/img/products/kit-cotoveleira-e-joelheira-wosawe-gear-mtb/aditional-image-2.jpg",
+            "/src/img/products/kit-cotoveleira-e-joelheira-wosawe-gear-mtb/aditional-image-3.jpg"
+        ],
+        "colors": {},
+        "url-param": "kit-cotoveleira-e-joelheira-wosawe-gear-mtb",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=kit-cotoveleira-e-joelheira-wosawe-gear-mtb",
+        "availability": 14,
+        "collection": "kits",
+        "brand": "Wosawe"
     }
 ]
