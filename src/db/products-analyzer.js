@@ -1,5 +1,5 @@
 // executar código para obter análise dos dados do json
-;
+
 fetch('http://127.0.0.1:5500/src/db/products.json')
     .then(res => res.json())
     .then(products => {
@@ -30,7 +30,6 @@ fetch('http://127.0.0.1:5500/src/db/products.json')
             const quantidade = products.filter(product => product.collection === collection).length;
             console.log(collection.slice(0, 1).toUpperCase() + collection.slice(1), ':', quantidade);
         };
-
 
         console.log('\nTodas Urls:\n');
         for (let product of products) console.log(product.url);
