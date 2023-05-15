@@ -19,12 +19,12 @@ fetch('http://127.0.0.1:5500/src/db/products.json')
             'diversos'
         ];
 
-        console.log('\nQuantidade de produtos:', products.length)
+        console.log('\nQuantidade de produtos:', products.length);
         console.log(
             '\nProdutos em promoção:',
             products.filter(product => product['price-no-discount'] > product.price).length
         );
-        console.log('\nQuantidade de coleções:', collections.length , '\n\nProdutos por coleção:\n')
+        console.log('\nQuantidade de coleções:', collections.length , '\n\nProdutos por coleção:\n');
 
         for (let collection of collections)  {
             const quantidade = products.filter(product => product.collection === collection).length;
@@ -42,5 +42,11 @@ fetch('http://127.0.0.1:5500/src/db/products.json')
 
         console.log('\nTodas marcas de rodas:\n');
         for (let product of products) if (product.collection === 'rodas') console.log(product.brand);
+
+        console.log('\nTodas marcas de skates:\n');
+        for (let product of products) if (product.collection === 'skates') console.log(product.brand);
+
+        console.log('\nTodas Urls Skates:\n');
+        for (let product of products) if (product.collection === 'skates') console.log(product.url);
     })
     .catch((err) => console.log('\nFalha na conexão...\nVerifique se o servidor local está correto e conectado.'));
