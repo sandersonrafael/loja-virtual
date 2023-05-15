@@ -861,5 +861,35 @@
         "availability": 2,
         "collection": "skates",
         "brand": "SK8 One"
+    },
+    {
+        "id": 44,
+        "name": "Skate Puente Sport Fast Tiger",
+        "description": "<p>Apresentando o Skate Puente Fast Tiger, um skate ágil e poderoso projetado para os skatistas que buscam velocidade e desempenho excepcionais. Inspirado na agilidade e na força do tigre, este skate proporciona uma experiência de skate empolgante e cheia de energia.</p><p>O Skate Puente Fast Tiger apresenta um deck resistente e durável, construído com materiais de alta qualidade para suportar as demandas das manobras radicais e das altas velocidades. Seu design aerodinâmico e leve oferece uma plataforma estável e responsiva, permitindo que você acelere com confiança e controle.</p><p>Equipado com trucks de alta performance, o Skate Puente Fast Tiger oferece uma excelente estabilidade e resposta aos movimentos do skatista. Os trucks foram projetados para proporcionar um equilíbrio perfeito entre flexibilidade e resistência, permitindo curvas suaves e precisas. As rodas de alto desempenho e alta aderência garantem uma ótima tração em diferentes tipos de superfície, permitindo que você acelere sem esforço e controle sua velocidade com precisão.</p><p>Além do desempenho excepcional, o Skate Puente Fast Tiger apresenta um design cativante com gráficos inspirados no poderoso tigre. Com seu estilo único e agressivo, este skate certamente chamará a atenção e refletirá sua personalidade destemida.</p><p>Prepare-se para correr como um tigre nas ruas e conquistar novos desafios com o Skate Puente Fast Tiger. Se você é um skatista que busca adrenalina e velocidade, este é o skate ideal para você. Domine as pistas e sinta a emoção da velocidade com o Skate Puente Fast Tiger.</p>",
+        "price": 453.7,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/skate-puente-fast-tiger/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "skate-puente-fast-tiger",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-puente-fast-tiger",
+        "availability": 2,
+        "collection": "skates",
+        "brand": "Puente"
+    },
+    {
+        "id": 45,
+        "name": "Skate Puente Sport Black White Owl",
+        "description": "<p>Apresento o Skate Puente Sport Black White Owl, um skate envolvente que combina estilo e elegância com um toque de mistério. Com sua marcante combinação de cores preto e branco e gráficos inspirados em corujas, este skate foi projetado para chamar a atenção e despertar admiração.</p><p>O Skate Puente Sport Black White Owl possui um deck resistente e durável, construído com materiais de alta qualidade para garantir uma experiência de skate excepcional. Sua forma ergonômica e concavidade média proporcionam uma base sólida e confortável, permitindo maior controle e manobras precisas.</p><p>Equipado com trucks confiáveis, o Skate Puente Sport Black White Owl oferece estabilidade e resposta suave aos movimentos do skatista. Esses trucks garantem curvas precisas e transições suaves durante as sessões de skate. As rodas de alta qualidade proporcionam excelente aderência em diferentes superfícies, garantindo uma experiência de rolamento suave e confiável.</p><p>Seja você um skatista iniciante ou experiente, o Skate Puente Sport Black White Owl é perfeito para quem deseja combinar estilo e desempenho. Com seu design único e inspirador, este skate irá destacá-lo na pista e permitir que você expresse sua personalidade única. Desperte a sua habilidade noturna com o Skate Puente Sport Black White Owl e deixe sua marca nas ruas com confiança e estilo.</p>",
+        "price": 499.9,
+        "price-no-discount": 599.9,
+        "main-img": "/src/img/products/skate-puente-sport-black-white-owl/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "skate-puente-sport-black-white-owl",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-puente-sport-black-white-owl",
+        "availability": 1,
+        "collection": "skates",
+        "brand": "Puente"
     }
 ]
