@@ -891,5 +891,101 @@
         "availability": 1,
         "collection": "skates",
         "brand": "Puente"
+    },
+    {
+        "id": 46,
+        "name": "Prancha de Skate NoNoodle Soyamax",
+        "description": "<p>Apresentando a prancha de skate NoNoodle Soyamax, uma prancha de alta qualidade com 7 camadas de maple. Projetada para oferecer durabilidade e desempenho excepcionais, esta prancha é perfeita para skatistas de todos os níveis que buscam uma experiência de skate de alta qualidade.</p><p>A prancha de skate NoNoodle Soyamax é construída com 7 camadas de maple, um material conhecido por sua resistência e flexibilidade. Essas camadas são cuidadosamente prensadas para fornecer uma base sólida e resistente, capaz de suportar impactos e manobras intensas. O maple proporciona uma excelente resposta aos movimentos do skatista, permitindo curvas precisas e uma ótima sensação de pop.</p><p>Além da sua construção robusta, a prancha de skate NoNoodle Soyamax apresenta um design versátil e funcional. Com uma forma ligeiramente côncava e tamanho adequado, oferece um equilíbrio ideal entre estabilidade e manobrabilidade. Isso permite que os skatistas executem truques com facilidade e tenham controle total sobre a prancha.</p><p>A prancha de skate NoNoodle Soyamax é a escolha perfeita para skatistas que valorizam a qualidade e o desempenho. Com sua construção em 7 camadas de maple, proporciona resistência e flexibilidade para enfrentar qualquer terreno. Seja você um skatista iniciante ou experiente, a prancha de skate NoNoodle Soyamax irá acompanhá-lo em suas aventuras, permitindo que você eleve seu nível de skate e desfrute de uma experiência de alto nível.</p>",
+        "price": 134.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/prancha-de-skate-nonoodle-soyamax/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/prancha-de-skate-nonoodle-soyamax/aditional-image-1.jpg",
+            "/src/img/products/prancha-de-skate-nonoodle-soyamax/aditional-image-2.jpg"
+        ],
+        "colors": {},
+        "url-param": "prancha-de-skate-nonoodle-soyamax",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-nonoodle-soyamax",
+        "availability": 13,
+        "collection": "pranchas",
+        "brand": "NoNoodle"
+    },
+    {
+        "id": 47,
+        "name": "Prancha de Skate NoNoodle Concava Seven Layer",
+        "description": "<p>Apresentamos a Prancha de Skate NoNoodle Concava Seven Layer, uma verdadeira obra-prima da marca NoNoodle. Projetada para proporcionar uma experiência de skate única e sem precedentes, esta prancha é uma escolha excepcional para skatistas de todos os níveis de habilidade.</p><p>A característica distintiva da NoNoodle Concava Seven Layer é a sua construção sólida e durável, composta por sete camadas de madeira de alta qualidade. Essas camadas foram cuidadosamente selecionadas para garantir resistência e flexibilidade ideais, permitindo que você desafie os limites do skate sem comprometer a estabilidade.</p><p>Com um design concavo inovador, esta prancha oferece um controle excepcional e uma resposta precisa aos movimentos do skatista. Seja para manobras técnicas, grindings ou descidas em alta velocidade, a NoNoodle Concava Seven Layer se adapta perfeitamente às suas necessidades, proporcionando uma experiência de skate ágil e emocionante.</p><p>Além disso, a NoNoodle se orgulha de oferecer um produto que valoriza a autenticidade e a simplicidade. Livre de pinturas ou grafismos elaborados, a prancha permite que sua habilidade e estilo individual se destaquem, garantindo que sua expressão criativa seja o centro das atenções.</p><p>Desenvolvida com a paixão e experiência de skatistas dedicados, a Prancha de Skate NoNoodle Concava Seven Layer oferece um equilíbrio perfeito entre desempenho, durabilidade e estética minimalista. Prepare-se para elevar o seu skate a um novo patamar e aproveitar cada momento na pista com confiança e estilo. Escolha a NoNoodle Concava Seven Layer e experimente a verdadeira essência do skate.</p>",
+        "price": 124.7,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/prancha-de-skate-nonoodle-concava-seven-layer/main-image.jpg",
+        "aditional-imgs": [
+            "/src/img/products/prancha-de-skate-nonoodle-concava-seven-layer/aditional-image-1.jpg",
+            "/src/img/products/prancha-de-skate-nonoodle-concava-seven-layer/aditional-image-2.jpg"
+        ],
+        "colors": {},
+        "url-param": "prancha-de-skate-nonoodle-concava-seven-layer",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-nonoodle-concava-seven-layer",
+        "availability": 17,
+        "collection": "pranchas",
+        "brand": "NoNoodle"
+    },
+    {
+        "id": 48,
+        "name": "Prancha de Skate Zero Red Skull",
+        "description": "<p>Apresentamos a Prancha de Skate Zero Red Skull, um equipamento ousado e poderoso que combina estilo arrebatador com desempenho excepcional. Com a marca Zero, reconhecida por sua qualidade e compromisso com a excelência, esta prancha é a escolha ideal para skatistas que desejam fazer uma declaração ousada nas pistas.</p><p>A Prancha de Skate Zero Red Skull possui um design icônico e marcante, com o crânio vermelho característico da marca estampado no centro. Esse grafismo cativante não apenas adiciona um toque de personalidade, mas também reflete a atitude destemida do mundo do skate.</p><p>Construída com materiais de alta qualidade, esta prancha oferece durabilidade e resistência superiores, permitindo que você se aventure em qualquer terreno com confiança. Seu shape concavo e acabamento impecável proporcionam uma plataforma estável e responsiva, garantindo manobras precisas e controle total durante suas sessões de skate.</p><p>A Prancha de Skate Zero Red Skull é uma verdadeira aliada para skatistas de todos os níveis. Seja você um iniciante empolgado em aprender novas manobras ou um profissional experiente em busca de desafios cada vez maiores, essa prancha está pronta para acompanhar e elevar o seu jogo.</p><p>Então, junte-se à família Zero e mostre sua personalidade nas pistas com a Prancha de Skate Zero Red Skull. Seja destemido, destaque-se e conquiste o mundo do skate com estilo e determinação.</p>",
+        "price": 118,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/prancha-de-skate-zero-red-skull/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "prancha-de-skate-zero-red-skull",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-zero-red-skull",
+        "availability": 14,
+        "collection": "pranchas",
+        "brand": "Zero"
+    },
+    {
+        "id": 49,
+        "name": "Prancha de Skate Zero Black Skull",
+        "description": "<p>Apresentamos a Prancha de Skate Zero Black Skull, uma verdadeira representação da essência do skate urbano e rebelde. Com a marca Zero, reconhecida por sua qualidade e compromisso com a excelência, esta prancha é perfeita para skatistas que desejam expressar sua personalidade única e desafiar os limites do skate.</p><p>A Prancha de Skate Zero Black Skull apresenta um design marcante e estilizado, com um crânio preto icônico impresso no centro. Esse grafismo poderoso evoca uma sensação de mistério e rebeldia, tornando-se uma declaração de atitude nas pistas.</p><p>Construída com materiais de alta qualidade, esta prancha oferece resistência e durabilidade excepcionais, permitindo que você se aventure em qualquer terreno com confiança. Seu shape concavo e acabamento impecável proporcionam estabilidade e resposta rápida, permitindo que você execute manobras com precisão e controle.</p><p>A Prancha de Skate Zero Black Skull é projetada para atender às demandas dos skatistas de todos os níveis, desde os iniciantes até os mais experientes. Com essa prancha, você poderá explorar sua criatividade e aprimorar suas habilidades, enfrentando novos desafios e superando limites a cada sessão.</p><p>Se você busca uma prancha que combine estilo único e desempenho excepcional, a Prancha de Skate Zero Black Skull é a escolha perfeita. Mostre sua atitude nas pistas, destaque-se da multidão e conquiste o mundo do skate com confiança e autenticidade.</p>",
+        "price": 97,
+        "price-no-discount": 127.9,
+        "main-img": "/src/img/products/prancha-de-skate-zero-black-skull/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "prancha-de-skate-zero-black-skull",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-zero-black-skull",
+        "availability": 15,
+        "collection": "pranchas",
+        "brand": "Zero"
+    },
+    {
+        "id": 50,
+        "name": "Prancha de Skate Zero Sandovar Green Smoker",
+        "description": "<p>Apresentamos a Prancha de Skate Zero Sandovar Green Smoker, uma verdadeira representação da paixão e da liberdade encontradas no skate. Com a marca Zero, conhecida por sua qualidade e compromisso com a excelência, esta prancha é perfeita para skatistas que buscam um estilo distinto e um desempenho excepcional.</p><p>A Prancha de Skate Zero Sandovar Green Smoker apresenta um design único e marcante, com uma combinação de cores verde e preto que evoca um senso de energia e atitude. Com um acabamento impecável e um gráfico cativante do fumante verde, esta prancha se destaca entre a multidão e reflete o espírito irreverente do skate.</p><p>Construída com materiais de alta qualidade, esta prancha oferece durabilidade e resistência excepcionais, permitindo que você desafie os limites do skate em qualquer terreno. Seu shape concavo proporciona estabilidade e controle superiores, permitindo que você execute manobras com precisão e confiança.</p><p>A Prancha de Skate Zero Sandovar Green Smoker é projetada para atender às necessidades de skatistas de todos os níveis de habilidade. Seja você um iniciante entusiasmado em aprender novas manobras ou um skatista experiente em busca de desafios emocionantes, esta prancha oferece o equilíbrio perfeito entre desempenho e estilo.</p><p>Então, embarque na jornada do skate com a Prancha de Skate Zero Sandovar Green Smoker e deixe sua marca nas pistas. Mostre sua personalidade ousada, libere sua criatividade e desfrute de uma experiência de skate empolgante e autêntica.</p>",
+        "price": 114.9,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/prancha-de-skate-zero-sandovar-green-smoker/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "prancha-de-skate-zero-sandovar-green-smoker",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-zero-sandovar-green-smoker",
+        "availability": 19,
+        "collection": "pranchas",
+        "brand": "Zero"
+    },
+    {
+        "id": 51,
+        "name": "Prancha de Skate Zero Cross of the Streets",
+        "description": "<p>Apresentamos a Prancha de Skate Zero Cross of the Streets, uma escolha arrojada e destemida para skatistas que buscam expressar sua personalidade única e dominar as ruas. Com a marca Zero, reconhecida por sua qualidade e compromisso com o skate, esta prancha é perfeita para aqueles que desejam fazer uma declaração autêntica e desafiar os limites do esporte.</p><p>A Prancha de Skate Zero Cross of the Streets apresenta um design marcante, com a icônica cruz impressa no centro. Essa imagem poderosa simboliza a determinação e a coragem necessárias para conquistar as ruas com estilo e habilidade. Com um acabamento impecável e detalhes cuidadosamente elaborados, esta prancha se destaca visualmente e atrai olhares onde quer que você vá.</p><p>Construída com materiais de alta qualidade, esta prancha oferece durabilidade excepcional e desempenho sólido, permitindo que você se aventure nas mais variadas superfícies urbanas. Seu shape concavo proporciona estabilidade e controle superiores, permitindo que você execute manobras com precisão e confiança.</p><p>A Prancha de Skate Zero Cross of the Streets é projetada para atender às demandas de skatistas de todos os níveis de habilidade, desde os iniciantes até os mais experientes. Seja você um skatista urbano que domina obstáculos nas ruas ou um apaixonado por skate que busca novas aventuras em parques de skate, esta prancha irá impulsionar o seu desempenho.</p><p>Então, escolha a Prancha de Skate Zero Cross of the Streets e faça sua presença ser sentida nas ruas. Mostre sua atitude única, desafie os limites e conquiste seu lugar no mundo do skate com estilo e determinação.</p>",
+        "price": 109.7,
+        "price-no-discount": null,
+        "main-img": "/src/img/products/prancha-de-skate-zero-cross-of-the-streets/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "prancha-de-skate-zero-cross-of-the-streets",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-zero-cross-of-the-streets",
+        "availability": 11,
+        "collection": "pranchas",
+        "brand": "Zero"
     }
 ]
