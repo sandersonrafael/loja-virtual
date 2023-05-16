@@ -61,16 +61,23 @@
     width: 100%;
     border-radius: 4px;
 }
+.product-price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .product-real-price {
     font-size: 22px;
     color: #DE560B;
+    padding: 0 3px;
 }
 
 .product-price-no-discount {
     font-size: 16px;
     text-decoration: line-through;
     color: gray;
+    padding: 0 3px;
 }
 
 
