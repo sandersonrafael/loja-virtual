@@ -18,7 +18,9 @@ fetch('/src/db/products.json')
         const loadProducts = () => {
             collectionProducts.innerHTML = '';
 
-            for (let i = (actualPage - 1) * 12; i < actualPage * 12; i++) {
+            const lastPage = actualPage <= Math.floor(collection.length / 12) ? (actualPage * 12): ((actualPage - 1) * 12) + collection.length % 12;
+
+            for (let i = (actualPage - 1) * 12; i < lastPage; i++) {
                 const productPrice = collection[i].price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
                 const productPriceNoDiscount = collection[i]['price-no-discount'] ? collection[i]['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) : '';
                 collectionProducts.innerHTML += `<div class="collection-product"><a class="product-url" href="${collection[i].url}"><img class="product-img" src="${collection[i]['main-img']}" alt="${collection[i].name}"></a><div class="product-infos"><p class="product-name">${collection[i].name}</p><span class="product-price"><strong class="product-real-price">${productPrice}</strong><small class="product-price-no-discount">${productPriceNoDiscount}</small></span></div></div>`;
@@ -26,8 +28,8 @@ fetch('/src/db/products.json')
         }
         loadProducts();
 
-        for (let page = 1; page < numberOfPages; page++) collectionPages.innerHTML += `<button>${page}</button>`;
-
+        if (collection.length > 12)
+        for (let page = 1; page < numberOfPages + 1; page++) collectionPages.innerHTML += `<button>${page}</button>`;
         pageButtons = document.querySelectorAll('.collection-pages > button');
         for (let pageButton of pageButtons) {
                 if (Number(pageButton.innerHTML) === 1) {
@@ -53,33 +55,27 @@ fetch('/src/db/products.json')
                 collection.sort((a, b) => a.id - b.id);
                 loadProducts();
             }
-
             if (sort.value === 'latests') {
                 collection.sort((a, b) => b.id - a.id);
                 loadProducts();
             }
-
             if (sort.value === 'a-to-z') {
                 collection.sort((a, b) => a.name.localeCompare(b.name));
                 loadProducts();
             }
-
             if (sort.value === 'z-to-a') {
                 collection.sort((a, b) => b.name.localeCompare(a.name));
                 loadProducts();
             }
-
             if (sort.value === 'ascending') {
                 collection.sort((a, b) => a.price - b.price);
                 loadProducts();
             }
-
             if (sort.value === 'descending') {
                 collection.sort((a, b) => b.price - a.price);
                 loadProducts();
             }
-
+            if (pageButtons.length > 0) pageButtons[0].onclick();
         }
-
     })
-    .catch(err => console.log('Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'))
+    .catch(err => console.log(err, 'Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'))
