@@ -191,7 +191,7 @@ footerPolicyExpand.onclick = function() {
 
 const hamburguerMenu = document.querySelector('.header-hamburguer');
 const headerNavigation = document.querySelector('.header-navigation');
-const searchBar = document.querySelector('.header-search');
+const headerSearch = document.querySelector('.header-search');
 
 const headerBack = document.querySelector('.header-back');
 
@@ -203,7 +203,7 @@ hamburguerMenu.onclick = () => {
         hamburguerMenu.innerHTML = '✕';
         headerNavigation.style.display = 'flex';
         hamburguerMenu.style.position = 'fixed';
-        searchBar.style.display = 'none';
+        headerSearch.style.display = 'none';
     } else { 
         banners.style['z-index'] = '0';
         footerPolicySpan.style['z-index'] = '0';
@@ -211,7 +211,7 @@ hamburguerMenu.onclick = () => {
         hamburguerMenu.innerHTML = '☰';
         headerNavigation.style.display = 'none';
         hamburguerMenu.style.position = 'static';
-        searchBar.style.display = 'flex';
+        headerSearch.style.display = 'flex';
 
         spanCategorias.innerHTML = '❯';
         subMenu.style.display = 'none';
