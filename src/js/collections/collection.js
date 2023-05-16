@@ -4,7 +4,6 @@ fetch('/src/db/products.json')
         const urlParam = new URL(window.location.href).searchParams.get('collection');
         const collection = products.filter(product => product.collection === urlParam);
 
-        console.log(urlParam);
         if (urlParam === 'all') for (let product of products) collection.push(product);
         if (!collection.length) window.location.href = '/pages/404/';
 
@@ -12,23 +11,18 @@ fetch('/src/db/products.json')
 
         const collectionProducts = document.querySelector('.collection-products');
         const collectionPages = document.querySelector('.collection-pages');
-        /* let collectionProduct = []; */
         const numberOfPages = Math.ceil(collection.length / 12);
         let pageButtons = [];
         let actualPage = 1;
 
         const loadProducts = () => {
             collectionProducts.innerHTML = '';
-            /* actualPage++ */
 
             for (let i = (actualPage - 1) * 12; i < actualPage * 12; i++) {
                 const productPrice = collection[i].price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
                 const productPriceNoDiscount = collection[i]['price-no-discount'] ? collection[i]['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) : '';
                 collectionProducts.innerHTML += `<div class="collection-product"><a class="product-url" href="${collection[i].url}"><img class="product-img" src="${collection[i]['main-img']}" alt="${collection[i].name}"></a><div class="product-infos"><p class="product-name">${collection[i].name}</p><span class="product-price"><strong class="product-real-price">${productPrice}</strong><small class="product-price-no-discount">${productPriceNoDiscount}</small></span></div></div>`;
             }
-
-            /* collectionProduct = document.querySelectorAll('.collection-product'); */
-
         }
         loadProducts();
 
@@ -42,7 +36,6 @@ fetch('/src/db/products.json')
                 }
 
             pageButton.onclick = function() {
-                console.log(this)
                 actualPage = Number(this.innerHTML);
                 for (let pageButton of pageButtons) {
                     pageButton.style.color = 'black';
@@ -52,6 +45,40 @@ fetch('/src/db/products.json')
                 this.style['text-decoration'] = 'none';
                 loadProducts();
             }
+        }
+
+        const sort = document.querySelector('.sort-products-by');
+        sort.onchange = () => {
+            if (sort.value === 'olders') {
+                collection.sort((a, b) => a.id - b.id);
+                loadProducts();
+            }
+
+            if (sort.value === 'latests') {
+                collection.sort((a, b) => b.id - a.id);
+                loadProducts();
+            }
+
+            if (sort.value === 'a-to-z') {
+                collection.sort((a, b) => a.name.localeCompare(b.name));
+                loadProducts();
+            }
+
+            if (sort.value === 'z-to-a') {
+                collection.sort((a, b) => b.name.localeCompare(a.name));
+                loadProducts();
+            }
+
+            if (sort.value === 'ascending') {
+                collection.sort((a, b) => a.price - b.price);
+                loadProducts();
+            }
+
+            if (sort.value === 'descending') {
+                collection.sort((a, b) => b.price - a.price);
+                loadProducts();
+            }
+
         }
 
     })
