@@ -1,0 +1,1 @@
+if (window.location.href === 'https://sk8-lifestyle.netlify.app/src/db/product-add.html') window.location.href = '/pages/404/';

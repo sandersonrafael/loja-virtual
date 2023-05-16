@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK8 Lifestyle</title>
+    <link rel="shortcut icon" href="/src/img/brand/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/src/styles/all-pages/global.css">
+    <link rel="stylesheet" href="/src/styles/all-pages/header.css">
+    <link rel="stylesheet" href="/src/styles/all-pages/footer.css">
+    <script src="/src/js/index.js" defer></script>
+
+    <link rel="stylesheet" href="/src/styles/collection-pages/collection.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="top-header">
+            <div class="header-top-bar">
+                <div class="header-logo">
+                    <a href="/"><img class="logo" src="/src/img/brand/logo.png" alt="SK8 Lifestyle"></a>
+                </div>
+                <nav class="header-user">
+                    <ul class="user-options">
+                        <li><a href="/login/"><img class="user-img" src="/src/img/user/login-white.png"
+                                    alt="Entrar">Entrar</a></li>
+                        <li><a href="/contact/"><img class="user-img" src="/src/img/user/support-white.png"
+                                    alt="Suporte">Suporte</a></li>
+                        <li><a href="/wishlist/"><img class="user-img" src="/src/img/user/favorites-white.png"
+                                    alt="Favoritos">Favoritos</a></li>
+                        <li><a href="/cart/"><img class="user-img" src="/src/img/user/cart-white.png"
+                                    alt="Carrinho">Carrinho <span>(0)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="header-menu">
+                <div class="header-hamburguer">☰</div>
+                <nav class="header-navigation">
+                    <div class="header-back">➜</div>
+                    <ul class="header-nav">
+                        <li><a href="/">Início</a></li>
+                        <li class="menu-expand">
+                            <p>Categorias</p> <span class="span-categorias">❯</span>
+                            <ul class="sub-menu">
+                                <li><a href="">Skates</a></li>
+                                <li class="sub-menu-expand">
+                                    <p>Peças</p> <span class="span-pecas">❯</span>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="">Pranchas</a></li>
+                                        <li><a href="">Rodas</a></li>
+                                        <li><a href="">Lixas</a></li>
+                                        <li><a href="">Trucks</a></li>
+                                        <li><a href="">Rolamentos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-expand">
+                                    <p>Acessórios</p> <span class="span-acessorios">❯</span>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="">Capacetes</a></li>
+                                        <li><a href="">Cotoveleiras</a></li>
+                                        <li><a href="">Joelheiras</a></li>
+                                        <li><a href="">Kits</a></li>
+                                        <li><a href="">Bags</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Manutenção</a></li>
+                                <li><a href="">Diversos</a></li>
+                                <li><a href="/collections/">Ver Tudo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Rastreamento</a></li>
+                        <li><a href="">Perguntas Frequentes</a></li>
+                        <li><a href="">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+                <div class="header-search">
+                    <input class="search-bar" type="search" name="search" id="search-bar"
+                        placeholder="Busque em nossa loja...">
+                    <button class="search-button"><img src="/src/img/buttons/search.png" alt="Pesquisar"></button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container">
+        <section class="collection-filters"></section>
+
+        <section class="collection">
+
+            <div class="collection-sort">
+                <p>Ordenar por: </p>
+                <select class="sort-products-by" name="sort-products-by">
+                    <option value="">Mais recentes</option>
+                    <option value="">Nome: A a Z</option>
+                    <option value="">Nome: Z a A</option>
+                    <option value="">Preço: crescente</option>
+                    <option value="">Preço: decrescente</option>
+                </select>
+            </div>
+
+            <div class="collection-products">
+                <div class="collection-product">
+
+                    <a class="product-url" href="">
+                        <img class="product-img"
+                            src="/src/img/products/lixa-de-skate-griptape-splashed-paint/main-image.jpg" alt="">
+                    </a>
+
+                    <div class="product-infos">
+                        <p class="product-name">BLa bla bla bla bla bla bla</p>
+                        <span class="product-price">
+                            <strong class="product-real-price">144,90</strong>
+                            <small class="product-price-no-discount">189,90</small>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+
+            <div class="footer-newsletter footer-block">
+                <p class="no-wrap footer-title">Assine Nossa Newsletter</p>
+                <p>Temos um carinho especial pelos nossos clientes fiéis. Ao assinar nossa newsletter, você recebe de
+                    primeira mão nossas ofertas e cupons promocionais!</p>
+                <form class="newsletter-form">
+                    <input class="newsletter-input" type="text" placeholder="Seu melhor e-mail...">
+                    <button class="newsletter-button">➞</button>
+                </form>
+            </div>
+
+            <nav class="footer-customer-area footer-block">
+                <p class="footer-title footer-title-desktop">Área do Cliente</p>
+                <p class="footer-title footer-title-mobile"><a class="footer-customer-area-expand">Área do Cliente
+                        <span>❯</span></a></p>
+                <ul class="footer-customer-area-sub">
+                    <li><a href="">Quem Somos</a></li>
+                    <li><a href="">Nossos Envios</a></li>
+                    <li><a href="">Garantia</a></li>
+                    <li><a href="">Rastrear Encomendas</a></li>
+                    <li><a href="">Perguntas Frequentes</a></li>
+                    <li><a href="">Fale Conosco</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-policy footer-block">
+                <p class="footer-title footer-title-desktop">Nossas Políticas</p>
+                <p class="footer-title footer-title-mobile"><a class="footer-policy-expand">Nossas Políticas
+                        <span>❯</span></a></p>
+                <ul class="footer-policy-sub">
+                    <li><a href="">Termos de Uso</a></li>
+                    <li><a href="">Política de Privacidade</a></li>
+                    <li><a href="">Política de Cookies</a></li>
+                    <li><a href="">Política de Reembolso</a></li>
+                    <li><a href="">Política de Envio</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-contact footer-block">
+                <p class="footer-title">Canais de Atendimento</p>
+                <p>Atendimento de segunda a sexta, das 08:00 às 12:00 e das 14:00 às 18:00. Aos sábados, das 08:00 às
+                    12:00.</p>
+                <p>Rua General Fictício, 355, Sala 05 - Centro, Ficticiliana - FC, 59600-000.</p>
+                <p><a href="mailto:email@sk8lifestyle.com"><img src="/src/img/social/email-white.png" alt="email">
+                        email@sk8lifestyle.com</a></p>
+                <p><a href="https://wa.me/5534934343434" target="_blank" rel="noopener noreferrer"><img
+                            src="/src/img/social/whatsapp.png" alt="whatsapp"> (34) 93434-3434</a></p>
+                <p><a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><img
+                            src="/src/img/social/instagram.png" alt="SK8 Lifestyle Instagram"> SK8 Lifestyle</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2023 <a href="/">SK8 Lifestyle</a>, todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+    <div class="no-element"></div>
+
+</body>
+
+</html>
