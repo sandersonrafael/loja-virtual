@@ -15,7 +15,7 @@ fetch('http://127.0.0.1:5500/src/db/products.json')
             'joelheiras',
             'kits',
             'bags',
-            'manutenção',
+            'manutencao',
             'diversos'
         ];
 
@@ -24,7 +24,7 @@ fetch('http://127.0.0.1:5500/src/db/products.json')
             '\nProdutos em promoção:',
             products.filter(product => product['price-no-discount'] > product.price).length
         );
-        console.log('\nQuantidade de coleções:', collections.length , '\n\nProdutos por coleção:\n');
+        console.log('\nQuantidade de coleções:', collections.length, '\n\nProdutos por coleção:\n');
 
         for (let collection of collections)  {
             const quantidade = products.filter(product => product.collection === collection).length;
