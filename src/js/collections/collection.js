@@ -3,7 +3,6 @@ fetch('/src/db/products.json')
     .then(products => {
         const urlParam = new URL(window.location.href).searchParams.get('collection');
         const collection = products.filter(product => product.collection === urlParam);
-        console.log(collection)
 
         console.log(urlParam);
         if (urlParam === 'all') for (let product of products) collection.push(product);
@@ -12,19 +11,48 @@ fetch('/src/db/products.json')
         // load all products in collection with all selected filters
 
         const collectionProducts = document.querySelector('.collection-products');
-        let collectionProduct = [];
+        const collectionPages = document.querySelector('.collection-pages');
+        /* let collectionProduct = []; */
+        const numberOfPages = Math.ceil(collection.length / 12);
+        let pageButtons = [];
+        let actualPage = 1;
 
         const loadProducts = () => {
             collectionProducts.innerHTML = '';
+            /* actualPage++ */
 
-            for (let product of collection) {
-                const productPrice = product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-                const productPriceNoDiscount = product['price-no-discount'] ? product['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) : '';
-                collectionProducts.innerHTML += `<div class="collection-product"><a class="product-url" href="${product.url}"><img class="product-img" src="${product['main-img']}" alt="${product.name}"></a><div class="product-infos"><p class="product-name">${product.name}</p><span class="product-price"><strong class="product-real-price">${productPrice}</strong><small class="product-price-no-discount">${productPriceNoDiscount}</small></span></div></div>`;
+            for (let i = (actualPage - 1) * 12; i < actualPage * 12; i++) {
+                const productPrice = collection[i].price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+                const productPriceNoDiscount = collection[i]['price-no-discount'] ? collection[i]['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) : '';
+                collectionProducts.innerHTML += `<div class="collection-product"><a class="product-url" href="${collection[i].url}"><img class="product-img" src="${collection[i]['main-img']}" alt="${collection[i].name}"></a><div class="product-infos"><p class="product-name">${collection[i].name}</p><span class="product-price"><strong class="product-real-price">${productPrice}</strong><small class="product-price-no-discount">${productPriceNoDiscount}</small></span></div></div>`;
             }
 
-            collectionProduct = document.querySelectorAll('.collection-product');
+            /* collectionProduct = document.querySelectorAll('.collection-product'); */
+
         }
         loadProducts();
+
+        for (let page = 1; page < numberOfPages; page++) collectionPages.innerHTML += `<button>${page}</button>`;
+
+        pageButtons = document.querySelectorAll('.collection-pages > button');
+        for (let pageButton of pageButtons) {
+                if (Number(pageButton.innerHTML) === 1) {
+                    pageButton.style.color = '#DE560B';
+                    pageButton.style['text-decoration'] = 'none';
+                }
+
+            pageButton.onclick = function() {
+                console.log(this)
+                actualPage = Number(this.innerHTML);
+                for (let pageButton of pageButtons) {
+                    pageButton.style.color = 'black';
+                    pageButton.style['text-decoration'] = 'underline';
+                }
+                this.style.color = '#DE560B';
+                this.style['text-decoration'] = 'none';
+                loadProducts();
+            }
+        }
+
     })
-    .catch(err => console.log('Falha na conexão...\nVerifique se a base de dados está conectada corretamente.', err))
+    .catch(err => console.log('Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'))
