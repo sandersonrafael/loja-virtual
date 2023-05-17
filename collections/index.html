@@ -92,10 +92,41 @@
 
     <main class="container">
         <aside class="collection-filters">
-            <p class="filters-title">Filtrar produtos</p>
-            <p><strong>Preço (R$):</strong></p>
-            <p>De:<input type="number"> até:<input type="number"></p>
-            <p></p>
+            <h1 class="filters-title">Filtrar produtos</h1>
+            <div class="filter-price">
+                <h2><strong>Por preço (R$):</strong></h2>
+                <p>De:<input type="number"> até:<input type="number"></p>
+            </div>
+            <div class="filter-offer">
+                <h2>Por oferta:</h2>
+                <p class="filter-radio">
+                    <input type="radio" name="offer" id="offer-1" checked>
+                    <label for="offer-1">Mostrar todos</label>
+                </p>
+                <p class="filter-radio">
+                    <input type="radio" name="offer" id="offer-2">
+                    <label for="offer-2">Com desconto</label>
+                </p>
+                <p class="filter-radio">
+                    <input type="radio" name="offer" id="offer-3"> 
+                    <label for="offer-3">Sem desconto</label>
+                </p>
+            </div>
+            <div class="filter-brand">
+                <h2>Por marca:</h2>
+                <select name="selected-brand">
+                    <option value="">Todas as marcas</option>
+                    <option value="${product.brand}"><!-- product.brand[0] + product.brand.slice(1) --></option>
+                </select>
+            </div>
+            <div class="filter-collection">
+                <h2>Por categoria:</h2>
+                <select name="select-collection">
+                    <option value="">Todas as categorias</option>
+                    <option value="${product.collection}"><!-- product.collection[0] + product.collection.slice(1) --></option>
+                </select>
+            </div>
+            
 
             <button>Aplicar filtros</button>
         </aside>

@@ -54,5 +54,15 @@ fetch('http://127.0.0.1:5500/src/db/products.json')
 
         console.log('\nTodas Urls Pranchas:\n');
         for (let product of products) if (product.collection === 'pranchas') console.log(product.url);
+
+        console.log('\nTodas as Marcas:\n');
+        const brands = [];
+        for (let product of products) {
+            if (brands.indexOf(product.brand) === -1 /* && product.collection === 'pranchas' */) {
+                brands.push(product.brand);
+                console.log(product.brand);
+            }
+        }
+        for (let product of products) if (product.collection.indexOf('') !== -1) console.log(product.collection)
     })
     .catch((err) => console.log('\nFalha na conexão...\nVerifique se o servidor local está correto e conectado.'));
