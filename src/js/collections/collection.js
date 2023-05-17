@@ -8,10 +8,10 @@ fetch('/src/db/products.json')
         if (urlParam === 'all') {
             for (let product of products) collection.push(product);
             collectionName.innerHTML = 'Todos os Produtos';
-        } else collectionName.innerHTML = urlParam.slice(0, 1).toLocaleUpperCase() + urlParam.slice (1);
+        } else collectionName.innerHTML = urlParam.slice(0, 1).toLocaleUpperCase() + urlParam.slice(1);
         if (!collection.length) window.location.href = '/pages/404/';
 
-        
+
         // load all products in collection with all selected filters
 
         const collectionProducts = document.querySelector('.collection-products');
@@ -57,7 +57,7 @@ fetch('/src/db/products.json')
                     this.style.color = '#DE560B';
                     this.style['text-decoration'] = 'none';
                     loadProducts();
-                    window.scrollTo({ top: 120, behavior: "smooth" });
+                    window.scrollTo({ top: 216, behavior: "smooth" });
                 }
             }
         }

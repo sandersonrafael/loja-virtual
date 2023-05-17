@@ -987,5 +987,20 @@
         "availability": 11,
         "collection": "pranchas",
         "brand": "Zero"
+    },
+    {
+        "id": 52,
+        "name": "Skate Rocker Seven Layer Canadian",
+        "description": "<p>Apresentamos o Skate Rocker Seven Layer Canadian, uma prancha de skate construída com qualidade excepcional e durabilidade superior. Com seu design robusto e desempenho confiável, essa prancha é a escolha ideal para skatistas de todos os níveis.</p><p>O Skate Rocker Seven Layer Canadian é feito com sete camadas de madeira canadense de alta qualidade, garantindo resistência e flexibilidade ideais. Essa construção sólida permite que você enfrente os desafios do skate com confiança, proporcionando estabilidade e controle durante as manobras.</p><p>Com seu shape rocker, essa prancha apresenta uma curvatura suave que melhora o desempenho e a resposta em transições e curvas. Essa característica permite que você faça transições suaves e manobras precisas, adicionando um toque extra de estilo ao seu skate.</p><p>Além disso, o Skate Rocker Seven Layer Canadian possui uma superfície antiderrapante para garantir aderência excepcional e maior controle sobre a prancha. Independentemente do terreno em que você esteja, essa prancha proporcionará uma experiência de skate confiável e gratificante.</p><p>Esteja você praticando manobras de rua ou aprimorando suas habilidades em um parque de skate, o Skate Rocker Seven Layer Canadian está pronto para acompanhá-lo em sua jornada no skate. Sinta a qualidade, a durabilidade e o desempenho excepcionais desta prancha enquanto você domina as pistas com confiança e estilo.</p>",
+        "price": 429.9,
+        "price-no-discount": 499.9,
+        "main-img": "/src/img/products/skate-rocker-seven-layer-canadian/main-image.jpg",
+        "aditional-imgs": [],
+        "colors": {},
+        "url-param": "skate-rocker-seven-layer-canadian",
+        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-rocker-seven-layer-canadian",
+        "availability": 3,
+        "collection": "skates",
+        "brand": "Rocker"
     }
 ]
