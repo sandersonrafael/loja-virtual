@@ -15,7 +15,7 @@ fetch('http://127.0.0.1:5500/src/db/products.json')
             'joelheiras',
             'kits',
             'bags',
-            'manutencao',
+            'manutenção',
             'diversos'
         ];
 
