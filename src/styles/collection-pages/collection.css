@@ -50,6 +50,8 @@
 .collection-product {
     padding: 10px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .collection-product * {
