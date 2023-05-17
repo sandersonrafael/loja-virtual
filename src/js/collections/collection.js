@@ -11,44 +11,59 @@ fetch('/src/db/products.json')
 
         const collectionProducts = document.querySelector('.collection-products');
         const collectionPages = document.querySelector('.collection-pages');
-        const numberOfPages = Math.ceil(collection.length / 12);
+
+        let numberOfPages = Math.ceil(collection.length / 12);
         let pageButtons = [];
         let actualPage = 1;
 
         const loadProducts = () => {
             collectionProducts.innerHTML = '';
 
-            const lastPage = actualPage <= Math.floor(collection.length / 12) ? (actualPage * 12): ((actualPage - 1) * 12) + collection.length % 12;
+            const lastPage = actualPage <= Math.floor(collection.length / 12) ? (actualPage * 12) : ((actualPage - 1) * 12) + collection.length % 12;
 
             for (let i = (actualPage - 1) * 12; i < lastPage; i++) {
-                const productPrice = collection[i].price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-                const productPriceNoDiscount = collection[i]['price-no-discount'] ? collection[i]['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) : '';
+                const productPrice = collection[i].price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+                const productPriceNoDiscount = collection[i]['price-no-discount'] ? collection[i]['price-no-discount'].toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) : '';
                 collectionProducts.innerHTML += `<div class="collection-product"><a class="product-url" href="${collection[i].url}"><img class="product-img" src="${collection[i]['main-img']}" alt="${collection[i].name}"></a><div class="product-infos"><p class="product-name">${collection[i].name}</p><span class="product-price"><strong class="product-real-price">${productPrice}</strong><small class="product-price-no-discount">${productPriceNoDiscount}</small></span></div></div>`;
             }
         }
         loadProducts();
 
-        if (collection.length > 12)
-        for (let page = 1; page < numberOfPages + 1; page++) collectionPages.innerHTML += `<button>${page}</button>`;
-        pageButtons = document.querySelectorAll('.collection-pages > button');
-        for (let pageButton of pageButtons) {
+        function setPagination() {
+            collectionPages.innerHTML = '';
+            numberOfPages = Math.ceil(collection.length / 12);
+            if (collection.length > 12) {
+                for (let page = 1; page <= numberOfPages; page++) collectionPages.innerHTML += `<button>${page}</button>`;
+            }
+
+            pageButtons = document.querySelectorAll('.collection-pages > button');
+            for (let pageButton of pageButtons) {
                 if (Number(pageButton.innerHTML) === 1) {
                     pageButton.style.color = '#DE560B';
                     pageButton.style['text-decoration'] = 'none';
                 }
 
-            pageButton.onclick = function() {
-                actualPage = Number(this.innerHTML);
-                for (let pageButton of pageButtons) {
-                    pageButton.style.color = 'black';
-                    pageButton.style['text-decoration'] = 'underline';
+                pageButton.onclick = function () {
+                    actualPage = Number(this.innerHTML);
+                    for (let pageButton of pageButtons) {
+                        pageButton.style.color = 'black';
+                        pageButton.style['text-decoration'] = 'underline';
+                    }
+                    this.style.color = '#DE560B';
+                    this.style['text-decoration'] = 'none';
+                    loadProducts();
+                    window.scrollTo({ top: 120, behavior: "smooth" });
                 }
-                this.style.color = '#DE560B';
-                this.style['text-decoration'] = 'none';
-                loadProducts();
-                window.scrollTo({top: 0});
             }
         }
+        setPagination();
+
+        const filterProducts = () => {
+            /* para limpar filtros: 
+            collection.slice(limpar todos produtos) 
+            for (let product of produtcs) collection.push(product); */
+        }
+        filterProducts();
 
         const sort = document.querySelector('.sort-products-by');
         sort.onchange = () => {
