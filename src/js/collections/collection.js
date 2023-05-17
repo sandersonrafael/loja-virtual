@@ -46,6 +46,7 @@ fetch('/src/db/products.json')
                 this.style.color = '#DE560B';
                 this.style['text-decoration'] = 'none';
                 loadProducts();
+                window.scrollTo({top: 0});
             }
         }
 
