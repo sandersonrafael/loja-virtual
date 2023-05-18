@@ -32,7 +32,7 @@
                         <li><a href="/wishlist/"><img class="user-img" src="/src/img/user/favorites-white.png"
                                     alt="Favoritos">Favoritos</a></li>
                         <li><a href="/cart/"><img class="user-img" src="/src/img/user/cart-white.png"
-                                    alt="Carrinho">Carrinho (<span>0</span>)</a></li>
+                                    alt="Carrinho">Carrinho <span>(0)</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -92,40 +92,43 @@
 
     <main class="container">
         <aside class="collection-filters">
-            <h1 class="filters-title">Filtrar produtos</h1>
-            <div class="filter-price">
-                <h2><strong>Por preço (R$):</strong></h2>
-                <p>De:<input type="number"> até:<input type="number"></p>
+            <h1 class="filters-title">Filtros<span>❯</span></h1>
+            <div class="filters">
+                <div class="filter-price">
+                    <h2><strong>Por preço (R$):</strong></h2>
+                    <p>De <input type="number"> a <input type="number"></p>
+                    <p></p>
+                </div>
+                <div class="filter-offer">
+                    <h2>Por oferta:</h2>
+                    <p class="filter-radio">
+                        <input type="radio" name="offer" id="offer-1" checked>
+                        <label for="offer-1">Mostrar todos</label>
+                    </p>
+                    <p class="filter-radio">
+                        <input type="radio" name="offer" id="offer-2">
+                        <label for="offer-2">Com desconto</label>
+                    </p>
+                    <p class="filter-radio">
+                        <input type="radio" name="offer" id="offer-3"> 
+                        <label for="offer-3">Sem desconto</label>
+                    </p>
+                </div>
+                <div class="filter-brand">
+                    <h2>Por marca:</h2>
+                    <select name="selected-brand">
+                        <option value="">Todas as marcas</option>
+                    </select>
+                </div>
+                <div class="filter-collection">
+                    <h2>Por categoria:</h2>
+                    <select name="select-collection">
+                        <option value="">Todas as categorias</option>
+                    </select>
+                </div>
             </div>
-            <div class="filter-offer">
-                <h2>Por oferta:</h2>
-                <p class="filter-radio">
-                    <input type="radio" name="offer" id="offer-1" checked>
-                    <label for="offer-1">Mostrar todos</label>
-                </p>
-                <p class="filter-radio">
-                    <input type="radio" name="offer" id="offer-2">
-                    <label for="offer-2">Com desconto</label>
-                </p>
-                <p class="filter-radio">
-                    <input type="radio" name="offer" id="offer-3"> 
-                    <label for="offer-3">Sem desconto</label>
-                </p>
-            </div>
-            <div class="filter-brand">
-                <h2>Por marca:</h2>
-                <select name="selected-brand">
-                    <option value="">Todas as marcas</option>
-                </select>
-            </div>
-            <div class="filter-collection">
-                <h2>Por categoria:</h2>
-                <select name="select-collection">
-                    <option value="">Todas as categorias</option>
-                </select>
-            </div>
-
             <button>Aplicar filtros</button>
+
         </aside>
 
         <section class="collection">
