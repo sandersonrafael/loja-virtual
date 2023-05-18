@@ -217,6 +217,12 @@ input::-webkit-inner-spin-button {
 
     .filters-title {
         cursor: pointer;
+        margin-bottom: 7px;
+    }
+
+    .filters-title:hover {
+        color: #DE560B;
+        transition: all 200ms ease-in-out;
     }
 
     .filters-title > span {
@@ -228,7 +234,6 @@ input::-webkit-inner-spin-button {
 
     .filters {
         display: none;
-        /* display: flex; */
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -244,7 +249,6 @@ input::-webkit-inner-spin-button {
     .collection {
         width: calc(100% - 30px);
     }
-
 }
 
 @media (max-width: 650px) {
