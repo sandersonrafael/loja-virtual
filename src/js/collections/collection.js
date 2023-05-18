@@ -33,7 +33,7 @@ fetch('/src/db/products.json')
         }
         loadProducts();
 
-        function setPagination() {
+        const setPagination = () => {
             collectionPages.innerHTML = '';
             numberOfPages = Math.ceil(collection.length / 12);
             if (collection.length > 12) {
@@ -67,14 +67,19 @@ fetch('/src/db/products.json')
         const filterPrice = document.querySelectorAll('.filter-price input');
         const filterOffer = document.querySelectorAll('.filter-offer input');
         const filterBrand = document.querySelector('.filter-brand select');
+        const filterCollectionDiv = document.querySelector('.filter-collection');
         const filterCollection = document.querySelector('.filter-collection select');
         const filterButton = document.querySelector('.collection-filters button');
+        const collectionsList = [];
         const brands = [];
 
         for (let product of collection) if (brands.indexOf(product.brand) === -1) brands.push(product.brand);
+        for (let brand of brands) filterBrand.innerHTML += `<option value="${brand}">${brand}</option>`;
 
-        for (let brand of brands) {
-            filterBrand.innerHTML += `<option value="${brand}">${brand}</option>`;
+        if (urlParam === 'all') {
+            filterCollectionDiv.style.display = 'block';
+            for (let product of collection) if (collectionsList.indexOf(product.collection) === -1) collectionsList.push(product.collection);
+            for (let collection of collectionsList) filterCollection.innerHTML += `<option value="${collection}">${collection[0].toUpperCase() + collection.slice(1)}</option>`
         }
 
         filterButton.onclick = () => {
@@ -90,6 +95,7 @@ fetch('/src/db/products.json')
                 else if (filterOffer[1].checked && !filteredCollection[i]['price-no-discount']) delete filteredCollection[i];
                 else if (filterOffer[2].checked && filteredCollection[i]['price-no-discount']) delete filteredCollection[i];
                 else if (filterBrand.value !== filteredCollection[i].brand && filterBrand.value) delete filteredCollection[i];
+                else if (filterCollection.value !== filteredCollection[i].collection && filterCollection.value) delete filteredCollection[i];
             }
             for (let value of filteredCollection) if (value) collection.push(value);
 
