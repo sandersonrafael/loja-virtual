@@ -19,10 +19,9 @@ input::-webkit-inner-spin-button {
     width: 20%;
     margin: 85px auto;
     padding: 15px;
-    /* border: 1px solid #bdbdbd; */
+    border-right: 1px solid #bdbdbd;
     height: 100%;
-    border-radius: 4px;
-    text-align: left;
+    text-align: center;
 }
 
 .collection-filters h1 {
@@ -80,6 +79,7 @@ input::-webkit-inner-spin-button {
 }
 
 .collection-filters button {
+    margin: 0 auto;
     width: 100%;
     max-width: 160px;
     height: 40px;

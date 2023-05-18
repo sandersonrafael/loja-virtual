@@ -84,7 +84,7 @@ fetch('/src/db/products.json')
             const filteredCollection = [];
 
             for (let product of products) if (urlParam === 'all' || product.collection === urlParam) filteredCollection.push(product);
-            
+
             for (let i in filteredCollection) {
                 if (filteredCollection[i].price < minPrice || filteredCollection[i].price > maxPrice) delete filteredCollection[i];
                 else if (filterOffer[1].checked && !filteredCollection[i]['price-no-discount']) delete filteredCollection[i];
