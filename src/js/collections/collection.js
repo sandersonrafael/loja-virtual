@@ -11,7 +11,6 @@ fetch('/src/db/products.json')
         } else collectionName.innerHTML = urlParam.slice(0, 1).toLocaleUpperCase() + urlParam.slice(1);
         if (!collection.length) window.location.href = '/pages/404/';
 
-
         // load all products in collection with all selected filters
 
         const collectionProducts = document.querySelector('.collection-products');
@@ -63,12 +62,42 @@ fetch('/src/db/products.json')
         }
         setPagination();
 
-        const filterProducts = () => {
-            /* para limpar filtros: 
-            collection.slice(limpar todos produtos) 
-            for (let product of produtcs) collection.push(product); */
+        // filter products
+
+        const filterPrice = document.querySelectorAll('.filter-price input');
+        const filterOffer = document.querySelectorAll('.filter-offer input');
+        const filterBrand = document.querySelector('.filter-brand select');
+        const filterCollection = document.querySelector('.filter-collection select');
+        const filterButton = document.querySelector('.collection-filters button');
+        const brands = [];
+
+        for (let product of collection) if (brands.indexOf(product.brand) === -1) brands.push(product.brand);
+
+        for (let brand of brands) {
+            filterBrand.innerHTML += `<option value="${brand}">${brand}</option>`;
         }
-        filterProducts();
+
+        filterButton.onclick = () => {
+            const minPrice = filterPrice[0].value || 0;
+            const maxPrice = filterPrice[1].value || Infinity;
+            collection.splice(0);
+            const filteredCollection = [];
+
+            for (let product of products) if (urlParam === 'all' || product.collection === urlParam) filteredCollection.push(product);
+            
+            for (let i in filteredCollection) {
+                if (filteredCollection[i].price < minPrice || filteredCollection[i].price > maxPrice) delete filteredCollection[i];
+                else if (filterOffer[1].checked && !filteredCollection[i]['price-no-discount']) delete filteredCollection[i];
+                else if (filterOffer[2].checked && filteredCollection[i]['price-no-discount']) delete filteredCollection[i];
+                else if (filterBrand.value !== filteredCollection[i].brand && filterBrand.value) delete filteredCollection[i];
+            }
+            for (let value of filteredCollection) if (value) collection.push(value);
+
+            actualPage = 1;
+            loadProducts();
+            setPagination();
+            if (collection.length === 0) collectionPages.innerHTML = '<div style="margin-top: 40px; font-size: 18px; text-align: center;"><p>Sua pesquisa não retornou nenhum resultado.</p><p>Refine sua busca e tente novamente...</p></div>';
+        }
 
         const sort = document.querySelector('.sort-products-by');
         sort.onchange = () => {
@@ -99,4 +128,4 @@ fetch('/src/db/products.json')
             if (pageButtons.length > 0) pageButtons[0].onclick();
         }
     })
-    .catch(err => console.log(err, 'Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'))
+    .catch(err => console.log('Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'))
