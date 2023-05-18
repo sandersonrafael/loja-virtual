@@ -18,17 +18,22 @@ input::-webkit-inner-spin-button {
 .collection-filters {
     width: 20%;
     margin: 85px auto;
-    padding: 15px;
+    padding: 10px;
     border-right: 1px solid #bdbdbd;
     height: 100%;
     text-align: center;
 }
 
-.collection-filters h1 {
+.filters-title {
     text-align: center;
 }
 
+.filters-title > span {
+    display: none;
+}
+
 .collection-filters h2 {
+    font-size: 21px;
     margin-top: 20px;
 }
 
@@ -198,9 +203,42 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
         margin: 0 auto;
     }
+    .collection-name {
+        margin-top: 30px;
+    }
 
     .collection-filters {
         width: calc(100% - 30px);
+        margin: 0 auto;
+        border: none;
+        border-top: 1px solid #bdbdbd;
+        border-bottom: 1px solid #bdbdbd;
+    }
+
+    .filters-title {
+        cursor: pointer;
+    }
+
+    .filters-title > span {
+        display: inline-block;
+        margin: 0 0 0 10px;
+        align-self: center;
+        transform: rotate(90deg);
+    }
+
+    .filters {
+        display: none;
+        /* display: flex; */
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .filters > * {
+        margin: 5px;
+    }
+
+    .collection-filters > button {
+        display: none;
     }
 
     .collection {

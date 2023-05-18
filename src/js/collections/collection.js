@@ -102,7 +102,24 @@ fetch('/src/db/products.json')
             actualPage = 1;
             loadProducts();
             setPagination();
+            filtersTitle.onclick();
+            window.scrollTo({ top: 216, behavior: "smooth" });
+
             if (collection.length === 0) collectionPages.innerHTML = '<div style="margin-top: 40px; font-size: 18px; text-align: center;"><p>Sua pesquisa não retornou nenhum resultado.</p><p>Refine sua busca e tente novamente...</p></div>';
+        }
+
+        // filter mobile
+
+        const filtersTitle = document.querySelector('.filters-title');
+        const filtersTitleSpan = document.querySelector('.filters-title > span');
+        const filters = document.querySelector('.filters');
+
+        filtersTitle.onclick = () => {
+            if (window.innerWidth <= 800) {
+                filters.style.display === 'flex' ? filters.style.display = 'none' : filters.style.display = 'flex';
+                filterButton.style.display === 'block' ? filterButton.style.display = 'none' : filterButton.style.display = 'block';
+                filtersTitleSpan.innerHTML === '❯' ? filtersTitleSpan.innerHTML = '❮' : filtersTitleSpan.innerHTML = '❯';
+            }
         }
 
         const sort = document.querySelector('.sort-products-by');
