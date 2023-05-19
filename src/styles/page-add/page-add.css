@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+    margin-bottom: 20px;
+}
+
+.container>* {
+    margin: 20px auto 0;
+}
+
+.container *>* {
+    margin-bottom: 20px;
+}
+
+.container button {
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.section-qnt {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-qnt button {
+    width: 50%;
+    height: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+}
+
+.container input[type="text"],
+.container textarea {
+    background-color: white;
+    border: 1px solid rgb(189, 189, 189);
+    width: calc(100% - 30px);
+    height: 24px;
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.container textarea {
+    height: 150px;
+    resize: none;
+    margin-bottom: 0;
+}
+
+.page-add {
+    width: 540px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.page-add > button {
+    margin: 0 auto;
+    width: 180px;
+    height: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
