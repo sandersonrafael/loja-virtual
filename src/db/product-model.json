@@ -10,7 +10,7 @@
         "color-n(pt-BR)": ["code-color", "relative-image-path"]
     },
     "url-param": "url-param",
-    "url": "https://sk8-lifestyle.netlify.app/products/?url=url-param",
+    "url": "/products/?url=url-param",
     "availability": 0,
     "collection": "",
     "brand": ""
