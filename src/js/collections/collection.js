@@ -9,7 +9,7 @@ fetch('/src/db/products.json')
             for (let product of products) collection.push(product);
             collectionName.innerHTML = 'Todos os Produtos';
         } else collectionName.innerHTML = urlParam.slice(0, 1).toLocaleUpperCase() + urlParam.slice(1);
-        if (!collection.length) window.location.href = '/pages/404/';
+        if (!collection.length) window.location.href = '/404/';
 
         // load all products in collection with all selected filters
 
@@ -105,7 +105,7 @@ fetch('/src/db/products.json')
             filtersTitle.onclick();
             window.scrollTo({ top: 216, behavior: "smooth" });
 
-            if (collection.length === 0) collectionPages.innerHTML = '<div style="margin-top: 40px; font-size: 18px; text-align: center;"><p>Sua pesquisa não retornou nenhum resultado.</p><p>Refine sua busca e tente novamente...</p></div>';
+            if (collection.length === 0) collectionPages.innerHTML = '<div style="margin-top: 40px; font-size: 18px; text-align: center;"><p>Sua pesquisa não retornou nenhum resultado.</p><p>Redefina sua busca e tente novamente...</p></div>';
         }
 
         // filter mobile

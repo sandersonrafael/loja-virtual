@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="/src/styles/all-pages/footer.css">
     <script src="/src/js/index.js" defer></script>
 
-    <link rel="stylesheet" href="/src/styles/collection-pages/collection.css">
-    <script src="/src/js/collections/collection.js" defer></script>
+    <link rel="stylesheet" href="/src/styles/404-page/404.css">
 </head>
 
 <body class="body">
@@ -91,65 +90,19 @@
     <div class="collection-name"><strong></strong></div>
 
     <main class="container">
-        <aside class="collection-filters">
-            <h1 class="filters-title">Filtros<span>❯</span></h1>
-            <div class="filters">
-                <div class="filter-price">
-                    <h2><strong>Por preço (R$):</strong></h2>
-                    <p>De <input type="number"> a <input type="number"></p>
-                    <p></p>
-                </div>
-                <div class="filter-offer">
-                    <h2>Por oferta:</h2>
-                    <p class="filter-radio">
-                        <input type="radio" name="offer" id="offer-1" checked>
-                        <label for="offer-1">Mostrar todos</label>
-                    </p>
-                    <p class="filter-radio">
-                        <input type="radio" name="offer" id="offer-2">
-                        <label for="offer-2">Com desconto</label>
-                    </p>
-                    <p class="filter-radio">
-                        <input type="radio" name="offer" id="offer-3">
-                        <label for="offer-3">Sem desconto</label>
-                    </p>
-                </div>
-                <div class="filter-brand">
-                    <h2>Por marca:</h2>
-                    <select name="selected-brand">
-                        <option value="">Todas as marcas</option>
-                    </select>
-                </div>
-                <div class="filter-collection">
-                    <h2>Por categoria:</h2>
-                    <select name="select-collection">
-                        <option value="">Todas as categorias</option>
-                    </select>
-                </div>
-            </div>
-            <button>Aplicar filtros</button>
-
-        </aside>
-
-        <section class="collection">
-
-            <div class="collection-sort">
-                <p>Ordenar por: </p>
-                <select class="sort-products-by" name="sort-products-by">
-                    <option value="olders">Mais antigos</option>
-                    <option value="latests">Mais recentes</option>
-                    <option value="a-to-z">Nome: A a Z</option>
-                    <option value="z-to-a">Nome: Z a A</option>
-                    <option value="ascending">Preço: crescente</option>
-                    <option value="descending">Preço: decrescente</option>
-                </select>
-            </div>
-
-            <div class="collection-products"></div>
-
-            <div class="collection-pages"></div>
-
-        </section>
+        <h1>Erro 404 - Página não encontrada</h1>
+        <div class="search-in-404">
+            <p>A página que você procura não existe.</p>
+            <p>Pesquise em nossa loja:</p>
+        </div>
+        <form action="/search/" class="search-404">
+            <input type="search" class="search-404-input" name="search">
+            <button class="search-404-button"><img src="/src/img/buttons/search-white.png" alt="Pesquisar"></button>
+        </form>
+        <div class="back-to-home-404">
+            <p>Ou continue navegando...</p>
+            <a href="/">Voltar</a>
+        </div>
     </main>
 
     <footer class="footer">

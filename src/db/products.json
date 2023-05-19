@@ -9,7 +9,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "prancha-de-skate-santa-cruz-ryb-color",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-santa-cruz-ryb-color",
+        "url": "/products/?url=prancha-de-skate-santa-cruz-ryb-color",
         "availability": 34,
         "collection": "pranchas",
         "brand": "Santa Cruz"
@@ -46,7 +46,7 @@
             ]
         },
         "url-param": "rodas-de-skate-pro-ugin-shr-100a",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=rodas-de-skate-pro-ugin-shr-100a",
+        "url": "/products/?url=rodas-de-skate-pro-ugin-shr-100a",
         "availability": 76,
         "collection": "rodas",
         "brand": "Ugin"
@@ -83,7 +83,7 @@
             ]
         },
         "url-param": "prancha-de-skate-baker-simple-layer-80",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-baker-simple-layer-80",
+        "url": "/products/?url=prancha-de-skate-baker-simple-layer-80",
         "availability": 51,
         "collection": "pranchas",
         "brand": "Baker"
@@ -98,7 +98,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "prancha-de-skate-baker-ultra-layer-90",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-baker-ultra-layer-90",
+        "url": "/products/?url=prancha-de-skate-baker-ultra-layer-90",
         "availability": 22,
         "collection": "pranchas",
         "brand": "Baker"
@@ -125,7 +125,7 @@
             ]
         },
         "url-param": "rodas-de-skate-frosted-cruiser-longboard",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=rodas-de-skate-frosted-cruiser-longboard",
+        "url": "/products/?url=rodas-de-skate-frosted-cruiser-longboard",
         "availability": 27,
         "collection": "rodas",
         "brand": "Frosted"
@@ -153,7 +153,7 @@
             ]
         },
         "url-param": "rolamentos-de-skate-profissionais-redz-precision",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=rolamentos-de-skate-profissionais-redz-precision",
+        "url": "/products/?url=rolamentos-de-skate-profissionais-redz-precision",
         "availability": 22,
         "collection": "rolamentos",
         "brand": "Redz"
@@ -172,7 +172,7 @@
         ],
         "colors": {},
         "url-param": "skate-rocker-seven-layer-chess-pro",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-rocker-seven-layer-chess-pro",
+        "url": "/products/?url=skate-rocker-seven-layer-chess-pro",
         "availability": 13,
         "collection": "skates",
         "brand": "Rocker"
@@ -204,7 +204,7 @@
             ]
         },
         "url-param": "skate-rocker-seven-layer-space-hart",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-rocker-seven-layer-space-hart",
+        "url": "/products/?url=skate-rocker-seven-layer-space-hart",
         "availability": 12,
         "collection": "skates",
         "brand": "Rocker"
@@ -219,7 +219,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "skate-rocker-seven-layer-mystic-tiger",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-rocker-seven-layer-mystic-tiger",
+        "url": "/products/?url=skate-rocker-seven-layer-mystic-tiger",
         "availability": 19,
         "collection": "skates",
         "brand": "Rocker"
@@ -237,7 +237,7 @@
         ],
         "colors": {},
         "url-param": "skate-longboard-seeth-ink-ssg-cruiser-black-cat",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-longboard-seeth-ink-ssg-cruiser-black-cat",
+        "url": "/products/?url=skate-longboard-seeth-ink-ssg-cruiser-black-cat",
         "availability": 9,
         "collection": "skates",
         "brand": "Seeth Ink"
@@ -256,7 +256,7 @@
         ],
         "colors": {},
         "url-param": "lixa-de-skate-griptape-yellow-prism",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-griptape-yellow-prism",
+        "url": "/products/?url=lixa-de-skate-griptape-yellow-prism",
         "availability": 34,
         "collection": "lixas",
         "brand": "Griptape"
@@ -273,7 +273,7 @@
         ],
         "colors": {},
         "url-param": "lixa-de-skate-griptape-red-prism",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-griptape-red-prism",
+        "url": "/products/?url=lixa-de-skate-griptape-red-prism",
         "availability": 28,
         "collection": "lixas",
         "brand": "Griptape"
@@ -290,7 +290,7 @@
         ],
         "colors": {},
         "url-param": "lixa-de-skate-griptape-splashed-paint",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-griptape-splashed-paint",
+        "url": "/products/?url=lixa-de-skate-griptape-splashed-paint",
         "availability": 16,
         "collection": "lixas",
         "brand": "Griptape"
@@ -307,7 +307,7 @@
         ],
         "colors": {},
         "url-param": "lixa-de-skate-sgd-red-moon",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-sgd-red-moon",
+        "url": "/products/?url=lixa-de-skate-sgd-red-moon",
         "availability": 11,
         "collection": "lixas",
         "brand": "SGD"
@@ -324,7 +324,7 @@
         ],
         "colors": {},
         "url-param": "lixa-de-skate-sgd-galaxy-view",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=lixa-de-skate-sgd-galaxy-view",
+        "url": "/products/?url=lixa-de-skate-sgd-galaxy-view",
         "availability": 19,
         "collection": "lixas",
         "brand": "SGD"
@@ -343,7 +343,7 @@
         ],
         "colors": {},
         "url-param": "rolamentos-de-skate-abec-bsb-pro-16-und",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=rolamentos-de-skate-abec-bsb-pro-16-und",
+        "url": "/products/?url=rolamentos-de-skate-abec-bsb-pro-16-und",
         "availability": 23,
         "collection": "rolamentos",
         "brand": "ABEC"
@@ -362,7 +362,7 @@
         ],
         "colors": {},
         "url-param": "rolamentos-de-skate-abec-ceramic-blackred",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=rolamentos-de-skate-abec-ceramic-blackred",
+        "url": "/products/?url=rolamentos-de-skate-abec-ceramic-blackred",
         "availability": 31,
         "collection": "rolamentos",
         "brand": "ABEC"
@@ -382,7 +382,7 @@
         ],
         "colors": {},
         "url-param": "truck-de-skate-carver-cx4-aluminio",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=truck-de-skate-carver-cx4-aluminio",
+        "url": "/products/?url=truck-de-skate-carver-cx4-aluminio",
         "availability": 22,
         "collection": "trucks",
         "brand": "Carver"
@@ -397,7 +397,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "truck-de-skate-thrasher-hollow-55",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=truck-de-skate-thrasher-hollow-55",
+        "url": "/products/?url=truck-de-skate-thrasher-hollow-55",
         "availability": 11,
         "collection": "trucks",
         "brand": "Thrasher"
@@ -417,7 +417,7 @@
         ],
         "colors": {},
         "url-param": "rodas-de-skate-puente-ollie-punk-cruiser",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=rodas-de-skate-puente-ollie-punk-cruiser",
+        "url": "/products/?url=rodas-de-skate-puente-ollie-punk-cruiser",
         "availability": 35,
         "collection": "rodas",
         "brand": "Puente"
@@ -450,7 +450,7 @@
             ]
         },
         "url-param": "capacete-para-skatistas-beon-b-115-abs",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=capacete-para-skatistas-beon-b-115-abs",
+        "url": "/products/?url=capacete-para-skatistas-beon-b-115-abs",
         "availability": 17,
         "collection": "capacetes",
         "brand": "Beon"
@@ -487,7 +487,7 @@
             ]
         },
         "url-param": "capacete-para-skatista-sea-wind-simple-pe",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=capacete-para-skatista-sea-wind-simple-pe",
+        "url": "/products/?url=capacete-para-skatista-sea-wind-simple-pe",
         "availability": 27,
         "collection": "capacetes",
         "brand": "Sea Wind"
@@ -524,7 +524,7 @@
             ]
         },
         "url-param": "capacete-para-skatista-infantil-sea-wind-cave",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=capacete-para-skatista-infantil-sea-wind-cave",
+        "url": "/products/?url=capacete-para-skatista-infantil-sea-wind-cave",
         "availability": 25,
         "collection": "capacetes",
         "brand": "Sea Wind"
@@ -541,7 +541,7 @@
         ],
         "colors": {},
         "url-param": "skate-hwc-seven-layer-silence-skull",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-hwc-seven-layer-silence-skull",
+        "url": "/products/?url=skate-hwc-seven-layer-silence-skull",
         "availability": 7,
         "collection": "skates",
         "brand": "Hwc"
@@ -559,7 +559,7 @@
         ],
         "colors": {},
         "url-param": "rodas-de-skate-frosted-punk-jumper",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=rodas-de-skate-frosted-punk-jumper",
+        "url": "/products/?url=rodas-de-skate-frosted-punk-jumper",
         "availability": 32,
         "collection": "rodas",
         "brand": "Frosted"
@@ -576,7 +576,7 @@
         ],
         "colors": {},
         "url-param": "joelheira-wosawe-anti-derrapante-gear-mtb",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=joelheira-wosawe-anti-derrapante-gear-mtb",
+        "url": "/products/?url=joelheira-wosawe-anti-derrapante-gear-mtb",
         "availability": 34,
         "collection": "joelheiras",
         "brand": "Wosawe"
@@ -593,7 +593,7 @@
         ],
         "colors": {},
         "url-param": "cotoveleira-wosawe-anti-derrapante-gear-mtb",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=cotoveleira-wosawe-anti-derrapante-gear-mtb",
+        "url": "/products/?url=cotoveleira-wosawe-anti-derrapante-gear-mtb",
         "availability": 33,
         "collection": "cotoveleiras",
         "brand": "Wosawe"
@@ -612,7 +612,7 @@
         ],
         "colors": {},
         "url-param": "kit-cotoveleira-e-joelheira-wosawe-gear-mtb",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=kit-cotoveleira-e-joelheira-wosawe-gear-mtb",
+        "url": "/products/?url=kit-cotoveleira-e-joelheira-wosawe-gear-mtb",
         "availability": 14,
         "collection": "kits",
         "brand": "Wosawe"
@@ -630,7 +630,7 @@
         ],
         "colors": {},
         "url-param": "cotoveleiras-elbow-premium-jd-style",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=cotoveleiras-elbow-premium-jd-style",
+        "url": "/products/?url=cotoveleiras-elbow-premium-jd-style",
         "availability": 22,
         "collection": "cotoveleiras",
         "brand": "Elbow"
@@ -650,7 +650,7 @@
         ],
         "colors": {},
         "url-param": "bag-de-skate-lai-malas-com-compartimentos-multiplos",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=bag-de-skate-lai-malas-com-compartimentos-multiplos",
+        "url": "/products/?url=bag-de-skate-lai-malas-com-compartimentos-multiplos",
         "availability": 7,
         "collection": "bags",
         "brand": "LAI Malas"
@@ -669,7 +669,7 @@
         ],
         "colors": {},
         "url-param": "oleo-para-rolamentos-de-skate-deriva-10ml",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=oleo-para-rolamentos-de-skate-deriva-10ml",
+        "url": "/products/?url=oleo-para-rolamentos-de-skate-deriva-10ml",
         "availability": 37,
         "collection": "manutenção",
         "brand": "Deriva"
@@ -688,7 +688,7 @@
         ],
         "colors": {},
         "url-param": "oleo-de-rolamentos-de-skate-crom-low-visc",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=oleo-de-rolamentos-de-skate-crom-low-visc",
+        "url": "/products/?url=oleo-de-rolamentos-de-skate-crom-low-visc",
         "availability": 31,
         "collection": "manutenção",
         "brand": "CROM"
@@ -703,7 +703,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "quadro-de-parede-invisible-moon-street-style-60cm-x-100cm",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=quadro-de-parede-invisible-moon-street-style-60cm-x-100cm",
+        "url": "/products/?url=quadro-de-parede-invisible-moon-street-style-60cm-x-100cm",
         "availability": 5,
         "collection": "diversos",
         "brand": "Invisible Moon"
@@ -718,7 +718,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "quadro-de-parede-invisible-moon-horizon-skate-style",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=quadro-de-parede-invisible-moon-horizon-skate-style",
+        "url": "/products/?url=quadro-de-parede-invisible-moon-horizon-skate-style",
         "availability": 3,
         "collection": "diversos",
         "brand": "Invisible Moon"
@@ -733,7 +733,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "quadro-de-parede-invisible-moon-paint-splash",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=quadro-de-parede-invisible-moon-paint-splash",
+        "url": "/products/?url=quadro-de-parede-invisible-moon-paint-splash",
         "availability": 1,
         "collection": "diversos",
         "brand": "Invisible Moon"
@@ -748,7 +748,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "quadro-de-parede-invisible-moon-free-style",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=quadro-de-parede-invisible-moon-free-style",
+        "url": "/products/?url=quadro-de-parede-invisible-moon-free-style",
         "availability": 4,
         "collection": "diversos",
         "brand": "Invisible Moon"
@@ -763,7 +763,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "quadro-de-parede-invisible-moon-sky-jumper",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=quadro-de-parede-invisible-moon-sky-jumper",
+        "url": "/products/?url=quadro-de-parede-invisible-moon-sky-jumper",
         "availability": 1,
         "collection": "diversos",
         "brand": "Invisible Moon"
@@ -782,7 +782,7 @@
         ],
         "colors": {},
         "url-param": "quadros-de-parede-timeless-nighthy-astrounauts",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=quadros-de-parede-timeless-nighthy-astrounauts",
+        "url": "/products/?url=quadros-de-parede-timeless-nighthy-astrounauts",
         "availability": 4,
         "collection": "diversos",
         "brand": "Timeless"
@@ -797,7 +797,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "skate-puente-rock-style-street",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-puente-rock-style-street",
+        "url": "/products/?url=skate-puente-rock-style-street",
         "availability": 12,
         "collection": "skates",
         "brand": "Puente"
@@ -812,7 +812,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "skate-puente-street-life",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-puente-street-life",
+        "url": "/products/?url=skate-puente-street-life",
         "availability": 5,
         "collection": "skates",
         "brand": "Puente"
@@ -827,7 +827,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "skate-sk8-one-street-1968",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-sk8-one-street-1968",
+        "url": "/products/?url=skate-sk8-one-street-1968",
         "availability": 3,
         "collection": "skates",
         "brand": "SK8 One"
@@ -842,7 +842,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "skate-sk8-one-action-hunting",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-sk8-one-action-hunting",
+        "url": "/products/?url=skate-sk8-one-action-hunting",
         "availability": 4,
         "collection": "skates",
         "brand": "SK8 One"
@@ -857,7 +857,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "skate-sk8-one-universe",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-sk8-one-universe",
+        "url": "/products/?url=skate-sk8-one-universe",
         "availability": 2,
         "collection": "skates",
         "brand": "SK8 One"
@@ -872,7 +872,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "skate-puente-fast-tiger",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-puente-fast-tiger",
+        "url": "/products/?url=skate-puente-fast-tiger",
         "availability": 2,
         "collection": "skates",
         "brand": "Puente"
@@ -887,7 +887,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "skate-puente-sport-black-white-owl",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-puente-sport-black-white-owl",
+        "url": "/products/?url=skate-puente-sport-black-white-owl",
         "availability": 1,
         "collection": "skates",
         "brand": "Puente"
@@ -905,7 +905,7 @@
         ],
         "colors": {},
         "url-param": "prancha-de-skate-nonoodle-soyamax",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-nonoodle-soyamax",
+        "url": "/products/?url=prancha-de-skate-nonoodle-soyamax",
         "availability": 13,
         "collection": "pranchas",
         "brand": "NoNoodle"
@@ -923,7 +923,7 @@
         ],
         "colors": {},
         "url-param": "prancha-de-skate-nonoodle-concava-seven-layer",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-nonoodle-concava-seven-layer",
+        "url": "/products/?url=prancha-de-skate-nonoodle-concava-seven-layer",
         "availability": 17,
         "collection": "pranchas",
         "brand": "NoNoodle"
@@ -938,7 +938,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "prancha-de-skate-zero-red-skull",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-zero-red-skull",
+        "url": "/products/?url=prancha-de-skate-zero-red-skull",
         "availability": 14,
         "collection": "pranchas",
         "brand": "Zero"
@@ -953,7 +953,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "prancha-de-skate-zero-black-skull",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-zero-black-skull",
+        "url": "/products/?url=prancha-de-skate-zero-black-skull",
         "availability": 15,
         "collection": "pranchas",
         "brand": "Zero"
@@ -968,7 +968,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "prancha-de-skate-zero-sandovar-green-smoker",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-zero-sandovar-green-smoker",
+        "url": "/products/?url=prancha-de-skate-zero-sandovar-green-smoker",
         "availability": 19,
         "collection": "pranchas",
         "brand": "Zero"
@@ -983,7 +983,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "prancha-de-skate-zero-cross-of-the-streets",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=prancha-de-skate-zero-cross-of-the-streets",
+        "url": "/products/?url=prancha-de-skate-zero-cross-of-the-streets",
         "availability": 11,
         "collection": "pranchas",
         "brand": "Zero"
@@ -998,7 +998,7 @@
         "aditional-imgs": [],
         "colors": {},
         "url-param": "skate-rocker-seven-layer-canadian",
-        "url": "https://sk8-lifestyle.netlify.app/products/?url=skate-rocker-seven-layer-canadian",
+        "url": "/products/?url=skate-rocker-seven-layer-canadian",
         "availability": 3,
         "collection": "skates",
         "brand": "Rocker"
