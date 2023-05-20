@@ -9,13 +9,17 @@
 }
 
 .container > h1 {
-    font-size: 80px;
+    font-size: 60px;
     max-width: 700px;
     margin: 0 auto 30px;
 }
 
 .container p {
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.search-in-404 > p {
+    margin-bottom: 10px;
 }
 
 .search-404 {
