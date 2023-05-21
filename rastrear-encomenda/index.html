@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="/src/styles/all-pages/footer.css">
     <script src="/src/js/index.js" defer></script>
 
-    <link rel="stylesheet" href="/src/styles/pages/style.css">
-    <script src="/src/js/pages/index.js"></script>
+    <link rel="stylesheet" href="/src/styles/tracking-page/style.css">
+    <script src="/src/js/tracking-page/index.js" defer></script>
 </head>
 
 <body class="body">
@@ -89,8 +89,15 @@
     </header>
 
     <main class="container">
-        <h1 class="page-title"></h1>
-        <div class="page-content"></div>
+        <div class="default-container">
+            <h1 class="tracking-title">Rastrear Encomenda</h1>
+            <p class="tracking-instructions">Digite o código de rastreio dos correios e clique em Buscar para obter as informações da sua entrega.</p>
+            <section class="tracking">
+                <input type="text" class="tracking-code" placeholder="Código de Rastreio...">
+                <button class="tracking-button">Buscar</button>
+            </section>
+        </div>
+        <section class="tracking-infos"></section>
     </main>
 
     <footer class="footer">
