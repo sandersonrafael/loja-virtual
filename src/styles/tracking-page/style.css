@@ -152,7 +152,7 @@
 
 
 @media (max-width: 450px) {
-    p {
+    .container p {
         font-size: 14px;
     }
     .tracking-infos * span {
@@ -161,7 +161,7 @@
 }
 
 @media (max-width: 400px) {
-    p {
+    .container p {
         font-size: 13px;
     }
     .tracking-infos * span {
