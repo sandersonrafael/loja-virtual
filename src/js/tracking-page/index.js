@@ -40,7 +40,7 @@ trackingButton.onclick = () => {
     })
     .catch(err => {
         trackingTries++
-        if (trackingTries < 3) {
+        if (trackingTries < 4) {
             setTimeout(() => fetching(), 3000);
         } else {
             console.log('Falha na conexão...');

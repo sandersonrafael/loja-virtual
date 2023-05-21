@@ -116,6 +116,7 @@
     font-size: 40px;
     color: #DE560B;
     text-shadow: 0 0 2px #222;
+    padding-bottom: 13px;
 }
 
 @media (max-width: 450px) {
