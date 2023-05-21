@@ -93,7 +93,7 @@
     border: 1px solid white;
     padding: 10px 20px;
     color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .step-update-date {
@@ -135,7 +135,7 @@
     }
 
     .tracking-infos > span {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
