@@ -1,5 +1,6 @@
 .container {
     margin: 30px auto 60px;
+    min-height: 50vh;
 }
 
 .tracking-title {
