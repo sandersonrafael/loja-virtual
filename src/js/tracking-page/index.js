@@ -2,9 +2,9 @@ const trackingCode = document.querySelector('.tracking-code');
 const trackingButton = document.querySelector('.tracking-button');
 const trackingInfos = document.querySelector('.tracking-infos');
 const defaultContainer = document.querySelector('.default-container');
-let trackingTries = 0;
 
 trackingButton.onclick = () => {
+    let trackingTries = 0;
     trackingInfos.innerHTML = '<div class="loading-circle"><div class="loading-circle-white"></div></div>';
     let code = '';
     if (trackingCode.value) {
@@ -19,6 +19,7 @@ trackingButton.onclick = () => {
         const trackingSteps = res.eventos;
         let trackingStep = [];
         let stepStatus = [];
+        trackingInfos.innerHTML += `<p>Código: ${code}</p>`;
 
         for (let i in trackingSteps) {
             trackingInfos.innerHTML += `<div class="tracking-step"></div>`;
@@ -34,6 +35,7 @@ trackingButton.onclick = () => {
             for (let step of trackingSteps[i].subStatus) stepStatus[i].innerHTML += `<p>${step}</p>`;
 
             if (i < trackingSteps.length - 1) trackingInfos.innerHTML += `<span class="vertical-line">↑</span>`;
+            if (i == trackingSteps.length - 1) trackingInfos.innerHTML += `<a href="/rastrear-encomenda"><button class="tracking-button">Nova busca</button></a>`;
         }
     })
     .catch(err => {
