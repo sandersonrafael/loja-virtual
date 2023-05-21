@@ -38,8 +38,8 @@ fetch('/src/db/pages.json')
                 for (let i in control[c]) if (control[c][i]) allContents[c].push(control[c][i]);
             }
 
-            body.innerText = `,\n{\n"id": ${pages.length + 1},\n"page-title": `;
-            body.innerText += ` "${pageTitle.value}",\n"page-content": "`;
+            body.innerText = `,\n{\n"id": ${pages.length + 1},\n"title": `;
+            body.innerText += ` "${pageTitle.value}",\n"content": "`;
 
             for (let i in allContents) {
                 body.innerText += `<h2>${topicTitles[i].value}</h2>`;
