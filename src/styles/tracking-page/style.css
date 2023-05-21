@@ -44,7 +44,6 @@
 .tracking-button {
     align-self: center;
     text-align: center;
-    /* width: 120px; */
     padding: 0 25px;
     margin: 0 auto;
     height: 40px;
@@ -93,7 +92,8 @@
     border-radius: 12px 12px 0 0;
     border: 1px solid white;
     padding: 10px 20px;
-    color: #222;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .step-update-date {
@@ -117,7 +117,27 @@
     text-shadow: 0 0 2px #222;
 }
 
+@media (max-width: 450px) {
+    .container p {
+        font-size: 14px;
+    }
+    .tracking-infos * span {
+        font-size: 16px;
+    }
+}
 
+@media (max-width: 400px) {
+    .container p {
+        font-size: 13px;
+    }
+    .tracking-infos * span {
+        font-size: 14px;
+    }
+
+    .tracking-infos > span {
+        font-size: 30px;
+    }
+}
 
 /* Loading animation */
 
@@ -147,28 +167,5 @@
 
     100% {
         transform: rotate(360deg);
-    }
-}
-
-
-@media (max-width: 450px) {
-    .container p {
-        font-size: 14px;
-    }
-    .tracking-infos * span {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 400px) {
-    .container p {
-        font-size: 13px;
-    }
-    .tracking-infos * span {
-        font-size: 14px;
-    }
-
-    .tracking-infos > span {
-        font-size: 30px;
     }
 }
