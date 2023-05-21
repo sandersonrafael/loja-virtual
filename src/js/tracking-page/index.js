@@ -2,6 +2,7 @@ const trackingCode = document.querySelector('.tracking-code');
 const trackingButton = document.querySelector('.tracking-button');
 const trackingInfos = document.querySelector('.tracking-infos');
 const defaultContainer = document.querySelector('.default-container');
+let trackingTries = 0;
 
 trackingButton.onclick = () => {
     trackingInfos.innerHTML = '<div class="loading-circle"><div class="loading-circle-white"></div></div>';
@@ -10,7 +11,7 @@ trackingButton.onclick = () => {
         code = trackingCode.value.toUpperCase();
     }
 
-    fetch(`https://api.linketrack.com/track/json?user=teste&token=1abcd00b2731640e886fb41a8a9671ad1434c599dbaa0a0de9a5aa619f29a83f&codigo=${code}`)
+    const fetching = () => fetch(`https://api.linketrack.com/track/json?user=teste&token=1abcd00b2731640e886fb41a8a9671ad1434c599dbaa0a0de9a5aa619f29a83f&codigo=${code}`)
     .then(res => res.json())
     .then(res => {
         trackingInfos.innerHTML = '';
@@ -36,8 +37,14 @@ trackingButton.onclick = () => {
         }
     })
     .catch(err => {
-        console.log('Falha na conexão...');
-        trackingInfos.innerHTML = '<p>Objeto não encontrado. Verifique se o código informado está correto e tente novamente em alguns instantes...</p>';
-        setTimeout(() => window.location.reload(), 3000);
-    })
+        trackingTries++
+        if (trackingTries < 3) {
+            setTimeout(() => fetching(), 3000);
+        } else {
+            console.log('Falha na conexão...');
+            trackingInfos.innerHTML = '<p>Objeto não encontrado. Verifique se o código informado está correto e tente novamente em alguns instantes...</p>';
+        }
+        
+    });
+    fetching();
 }
