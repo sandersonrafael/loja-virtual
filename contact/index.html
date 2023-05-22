@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="/src/styles/all-pages/footer.css">
     <script src="/src/js/index.js" defer></script>
 
-    <link rel="stylesheet" href="/src/styles/front-page/banners.css">
-    <script src="/src/js/front-page/banners.js" defer></script>
+    <link rel="stylesheet" href="/src/styles/contact-page/style.css">
+    <script src="/src/js/contact/index.js" defer></script>
 </head>
 
 <body class="body">
@@ -88,28 +88,25 @@
 
     </header>
 
-    <main>
-        <section class="banners">
-            <div class="banner-option-1">
-                <a href="/" class="banner-button"></a>
-            </div>
-            <div class="banner-option-2">
-                <a href="/" class="banner-button"></a>
-            </div>
-            <div class="banner-option-3">
-                <a href="/" class="banner-button"></a>
-            </div>
-            <div class="banner-selected">
-                <button class="banner-option-button"></button>
-                <button class="banner-option-button"></button>
-                <button class="banner-option-button"></button>
-            </div>
-        </section>
+    <main class="container">
+        <h1>Deixe-nos uma mensagem</h1>
+        <p>Dúvidas? Problemas? Sugestões? Deixe-nos a sua mensagem e entraremos em contato através do e-mail e/ou telefone informado o quanto antes! Comprometemo-nos a te dar um retorno em até dois dias úteis.</p>
 
-        <section class="main-content">
+        <form class="contact">
+            <label for="contact-name">Nome*</label>
+            <input type="text" name="" id="contact-name" placeholder="Como devemos te chamar?">
 
-        </section>
+            <label for="contact-email">E-mail*</label>
+            <input type="email" name="email" id="contact-email" placeholder="Em qual e-mail devemos responder?">
 
+            <label for="contact-phone">Telefone</label>
+            <input type="tel" name="phone" id="contact-phone" placeholder="Para qual número devemos ligar?">
+
+            <label for="contact-message">Mensagem*</label>
+            <textarea name="message" style="resize:none" id="contact-message" placeholder="Conte o que precisa falar para a gente!"></textarea>
+
+            <button class="form-send">Enviar</button>
+        </form>
     </main>
 
     <footer class="footer">
