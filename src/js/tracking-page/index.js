@@ -38,7 +38,7 @@ trackingButton.onclick = () => {
             for (let step of trackingSteps[i].subStatus) stepStatus[i].innerHTML += `<p>${step}</p>`;
 
             if (i < trackingSteps.length - 1) trackingInfos.innerHTML += `<span class="vertical-line">↑</span>`;
-            if (i == trackingSteps.length - 1) trackingInfos.innerHTML += `<a href="/rastrear-encomenda"><button class="tracking-button">Nova busca</button></a>`;
+            if (i == trackingSteps.length - 1) trackingInfos.innerHTML += `<a href="/tracking/"><button class="tracking-button">Nova busca</button></a>`;
         }
     })
     .catch(err => {
