@@ -11,6 +11,8 @@ fetch('/src/db/products.json')
         } else collectionName.innerHTML = urlParam.slice(0, 1).toLocaleUpperCase() + urlParam.slice(1);
         if (!collection.length) window.location.href = '/404/';
 
+        document.title = collectionName.innerText + ' | SK8 Lifestyle';
+
         // load all products in collection with all selected filters
 
         const collectionProducts = document.querySelector('.collection-products');
