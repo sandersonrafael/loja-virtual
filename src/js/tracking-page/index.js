@@ -4,6 +4,9 @@ const trackingInfos = document.querySelector('.tracking-infos');
 const defaultContainer = document.querySelector('.default-container');
 
 trackingButton.onclick = () => {
+    if (trackingCode.value.length === 0) return trackingInfos.innerHTML = '<p>O código de rastreio precisa ser informado.</p>';
+    trackingButton.disabled = true;
+    trackingCode.disabled = true;
     let trackingTries = 0;
     trackingInfos.innerHTML = '<div class="loading-circle"><div class="loading-circle-white"></div></div>';
     let code = '';
@@ -43,6 +46,8 @@ trackingButton.onclick = () => {
         if (trackingTries < 4) {
             setTimeout(() => fetching(), 3000);
         } else {
+            trackingButton.disabled = false;
+            trackingCode.disabled = false;
             console.log('Falha na conexão...');
             trackingInfos.innerHTML = '<p>Objeto não encontrado. Verifique se o código informado está correto e tente novamente em alguns instantes...</p>';
         }
