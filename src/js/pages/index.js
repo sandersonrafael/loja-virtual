@@ -8,7 +8,6 @@ fetch('/src/db/pages.json')
 
         document.title = page.title + ' | SK8 Lifestyle';
 
-
         const pageTitle = document.querySelector('.page-title');
         const pageContent = document.querySelector('.page-content');
 

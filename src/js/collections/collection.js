@@ -9,7 +9,7 @@ fetch('/src/db/products.json')
             for (let product of products) collection.push(product);
             collectionName.innerHTML = 'Todos os Produtos';
         } else collectionName.innerHTML = urlParam.slice(0, 1).toLocaleUpperCase() + urlParam.slice(1);
-        if (!collection.length) window.location.href = '/404/';
+        if (!collection.length) return window.location.href = '/404/';
 
         document.title = collectionName.innerText + ' | SK8 Lifestyle';
 
@@ -124,6 +124,8 @@ fetch('/src/db/products.json')
             }
         }
 
+        // sort products
+
         const sort = document.querySelector('.sort-products-by');
         sort.onchange = () => {
             if (sort.value === 'olders') {
@@ -153,4 +155,4 @@ fetch('/src/db/products.json')
             if (pageButtons.length > 0) pageButtons[0].onclick();
         }
     })
-    .catch(err => console.log('Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'))
+    .catch(err => console.log('Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'));

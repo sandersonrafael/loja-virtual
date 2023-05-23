@@ -23,7 +23,7 @@ contactPhone.oninput = () => {
 
 contactForm.onsubmit = (e) => {
     e.preventDefault();
-    contactContainer.innerHTML = '<h1>Obrigado por entrar em contato com a gente!</h1>';
+    contactContainer.innerHTML = `<h1>Obrigado por entrar em contato com a gente, ${contactName.value.split(' ')[0]}!</h1>`;
     contactContainer.innerHTML += '<p>Logo mais te retornaremos através dos meios de contato informados. Fique atento(a) à sua caixa de entrada, lixeira e spam!</p>';
     window.scrollTo({top: 0, behavior: "smooth"})
 }

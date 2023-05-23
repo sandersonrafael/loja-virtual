@@ -1,0 +1,149 @@
+.container {
+    min-height: 40vh;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container > h1 {
+    margin: 30px auto;
+}
+
+.search-sort {
+    display: flex;
+    justify-content: center;
+}
+
+.search-sort * {
+    margin: -0.5px;
+    padding: 7px;
+}
+
+.search-sort p {
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #c4c4c498;
+    border-right: none;
+}
+
+.search-sort select {
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #c4c4c498;
+    border-left: none;
+    cursor: pointer;
+}
+
+.search-products {
+    margin: 30px auto;
+    width: calc(100% - 60px);
+    max-width: 1000px;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.search-products p {
+    width: 100%;
+    height: 100%;
+}
+
+.search-product {
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-product * {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.product-price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-real-price {
+    font-size: 20px;
+    color: #DE560B;
+    padding: 0 3px;
+}
+
+.product-price-no-discount {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: gray;
+    padding: 0 3px;
+}
+
+.search-pages {
+    display: flex;
+    justify-content: center;
+}
+
+.search-pages button {
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 5px;
+}
+
+.search-again {
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 320px;
+    padding: 20px;
+}
+
+.search-again-input {
+    width: calc(100% - 60px);
+    padding: 12px 40px 12px 20px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+.search-again-input:focus {
+    box-shadow: 0 0 10px rgba(222, 85, 11, 0.5);
+}
+
+.search-again-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    bottom: 0;
+}
+
+.search-again-button img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 800px) {
+    .search-products {
+        grid-template-columns: 1fr 1fr;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .search-products {
+        grid-template-columns: 1fr;
+    }
+}
