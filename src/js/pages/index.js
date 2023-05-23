@@ -6,6 +6,9 @@ fetch('/src/db/pages.json')
 
         if (!page) window.location.href = '/404/';
 
+        document.title = page.title + ' | SK8 Lifestyle';
+
+
         const pageTitle = document.querySelector('.page-title');
         const pageContent = document.querySelector('.page-content');
 
