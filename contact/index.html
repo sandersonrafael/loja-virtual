@@ -92,18 +92,18 @@
         <h1>Deixe-nos uma mensagem</h1>
         <p>Dúvidas? Problemas? Sugestões? Deixe-nos a sua mensagem e entraremos em contato através do e-mail e/ou telefone informado o quanto antes! Comprometemo-nos a te dar um retorno em até dois dias úteis.</p>
 
-        <form action="/contact/" class="contact">
+        <form action="/contact/" class="contact" id="contact-submit">
             <label for="contact-name">Nome*</label>
-            <input type="text" name="" id="contact-name" placeholder="Como devemos te chamar?">
+            <input type="text" name="" id="contact-name" placeholder="Como devemos te chamar?" required>
 
             <label for="contact-email">E-mail*</label>
-            <input type="email" name="email" id="contact-email" placeholder="Em qual e-mail devemos responder?">
+            <input type="email" name="email" id="contact-email" placeholder="Em qual e-mail devemos responder?" required>
 
-            <label for="contact-phone">Telefone</label>
-            <input type="tel" name="phone" id="contact-phone" placeholder="Para qual número devemos ligar?">
+            <label for="contact-phone">Celular*</label>
+            <input type="tel" name="phone" id="contact-phone" placeholder="Para qual número devemos ligar?" required>
 
             <label for="contact-message">Mensagem*</label>
-            <textarea name="message" style="resize:none" id="contact-message" placeholder="Conte o que precisa falar para a gente!"></textarea>
+            <textarea name="message" style="resize:none" id="contact-message" placeholder="Conte-nos como podemos te ajudar!" required></textarea>
 
             <button class="form-send">Enviar</button>
         </form>
