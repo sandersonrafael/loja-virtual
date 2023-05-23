@@ -15,7 +15,7 @@ const loadProduct = () => fetch('/src/db/products.json')
 
         // if param don't exists or don't return a valid product, will redirect to a 404 page
 
-        if (!urlParam || !product) window.location.href = '/404/';
+        if (!urlParam || !product) return window.location.href = '/404/';
         document.title = product.name + ' | SK8 Lifestyle';
 
         // product images -> max 4 aditional imgs
