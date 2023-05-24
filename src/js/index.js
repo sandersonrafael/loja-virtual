@@ -158,20 +158,29 @@ headerBack.onclick = () => {
     }
 };
 
+
+// cookies
+
+cookieExpires = (days) => {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    return date.toUTCString();
+}
+
 // cookie consent bar
 
 const cookieConsentBar = document.querySelector('.cookie-consent-bar');
 const cookieAcept = document.querySelector('.cookie-acept');
 
 if (document.cookie.indexOf('aceptCookies') === -1) {
-    cookieConsentBar.style.display = 'flex';
+    setTimeout(() => cookieConsentBar.style.display = 'flex', 1200);
 }
 
 cookieAcept.onclick = () => {
     cookieConsentBar.style.display = 'none';
-
-    const dias = 1;
-    const date = new Date();
-    date.setTime(date.getTime() + (dias * 24 * 60 * 60 * 1000));
-    document.cookie = "aceptCookies=" + "true" + "; expires=" + date.toUTCString() + "; path=/";
+    document.cookie = "aceptCookies=" + "true" + "; expires=" + cookieExpires(1) + "; path=/";
 }
+
+// cart products cookie
+
+if (document.cookie.indexOf('cartProducts') === -1) document.cookie = `cartProducts=[]; expires=; path=/`;
