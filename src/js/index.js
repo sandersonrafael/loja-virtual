@@ -26,7 +26,7 @@ menuExpand.onclick = () => {
         
         spanPecas.innerHTML = '❯';
         subMenuPecas.style.display = 'none';
-
+        
         spanAcessorios.innerHTML = '❯';
         subMenuAcessorios.style.display = 'none';
     }
@@ -64,44 +64,44 @@ subMenuExpand2.onclick = () => {
 };
 
 bottomHeader.onmouseleave = () => {
-        if (hamburguerMenu.innerHTML === '✕') hamburguerMenu.onclick();
-        spanCategorias.innerHTML = '❯';
-        subMenu.style.display = 'none';
-        spanAcessorios.innerHTML = '❯';
+    if (hamburguerMenu.innerHTML === '✕') hamburguerMenu.onclick();
+    spanCategorias.innerHTML = '❯';
+    subMenu.style.display = 'none';
+    spanAcessorios.innerHTML = '❯';
         subMenuAcessorios.style.display = 'none';
         spanPecas.innerHTML = '❯';
         subMenuPecas.style.display = 'none';
-};
-
-// footer mobile
-
-const footerCustomerExpand = document.querySelector('.footer-customer-area-expand');
-const footerCustomerSubMenu = document.querySelector('.footer-customer-area-sub');
-const footerCustomerSpan = document.querySelector('.footer-customer-area-expand>span');
-
-footerCustomerExpand.onclick = function() {
-    if (footerCustomerSubMenu.style.display === '')
-    footerCustomerSubMenu.style.display = 'none';
-
-    if (footerCustomerSubMenu.style.display === 'none') {
-        footerCustomerSubMenu.style.display = 'block';
-        footerCustomerSpan.innerHTML = '❮'
+    };
+    
+    // footer mobile
+    
+    const footerCustomerExpand = document.querySelector('.footer-customer-area-expand');
+    const footerCustomerSubMenu = document.querySelector('.footer-customer-area-sub');
+    const footerCustomerSpan = document.querySelector('.footer-customer-area-expand>span');
+    
+    footerCustomerExpand.onclick = function() {
+        if (footerCustomerSubMenu.style.display === '')
+        footerCustomerSubMenu.style.display = 'none';
+        
+        if (footerCustomerSubMenu.style.display === 'none') {
+            footerCustomerSubMenu.style.display = 'block';
+            footerCustomerSpan.innerHTML = '❮'
+        }
+        else {
+            footerCustomerSubMenu.style.display = 'none'
+            footerCustomerSpan.innerHTML = '❯'
+        }
     }
-    else {
-        footerCustomerSubMenu.style.display = 'none'
-        footerCustomerSpan.innerHTML = '❯'
-    }
-}
-
-const footerPolicyExpand = document.querySelector('.footer-policy-expand');
-const footerPolicySubMenu = document.querySelector('.footer-policy-sub');
-const footerPolicySpan = document.querySelector('.footer-policy-expand>span');
-
-footerPolicyExpand.onclick = function() {
-    if (footerPolicySubMenu.style.display === '')
-    footerPolicySubMenu.style.display = 'none';
-
-    if (footerPolicySubMenu.style.display === 'none') {
+    
+    const footerPolicyExpand = document.querySelector('.footer-policy-expand');
+    const footerPolicySubMenu = document.querySelector('.footer-policy-sub');
+    const footerPolicySpan = document.querySelector('.footer-policy-expand>span');
+    
+    footerPolicyExpand.onclick = function() {
+        if (footerPolicySubMenu.style.display === '')
+        footerPolicySubMenu.style.display = 'none';
+        
+        if (footerPolicySubMenu.style.display === 'none') {
         footerPolicySubMenu.style.display = 'block';
         footerPolicySpan.innerHTML = '❮'
     }
@@ -134,7 +134,7 @@ hamburguerMenu.onclick = () => {
         headerNavigation.style.display = 'none';
         hamburguerMenu.style.position = 'static';
         searchBar.style.display = 'flex';
-
+        
         spanCategorias.innerHTML = '❯';
         subMenu.style.display = 'none';
         spanAcessorios.innerHTML = '❯';
@@ -157,3 +157,21 @@ headerBack.onclick = () => {
         headerBack.style.display = 'none';
     }
 };
+
+// cookie consent bar
+
+const cookieConsentBar = document.querySelector('.cookie-consent-bar');
+const cookieAcept = document.querySelector('.cookie-acept');
+
+if (document.cookie.indexOf('aceptCookies') === -1) {
+    cookieConsentBar.style.display = 'flex';
+}
+
+cookieAcept.onclick = () => {
+    cookieConsentBar.style.display = 'none';
+
+    const dias = 1;
+    const date = new Date();
+    date.setTime(date.getTime() + (dias * 24 * 60 * 60 * 1000));
+    document.cookie = "aceptCookies=" + "true" + "; expires=" + date.toUTCString() + "; path=/";
+}
