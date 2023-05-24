@@ -128,3 +128,38 @@ addQuantity[0].onclick = function() {
 addQuantity[2].onclick = function() {
     addQuantity[1].innerHTML = Number(addQuantity[1].innerHTML) + 1;
 }
+
+// add to cart (cookies)
+
+cookieExpires = (days) => {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    return date.toUTCString();
+}
+
+const addToCart = document.querySelector('.product-add-cart > button');
+addToCart.onclick = () => {
+    const quantity = Number(document.querySelector('.quantity-actual').innerHTML)
+    const name = document.querySelector('.product-name > strong').innerHTML;
+
+    try {
+        const cartProducts = JSON.parse(
+            document.cookie
+                .split(';')
+                .find((cookie) => cookie.indexOf('cartProducts') !== -1)
+                .split('=')[1]
+        );    
+
+        const productIndex = cartProducts.findIndex(product => product.name === name);
+        productIndex === -1 ?
+        cartProducts.push({name, quantity}) :
+        cartProducts[productIndex].quantity += quantity;
+
+        document.cookie = `cartProducts=${JSON.stringify(cartProducts)}; expires=${cookieExpires(1)}; path=/`
+    } catch (err) {
+        console.log('Necessário permitir cookies para navegar corretamente nesta página.')
+    }
+
+
+    // fazer redirect do produto adicionado ao carrinho para a página /carc/
+}

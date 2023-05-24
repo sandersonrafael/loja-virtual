@@ -20,15 +20,15 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .cookie-consent-bar {
     background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     position: fixed;
-    bottom: 15px;
+    bottom: 45px;
     padding: 30px;
     width: (100% - 40px);
     max-width: 1000px;
     margin: 0 auto;
-    right: 10px;
-    left: 10px;
+    right: 30px;
+    left: 30px;
     display: none;
     /* display: flex; */
     justify-content: space-between;
@@ -61,7 +61,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @media (max-width: 800px) {
     .cookie-consent-bar {
-        bottom: 45px;
         font-size: 14px;
         right: 5px;
         left: 5px;
