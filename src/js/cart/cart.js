@@ -33,13 +33,36 @@ const clearCart = () => {
                                 `<p class="cart-product-name"><strong class="cart-product-name-strong">${product.name}</strong></p>` +
                                 `<p class="cart-product-total"><strong class="product-price">${(product.price * jsonCartProducts[i].quantity).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong><small>${product['price-no-discount'] ? (product['price-no-discount'] * jsonCartProducts[i].quantity).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) : ''}</small></p>` +
                                 '<div class="cart-product-quantity">' +
-                                    '<button class="product-quantity-sub">-</button>' +
+                                    `<button class="product-quantity-sub">${jsonCartProducts[i].quantity > 1 ? '-' : '<img src="/src/img/buttons/trash.png" alt="trash button"></img>'}</button>` +
                                     `<span class="product-quantity-actual">${jsonCartProducts[i].quantity}</span>` +
                                     '<button class="product-quantity-add">+</button>' +
                                 '</div>' +
                             '</div>' +
                         '</div>';
                 });
+
+                // total price
+
+                const totalPriceInCart = document.querySelector('.total-price');
+                
+                const totalPrice = addedProducts.reduce((total, product, i) => {
+                    return total += product.price * jsonCartProducts[i].quantity;
+                }, 0);
+
+                totalPriceInCart.innerHTML = totalPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+
+                // total price-no-discount
+
+                const totalPriceNoDiscountInCart = document.querySelector('.total-price-no-discount');
+
+                const totalPriceNoDiscount = addedProducts.reduce((total, product, i) => {
+                    if (!product['price-no-discount']) return total += product.price * jsonCartProducts[i].quantity;
+                    return total += product['price-no-discount'] * jsonCartProducts[i].quantity;
+                },0 );
+
+                totalPriceNoDiscount > totalPrice ?
+                    totalPriceNoDiscountInCart.innerHTML = totalPriceNoDiscount.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) :
+                    totalPriceNoDiscountInCart.innerHTML = '';
             }
             attCart();
 
@@ -51,7 +74,6 @@ const clearCart = () => {
                     if (Number(productQuantities[i].innerHTML) > 0)
                         newStorage.push({ name: productNames[i].innerHTML, quantity: Number(productQuantities[i].innerHTML) });
                 }
-                console.log(newStorage.length, 'Feito!')
                 if (newStorage.length > 0) return localStorage.setItem('cart-products', JSON.stringify(newStorage));
                 localStorage.removeItem('cart-products');
                 clearCart();
