@@ -16,13 +16,13 @@
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
-    background-color: rgb(13, 114, 177);
+    /* background-color: rgb(13, 114, 177); */
     /* height: 300px; */
 }
 
 .cart-products {
-    height: 30px;
     width: 70%;
     background-color: white;
 }
@@ -30,10 +30,12 @@
 .cart-checkout {
     width: calc(25% - 40px);
     max-width: 210px;
+    height: 100%;
     background-color: white;
     text-align: center;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .cart-checkout > * {
@@ -54,6 +56,20 @@
     background-color: rgb(13, 114, 177, 0.9);
 }
 
+
+
+
+.cart-product {
+    display: flex;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding-bottom: 20px;
+}
+
+.cart-product > img {
+    width: 160px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
 
 /* usar display flex collum invertida para o finalizar checkout no mobile 
 e ficar o checkout em cima*/
