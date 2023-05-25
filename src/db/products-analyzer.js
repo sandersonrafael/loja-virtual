@@ -58,7 +58,7 @@ fetch('http://127.0.0.1:5500/src/db/products.json')
         console.log('\nTodas as Marcas:\n');
         const brands = [];
         for (let product of products) {
-            if (brands.indexOf(product.brand) === -1 /* && product.collection === 'pranchas' */) {
+            if (brands.indexOf(product.brand) === -1) {
                 brands.push(product.brand);
                 console.log(product.brand);
             }
