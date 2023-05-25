@@ -158,7 +158,6 @@ headerBack.onclick = () => {
     }
 };
 
-
 // cookies
 
 cookieExpires = (days) => {
@@ -180,7 +179,3 @@ cookieAcept.onclick = () => {
     cookieConsentBar.style.display = 'none';
     document.cookie = "aceptCookies=" + "true" + "; expires=" + cookieExpires(1) + "; path=/";
 }
-
-// cart products cookie
-
-if (document.cookie.indexOf('cartProducts') === -1) document.cookie = `cartProducts=[]; expires=; path=/`;

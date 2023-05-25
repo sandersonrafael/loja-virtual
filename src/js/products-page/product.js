@@ -142,24 +142,16 @@ addToCart.onclick = () => {
     const quantity = Number(document.querySelector('.quantity-actual').innerHTML)
     const name = document.querySelector('.product-name > strong').innerHTML;
 
-    try {
-        const cartProducts = JSON.parse(
-            document.cookie
-                .split(';')
-                .find((cookie) => cookie.indexOf('cartProducts') !== -1)
-                .split('=')[1]
-        );    
+    if (!localStorage.getItem('cart-products')) localStorage.setItem('cart-products', '[]');
 
-        const productIndex = cartProducts.findIndex(product => product.name === name);
-        productIndex === -1 ?
-        cartProducts.push({name, quantity}) :
-        cartProducts[productIndex].quantity += quantity;
+    const cartProducts = JSON.parse(localStorage.getItem('cart-products'));
 
-        document.cookie = `cartProducts=${JSON.stringify(cartProducts)}; expires=${cookieExpires(1)}; path=/`
-    } catch (err) {
-        console.log('Necessário permitir cookies para navegar corretamente nesta página.')
-    }
+    const productIndex = cartProducts.findIndex(product => product.name === name);
 
+    productIndex === -1 ?
+    cartProducts.push({name, quantity}) :
+    cartProducts[productIndex].quantity += quantity;
 
-    // fazer redirect do produto adicionado ao carrinho para a página /carc/
+    localStorage.setItem('cart-products', JSON.stringify(cartProducts));
 }
+// fazer redirect do produto adicionado ao carrinho para a página /cart/
