@@ -107,8 +107,6 @@
     width: 18px;
 }
 
-/* Fazer menu expansível para versão mobile 400px */
-
 @media (max-width: 800px) {
     .footer-top {
         display: grid;
