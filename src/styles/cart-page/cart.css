@@ -1,0 +1,59 @@
+.container {
+    min-height: 40vh;
+    margin: 30px auto;
+}
+
+.container > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cart-general {
+    width: calc(100% - 60px);
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgb(13, 114, 177);
+    /* height: 300px; */
+}
+
+.cart-products {
+    height: 30px;
+    width: 70%;
+    background-color: white;
+}
+
+.cart-checkout {
+    width: calc(25% - 40px);
+    max-width: 210px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cart-checkout > * {
+    margin: 5px auto;
+}
+.cart-checkout > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(13, 114, 177);
+}
+
+.cart-checkout > a:hover {
+    background-color: rgb(13, 114, 177, 0.9);
+}
+
+
+/* usar display flex collum invertida para o finalizar checkout no mobile 
+e ficar o checkout em cima*/
