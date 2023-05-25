@@ -153,5 +153,5 @@ addToCart.onclick = () => {
     cartProducts[productIndex].quantity += quantity;
 
     localStorage.setItem('cart-products', JSON.stringify(cartProducts));
+    window.location.href = '/cart/';
 }
-// fazer redirect do produto adicionado ao carrinho para a página /cart/
