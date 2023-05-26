@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SK8 Lifestyle</title>
+    <title>Em Promoção | SK8 Lifestyle</title>
     <link rel="shortcut icon" href="/src/img/brand/favicon.png" type="image/png">
     <link rel="stylesheet" href="/src/styles/all-pages/global.css">
     <link rel="stylesheet" href="/src/styles/all-pages/header.css">
     <link rel="stylesheet" href="/src/styles/all-pages/footer.css">
     <script src="/src/js/index.js" defer></script>
 
-    <link rel="stylesheet" href="/src/styles/pages/style.css">
-    <script src="/src/js/pages/index.js"></script>
+    <link rel="stylesheet" href="/src/styles/on-sale-page/on-sale.css">
+    <script src="/src/js/on-sale-page/on-sale.js" defer></script>
 </head>
 
 <body class="body">
@@ -89,8 +89,26 @@
     </header>
 
     <main class="container">
-        <h1 class="page-title"></h1>
-        <div class="page-content"></div>
+        <h1>Produtos em Promoção</h1>
+
+        <section class="on-sale-results">
+            <div class="on-sale-sort">
+                <p>Ordenar por: </p>
+                <select class="sort-products-by" name="sort-products-by">
+                    <option value="olders">Mais antigos</option>
+                    <option value="latests">Mais recentes</option>
+                    <option value="a-to-z">Nome: A a Z</option>
+                    <option value="z-to-a">Nome: Z a A</option>
+                    <option value="ascending">Preço: crescente</option>
+                    <option value="descending">Preço: decrescente</option>
+                </select>
+            </div>
+
+            <div class="on-sale-products"></div>
+
+            <div class="on-sale-pages"></div>
+        </section>
+
     </main>
 
     <footer class="footer">

@@ -90,4 +90,4 @@ fetch('/src/db/products.json')
             if (pageButtons.length > 0) pageButtons[0].onclick();
         }
     })
-    .catch(err => console.log(err, 'Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'));
+    .catch(err => console.log('Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'));

@@ -6,7 +6,7 @@ const clearCart = () => {
     cartGeneral.innerHTML =
         '<p>Parece que ainda não há nenhum produto no seu carrinho...</p>' +
         '<p>Temos uma imensa variedade de produtos para os mais diversos gostos e estilos.</p>' +
-        '<a href="/collections/?collection=all">Ver produtos...</a>'
+        '<a href="/collections/?collection=all">Ver produtos...</a>';
 }
 
 !cartProducts ?
@@ -77,6 +77,7 @@ const clearCart = () => {
                 if (newStorage.length > 0) return localStorage.setItem('cart-products', JSON.stringify(newStorage));
                 localStorage.removeItem('cart-products');
                 clearCart();
+                window.scrollTo({top: 70, behavior: 'smooth'});
             }
 
             const changeQuantity = () => {
@@ -101,4 +102,4 @@ const clearCart = () => {
             }
             changeQuantity();
         })
-        .catch(err => console.log(err, 'Falha na conexão...'));
+        .catch(err => console.log('Falha na conexão...'));
