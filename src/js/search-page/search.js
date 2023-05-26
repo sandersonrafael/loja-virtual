@@ -7,7 +7,7 @@ fetch('/src/db/products.json')
         // search result = 0
 
         if (searchResult.length === 0) return document.querySelector('.container').innerHTML =
-        '<h1>Nenhum produto encontrado</h1><p>Verifique se digitou o nome do produto corretamente e busque novamente.</p><form action="/search/" class="search-again"><input type="text" name="search" class="search-again-input" placeholder="Qual produto você deseja?"><button class="search-again-button"><img src="/src/img/buttons/search.png" alt="Pesquisar"></button></form>';
+        '<h1>Nenhum produto encontrado</h1><p>Verifique se digitou o nome do produto corretamente e busque novamente.</p><form action="/search/" class="search-again"><input type="text" name="search" class="search-again-input" placeholder="Qual produto você deseja?" required><button class="search-again-button"><img src="/src/img/buttons/search.png" alt="Pesquisar"></button></form>';
 
         // load all products that matches with search
 
