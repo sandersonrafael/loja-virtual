@@ -27,7 +27,6 @@ const clearCart = () => {
 
                 cartProductsDiv.innerHTML = '<button class="clear-cart">Limpar carrinho</button>';
 
-
                 addedProducts.forEach((product, i) => {
                     cartProductsDiv.innerHTML +=
                         '<div class="cart-product">' +

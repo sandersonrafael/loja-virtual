@@ -27,7 +27,7 @@
 
 .product-container {
     width: calc(100vw - 40px);
-    margin: 40px auto;
+    margin: 40px auto 0;
 }
 
 .product-general {
@@ -387,6 +387,7 @@
 .product-shipping,
 .product-guarantee {
     display: none;
+    margin-bottom: 0;
 }
 
 #description:checked~.product-description,
@@ -431,7 +432,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .product-general>div {
         min-width: 100%;
     }
