@@ -154,13 +154,15 @@ addToCart.onclick = () => {
 
     localStorage.setItem('cart-products', JSON.stringify(cartProducts));
     const added = document.querySelector('.product-added-to-cart');
+
+    attHeaderCart();
     
     window.scrollTo({top: 0, behavior: "smooth"});
     added.style = 'width: 260px; height: 100px;';
     setTimeout(() => added.innerHTML = `<p><strong>${name}</strong> adicionado ao carrinho...</p><p><strong>Quantidade</strong>: ${quantity}</p>`, 700);
     setTimeout(() => {
         added.innerHTML = '';
-        added.style = 'width: 0; height: 0;'
+        added.style = 'transition: none; width: 0; height: 0;'
         window.location.href = '/cart/';
-    }, 2500)
+    }, 2100);
 }

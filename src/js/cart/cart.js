@@ -16,6 +16,8 @@ const clearCart = () => {
         .then(products => {
 
             const attCart = () => {
+                attHeaderCart();
+
                 const addedProducts = [];
                 const cartProducts = localStorage.getItem('cart-products');
                 if (!cartProducts) return;

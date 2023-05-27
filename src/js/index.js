@@ -158,6 +158,16 @@ headerBack.onclick = () => {
     }
 };
 
+// header cart number of products
+const attHeaderCart = () => {
+    const onCartQuantity = document.querySelector('.header-cart span span');
+    const cartProducts = localStorage.getItem('cart-products');
+    const sumQuantity = () => JSON.parse(cartProducts).reduce((sum, product) => sum += product.quantity, 0);
+    onCartQuantity.innerHTML = cartProducts ? sumQuantity() : 0;
+    onCartQuantity.style.color = cartProducts ? '#DE560B' : '';
+}
+attHeaderCart();
+
 // cookies
 
 cookieExpires = (days) => {
