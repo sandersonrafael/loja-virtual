@@ -30,7 +30,7 @@ const clearCart = () => {
                         '<div class="cart-product">' +
                             `<a href="${product.url}"><img src="${product['main-img']}" alt="${product.name}"></a>` +
                             '<div class="cart-product-infos">' +
-                                `<p class="cart-product-name"><strong class="cart-product-name-strong">${product.name}</strong></p>` +
+                                `<p class="cart-product-name"><a href="${product.url}"><strong class="cart-product-name-strong">${product.name}</strong></a></p>` +
                                 `<p class="cart-product-total"><strong class="product-price">${(product.price * jsonCartProducts[i].quantity).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</strong><small>${product['price-no-discount'] ? (product['price-no-discount'] * jsonCartProducts[i].quantity).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) : ''}</small></p>` +
                                 '<div class="cart-product-quantity">' +
                                     `<button class="product-quantity-sub">${jsonCartProducts[i].quantity > 1 ? '-' : '<img src="/src/img/buttons/trash.png" alt="trash button"></img>'}</button>` +
