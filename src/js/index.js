@@ -196,21 +196,52 @@ cookieAcept.onclick = () => {
 if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json')
     .then(res => res.json())
     .then(products => {
+        // get products indexes randomly
+
+        const randomIndexesNoRepeat = (indexesQuantity, max, min = 0) => {
+            if (max - min < indexesQuantity) return 'Intervalo menor que a quantidade de índices solitada';
+
+            const random = () => Math.round(Math.random() * (max - min) + min);
+            const randomIndexesArray = [];
+
+            const pushIndexes = () => {
+                if (randomIndexesArray.length === indexesQuantity) return;
+
+                const tryIndex = random();
+                const testValue = randomIndexesArray.reduce((booleanValue, actualValue) => {
+                    return booleanValue = booleanValue && tryIndex !== actualValue;
+                }, true);
+
+                if (testValue) {
+                    randomIndexesArray.push(tryIndex);
+                    pushIndexes();
+                } else pushIndexes();
+            }
+            pushIndexes();
+
+            return randomIndexesArray;
+        };
+
+        // write suggestion html
+
         const getSuggestions = (productsArray, suggestionElement, name, url) => {
             const getItens = () => {
-                let item = '';
-                for (let i = 0; i <= 2; i++) {
-                    item += 
+                const randomProducts = randomIndexesNoRepeat(3, productsArray.length - 1)
+                    .map((randomIndex) => productsArray[randomIndex]);
+
+                let itens = '';
+                for (let i in randomProducts) {
+                    itens += 
                         '<div class="suggestion-item">' +
-                            `<a href="${productsArray[i].url}"><img src="${productsArray[i]['main-img']}" alt="${productsArray[i].name}"></a>` +
-                            `<h2><a href="${productsArray[i].url}">${productsArray[i].name}</a></h2>` +
+                            `<a href="${randomProducts[i].url}"><img src="${randomProducts[i]['main-img']}" alt="${randomProducts[i].name}"></a>` +
+                            `<h2><a href="${randomProducts[i].url}">${randomProducts[i].name}</a></h2>` +
                             '<p>' +
-                                `<strong>${productsArray[i].price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong>` +
-                                `<small>${productsArray[i]['price-no-discount'] && productsArray[i]['price-no-discount'] > productsArray[i].price ? ' ' + productsArray[i]['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) : ''}</small>` +
+                                `<strong>${randomProducts[i].price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong>` +
+                                `<small>${randomProducts[i]['price-no-discount'] && randomProducts[i]['price-no-discount'] > randomProducts[i].price ? ' ' + randomProducts[i]['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) : ''}</small>` +
                             '</p>' +
                         '</div>';
                 }
-                return item;
+                return itens;
             };
             suggestionElement.innerHTML = 
                 `<h1>${name}</h1>` +
@@ -225,7 +256,7 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
 
         const onSaleElement = document.querySelector('.on-sale-suggestion');
         if (onSaleElement) {
-            const onSaleProducts = products.filter(product => product['price-no-discount'] && product['price-no-discount'] > product.price );
+            const onSaleProducts = products.filter(product => product['price-no-discount'] && product['price-no-discount'] > product.price);
             const onSaleCollectionName = 'Produtos em Promoção';
             const onSaleUrl = '/on-sale/';
             getSuggestions(onSaleProducts, onSaleElement, onSaleCollectionName, onSaleUrl);
