@@ -153,5 +153,14 @@ addToCart.onclick = () => {
     cartProducts[productIndex].quantity += quantity;
 
     localStorage.setItem('cart-products', JSON.stringify(cartProducts));
-    window.location.href = '/cart/';
+    const added = document.querySelector('.product-added-to-cart');
+    
+    window.scrollTo({top: 0, behavior: "smooth"});
+    added.style = 'width: 260px; height: 100px;';
+    setTimeout(() => added.innerHTML = `<p><strong>${name}</strong> adicionado ao carrinho...</p><p><strong>Quantidade</strong>: ${quantity}</p>`, 700);
+    setTimeout(() => {
+        added.innerHTML = '';
+        added.style = 'width: 0; height: 0;'
+        window.location.href = '/cart/';
+    }, 2500)
 }
