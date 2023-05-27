@@ -159,6 +159,7 @@ headerBack.onclick = () => {
 };
 
 // header cart number of products
+
 const attHeaderCart = () => {
     const onCartQuantity = document.querySelector('.header-cart span span');
     const cartProducts = localStorage.getItem('cart-products');
@@ -189,3 +190,45 @@ cookieAcept.onclick = () => {
     cookieConsentBar.style.display = 'none';
     document.cookie = "aceptCookies=" + "true" + "; expires=" + cookieExpires(1) + "; path=/";
 }
+
+// get suggestions
+
+if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json')
+    .then(res => res.json())
+    .then(products => {
+        const getSuggestions = (productsArray, suggestionElement, name, url) => {
+            const getItens = () => {
+                let item = '';
+                for (let i = 0; i <= 2; i++) {
+                    item += 
+                        '<div class="suggestion-item">' +
+                            `<a href="${productsArray[i].url}"><img src="${productsArray[i]['main-img']}" alt="${productsArray[i].name}"></a>` +
+                            `<h2><a href="${productsArray[i].url}">${productsArray[i].name}</a></h2>` +
+                            '<p>' +
+                                `<strong>${productsArray[i].price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong>` +
+                                `<small>${productsArray[i]['price-no-discount'] && productsArray[i]['price-no-discount'] > productsArray[i].price ? ' ' + productsArray[i]['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) : ''}</small>` +
+                            '</p>' +
+                        '</div>';
+                }
+                return item;
+            };
+            suggestionElement.innerHTML = 
+                `<h1>${name}</h1>` +
+                '<div class="suggestion-contents">' +
+                    getItens() +
+                    '<div class="suggestion-item">' +
+                        `<a href="${url}">Ver Todos os ${name}...</a>` +
+                    '</div>';
+        };
+
+        // get on sale suggestion
+
+        const onSaleElement = document.querySelector('.on-sale-suggestion');
+        if (onSaleElement) {
+            const onSaleProducts = products.filter(product => product['price-no-discount'] && product['price-no-discount'] > product.price );
+            const onSaleCollectionName = 'Produtos em Promoção';
+            const onSaleUrl = '/on-sale/';
+            getSuggestions(onSaleProducts, onSaleElement, onSaleCollectionName, onSaleUrl);
+        }
+    })
+    .catch(err => console.log('Falha na conexão... Necessário habilitar o JavaScript para acessar o conteúdo completo do site.'));
