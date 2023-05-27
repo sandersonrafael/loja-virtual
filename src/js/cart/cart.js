@@ -25,7 +25,8 @@ const clearCart = () => {
 
                 for (let cartProduct of jsonCartProducts) addedProducts.push(products.find(product => product.name === cartProduct.name));
 
-                cartProductsDiv.innerHTML = '';
+                cartProductsDiv.innerHTML = '<button class="clear-cart">Limpar carrinho</button>';
+
 
                 addedProducts.forEach((product, i) => {
                     cartProductsDiv.innerHTML +=
@@ -42,6 +43,11 @@ const clearCart = () => {
                             '</div>' +
                         '</div>';
                 });
+                document.querySelector('.clear-cart').onclick = () => {
+                    localStorage.removeItem('cart-products');
+                    attHeaderCart();
+                    clearCart();
+                }
 
                 // total price
 
