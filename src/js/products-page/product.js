@@ -83,13 +83,6 @@ const loadProduct = () => fetch('/src/db/products.json')
             allPaymentsTimes[i].innerHTML = (product.price * taxMercadoPago[i] / (Number(i) + 1)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
         }
 
-        // product color
-
-        /*
-        preencher com código que relaciona imagem e url, exibindo na main img a cor selecionada,
-        pegando também a key do object e usando como element.style['background-color'] = `${object.key}`
-        */
-
         // product description
 
         const productDescription = document.querySelector('.product-description');
@@ -129,13 +122,7 @@ addQuantity[2].onclick = function() {
     addQuantity[1].innerHTML = Number(addQuantity[1].innerHTML) + 1;
 }
 
-// add to cart (cookies)
-
-cookieExpires = (days) => {
-    const date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    return date.toUTCString();
-}
+// add to cart (localStorage)
 
 const addToCart = document.querySelector('.product-add-cart > button');
 addToCart.onclick = () => {

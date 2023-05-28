@@ -262,7 +262,7 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
             getSuggestions(onSaleProducts, onSaleElement, onSaleCollectionName, onSaleUrl);
         };
 
-        // get on sale suggestion
+        // get skates suggestion
 
         const skatesElement = document.querySelector('.skates-suggestion');
         if (skatesElement) {
