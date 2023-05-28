@@ -222,7 +222,7 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
             return randomIndexesArray;
         };
 
-        // write suggestion html
+        // write suggestions htmls
 
         const getSuggestions = (productsArray, suggestionElement, name, url) => {
             const getItens = () => {
@@ -244,7 +244,7 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
                 return itens;
             };
             suggestionElement.innerHTML = 
-                `<h1>${name}</h1>` +
+                `<h1>Confira Nossos ${name}</h1>` +
                 '<div class="suggestion-contents">' +
                     getItens() +
                     '<div class="suggestion-item">' +
@@ -260,6 +260,16 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
             const onSaleCollectionName = 'Produtos em Promoção';
             const onSaleUrl = '/on-sale/';
             getSuggestions(onSaleProducts, onSaleElement, onSaleCollectionName, onSaleUrl);
+        };
+
+        // get on sale suggestion
+
+        const skatesElement = document.querySelector('.skates-suggestion');
+        if (skatesElement) {
+            const skatesProducts = products.filter(product => product.collection === 'skates');
+            const skatesCollectionName = 'Skates';
+            const skatesUrl = '/collections/?collection=skates';
+            getSuggestions(skatesProducts, skatesElement, skatesCollectionName, skatesUrl);
         }
     })
     .catch(err => console.log('Falha na conexão... Necessário habilitar o JavaScript para acessar o conteúdo completo do site.'));
