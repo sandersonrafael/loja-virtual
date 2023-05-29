@@ -13,7 +13,7 @@
 #banner-1:checked~div>#banner-label-1,
 #banner-2:checked~div>#banner-label-2,
 #banner-3:checked~div>#banner-label-3 {
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(0, 0, 0);
 }
 
 #banner-2:checked~.banners>.banner-images {
@@ -64,8 +64,8 @@
     border-radius: 50%;
     width: 12px;
     height: 12px;
-    border: 3px solid rgb(100, 100, 100);
-    box-shadow: 0 0 15px rgba(222, 85, 11, 0.5);
+    border: 3px solid rgb(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 
