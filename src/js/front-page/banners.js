@@ -25,3 +25,9 @@ nextBanner.onclick = () => {
     else if (selectedBanner[2].checked === true) selectedBanner[0].checked = true;
     return bannerSlide();
 };
+
+const bannerLabels = document.querySelectorAll('.banner-labels > label');
+for (let i in bannerLabels) bannerLabels[i].onclick = () => {
+    clearInterval(slideInterval);
+    bannerSlide();
+}
