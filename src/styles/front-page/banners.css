@@ -72,44 +72,37 @@
 .banner-previous,
 .banner-next  {
     position: absolute;
-    width: 6%;
-    height: 18%;
+    width: 12%;
     border: none;
     outline: none;
-    background-color: rgb(182, 182, 182, .4);
-    border-radius: 8px;
+    background-color: transparent;
     cursor: pointer;
-    color: rgb(255, 255, 255, .5);
-    box-shadow: 0 0 10px rgba(222, 85, 11, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .banner-previous>img,
 .banner-next>img {
-    width: 100%;
+    width: 60%;
 } 
 
 .banner-previous:hover,
 .banner-next:hover {
-    background-color: rgb(182, 182, 182, .6);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .banner-previous:active,
 .banner-next:active {
-    background-color: rgb(182, 182, 182, .4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner-previous {
-    top:50%;
-    left: 13px;
-    transform: translateY(50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
     rotate: 180deg;
 }
 
 .banner-next {
-    top: 50%;
-    right: 13px;
-    transform: translateY(-50%);
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
