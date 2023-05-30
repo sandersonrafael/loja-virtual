@@ -30,3 +30,15 @@ for (let i in bannerLabels) bannerLabels[i].onclick = () => {
     clearInterval(slideInterval);
     bannerSlide();
 };
+
+// responsive banner images
+
+const bannerImages = document.querySelectorAll('.banner-images a img');
+
+const checkBannerImgDevice = () => {
+    if (window.innerWidth <= 768) for (let img of bannerImages) img.src = img.src.replace('desktop', 'mobile');
+    else if (window.innerWidth > 768) for (let img of bannerImages) img.src = img.src.replace('mobile', 'desktop');
+}
+checkBannerImgDevice();
+
+window.onresize = () => checkBannerImgDevice();

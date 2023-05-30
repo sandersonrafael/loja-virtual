@@ -49,9 +49,9 @@
     width: 100%;
 }
 
-.banner-mobile {
+/* .banner-mobile {
     display: none;
-}
+} */
 
 .banner-labels {
     position: absolute;
@@ -126,11 +126,11 @@
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .banner-desktop {
         display: none;
     }
     .banner-mobile {
         display: block;
     }
-}
+} */
