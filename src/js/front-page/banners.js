@@ -5,7 +5,7 @@ const nextBanner = () => {
     else if (selectedBanner[1].checked === true) selectedBanner[2].checked = true;
     else if (selectedBanner[2].checked === true) selectedBanner[0].checked = true;
 };
-const bannerSlide = () => slideInterval = setInterval(nextBanner, 4000);
+const bannerSlide = () => slideInterval = setInterval(nextBanner, 5000);
 bannerSlide();
 
 const previousBannerButton = document.querySelector('.banner-previous');
