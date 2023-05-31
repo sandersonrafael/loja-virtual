@@ -46,6 +46,7 @@
 .product-main-img {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .product-main-img>img {
@@ -53,7 +54,30 @@
     max-width: 450px;
     height: 100%;
     max-height: 450px;
-    border-radius: 4px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-wishlist {
+    position: absolute;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    max-height: 450px;
+}
+
+.add-to-wishlist button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 60px;
+    cursor: pointer;
+    color: rgba(255, 255, 255);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .product-aditional-imgs {

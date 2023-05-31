@@ -161,7 +161,8 @@ input::-webkit-inner-spin-button {
 
 .product-img {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .product-price {

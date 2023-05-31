@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="/src/styles/all-pages/footer.css">
     <script src="/src/js/index.js" defer></script>
 
-    <link rel="stylesheet" href="/src/styles/front-page/banners.css">
-    <script src="/src/js/front-page/banners.js" defer></script>
+    <link rel="stylesheet" href="/src/styles/wishlist/style.css">
+    <script src="/src/js/whishlist/wishlist.js" defer></script>
 </head>
 
 <body class="body">
@@ -88,34 +88,14 @@
 
     </header>
 
-    <section class="banners-container">
-        <input type="radio" name="banners" id="banner-1" checked>
-        <input type="radio" name="banners" id="banner-2">
-        <input type="radio" name="banners" id="banner-3">
-        <div class="banners">
-            <div class="banner-images">
-                <a href="/collections/?collection=skates" class="banner-1">
-                    <img src="/src/img/banners/banner-1-desktop.jpg" alt="Skates em Promoção Com Frete Grátis e Até 30% De Desconto.">
-                </a>
-                <a href="/collections/?collection=lixas">
-                    <img src="/src/img/banners/banner-2-desktop.jpg" alt="Lixas de Skate. Vários Modelos em Oferta.">
-                </a>
-                <span>
-                    <img src="/src/img/banners/banner-3-desktop.jpg" alt="SK8 Lifestyle, A Loja Do Skatista Brasileiro.">
-                </span>
-            </div>
-        </div>
-        <div class="banner-labels">
-            <label for="banner-1" id="banner-label-1" aria-label="Botão para a primeira imagem"></label>
-            <label for="banner-2" id="banner-label-2" aria-label="Botão para a segunda imagem"></label>
-            <label for="banner-3" id="banner-label-3" aria-label="Botão para a terceira imagem"></label>
-        </div>
-        <button class="banner-previous"><img src="/src/img/buttons/seta.png" alt="Slide Anterior"></button>
-        <button class="banner-next"><img src="/src/img/buttons/seta.png" alt="Slide Seguinte"></button>
-    </section>
+    <main class="container">
+        <h1>Lista de Desejos</h1>
+        <section class="wishlist-products"></section>
+        <div class="wishlist-pages"></div>
+    </main>
 
-    <aside class="on-sale-suggestion products-suggestion"></aside>
-    <aside class="skates-suggestion products-suggestion"></aside>
+    <!-- <aside class="on-sale-suggestion products-suggestion"></aside>
+    <aside class="skates-suggestion products-suggestion"></aside> -->
 
     <footer class="footer">
         <div class="footer-top">

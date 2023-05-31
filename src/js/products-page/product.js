@@ -23,7 +23,37 @@ const loadProduct = () => fetch('/src/db/products.json')
         const mainImg = document.querySelector('.product-main-img');
         const aditionalImgs = document.querySelectorAll('.product-aditional-img');
 
-        mainImg.innerHTML = `<img src="${product['main-img']}" alt="${product.name}">`;
+        mainImg.innerHTML = `<img src="${product['main-img']}" alt="${product.name}"><div class="add-to-wishlist"><button>♥</button></div>`;
+
+        const wishlistButton = document.querySelector('.add-to-wishlist button');
+
+        const checkWishlist = () => localStorage.getItem('wishlistProducts') ? 
+            localStorage.getItem('wishlistProducts').indexOf(urlParam) !== -1 ?
+            wishlistButton.style.color = '#DE560B' :
+            wishlistButton.style.color = 'white' :
+            wishlistButton.style.color = 'white';
+        checkWishlist();
+
+        wishlistButton.onclick = () => {
+            const wishlist = localStorage.getItem('wishlistProducts');
+            const objWishlist = wishlist ? JSON.parse(wishlist) : '[]';
+
+            if (!wishlist) {
+                localStorage.setItem('wishlistProducts', `["${urlParam}"]`);
+                return checkWishlist();
+            }
+            if (wishlist.indexOf(urlParam) === -1) {
+                objWishlist.push(urlParam);
+                localStorage.setItem('wishlistProducts', JSON.stringify(objWishlist));
+                return checkWishlist();
+            } else {
+                for (let i in objWishlist) if (objWishlist[i] === urlParam) objWishlist.splice(i, 1);
+                objWishlist.length === 0 ?
+                    localStorage.removeItem('wishlistProducts') :
+                    localStorage.setItem('wishlistProducts', JSON.stringify(objWishlist));
+                return checkWishlist();
+            }
+        };
 
         if (product['aditional-imgs'].length > 0) {
 

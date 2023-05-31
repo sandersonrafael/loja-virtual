@@ -30,7 +30,7 @@ fetch('/src/db/products.json')
             for (let i = (actualPage - 1) * 12; i < lastPage; i++) {
                 const productPrice = collection[i].price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
                 const productPriceNoDiscount = collection[i]['price-no-discount'] ? collection[i]['price-no-discount'].toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) : '';
-                collectionProducts.innerHTML += `<div class="collection-product"><a class="product-url" href="${collection[i].url}"><img class="product-img" src="${collection[i]['main-img']}" alt="${collection[i].name}"></a><div class="product-infos"><p class="product-name">${collection[i].name}</p><span class="product-price"><strong class="product-real-price">${productPrice}</strong><small class="product-price-no-discount">${productPriceNoDiscount}</small></span></div></div>`;
+                collectionProducts.innerHTML += `<div class="collection-product"><a class="product-url" href="${collection[i].url}"><img class="product-img" src="${collection[i]['main-img']}" alt="${collection[i].name}"></a><div class="product-infos"><a class="product-name" href="${collection[i].url}">${collection[i].name}</a><span class="product-price"><strong class="product-real-price">${productPrice}</strong><small class="product-price-no-discount">${productPriceNoDiscount}</small></span></div></div>`;
             }
         }
         loadProducts();

@@ -49,7 +49,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .suggestion-item img {
     width: 100%;
-    border-radius: 6px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .suggestion-item h2 {
