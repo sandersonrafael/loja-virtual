@@ -33,7 +33,7 @@ for (let i in bannerLabels) bannerLabels[i].onclick = () => {
 
 // responsive banner images
 
-const bannerImages = document.querySelectorAll('.banner-images a img');
+const bannerImages = document.querySelectorAll('.banner-images * img');
 
 const checkBannerImgDevice = () => {
     if (window.innerWidth <= 768) for (let img of bannerImages) img.src = img.src.replace('desktop', 'mobile');
