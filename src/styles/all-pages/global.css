@@ -41,7 +41,28 @@ input[type="search"]::-webkit-search-cancel-button {
 .suggestion-item {
     width: 90%;
     margin: 0 auto;
+    position: relative;
 }
+
+.suggestion-item > button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 48px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 6px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.suggestion-item > button > img {
+    width: 100%;
+    border-radius: none;
+    box-shadow: none;
+}
+
 
 .suggestion-item * {
     margin-bottom: 7px;

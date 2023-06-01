@@ -7,7 +7,14 @@ fetch('/src/db/products.json')
         // search result = 0
 
         if (searchResult.length === 0) return document.querySelector('.container').innerHTML =
-        '<h1>Nenhum produto encontrado</h1><p>Verifique se digitou o nome do produto corretamente e busque novamente.</p><form action="/search/" class="search-again"><input type="text" name="search" class="search-again-input" placeholder="Qual produto você deseja?" required><button class="search-again-button"><img src="/src/img/buttons/search.png" alt="Pesquisar"></button></form>';
+            '<h1>Nenhum produto encontrado</h1>' +
+            '<p>Verifique se digitou o nome do produto corretamente e busque novamente.</p>' +
+            '<form action="/search/" class="search-again">' +
+                '<input type="text" name="search" class="search-again-input" placeholder="Qual produto você deseja?" required>' +
+                '<button class="search-again-button">' +
+                '<img src="/src/img/buttons/search.png" alt="Pesquisar">' +
+                '</button>' +
+            '</form>';
 
         // load all products that matches with search
 
@@ -18,6 +25,7 @@ fetch('/src/db/products.json')
         let actualPage = 1;
 
         const loadProducts = () => {
+            const wishlist = localStorage.getItem('wishlistProducts') || '[]';
             searchProducts.innerHTML = '';
 
             const lastPage = actualPage <= Math.floor(searchResult.length / 12) ? (actualPage * 12) : ((actualPage - 1) * 12) + searchResult.length % 12;
@@ -25,8 +33,43 @@ fetch('/src/db/products.json')
             for (let i = (actualPage - 1) * 12; i < lastPage; i++) {
                 const productPrice = searchResult[i].price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
                 const productPriceNoDiscount = searchResult[i]['price-no-discount'] ? searchResult[i]['price-no-discount'].toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) : '';
-                searchProducts.innerHTML += `<div class="search-product"><a class="product-url" href="${searchResult[i].url}"><img class="product-img" src="${searchResult[i]['main-img']}" alt="${searchResult[i].name}"></a><div class="product-infos"><a class="product-name" href="${searchResult[i].url}">${searchResult[i].name}</a><span class="product-price"><strong class="product-real-price">${productPrice}</strong><small class="product-price-no-discount">${productPriceNoDiscount}</small></span></div></div>`;
+                searchProducts.innerHTML +=
+                    '<div class="search-product">' +
+                        `<a class="product-url" href="${searchResult[i].url}">` +
+                            `<img class="product-img" src="${searchResult[i]['main-img']}" alt="${searchResult[i].name}">` +
+                        '</a>' +
+                        '<div class="product-infos">' +
+                            `<a class="product-name" href="${searchResult[i].url}">${searchResult[i].name}</a>` +
+                            '<span class="product-price">' +
+                            `<strong class="product-real-price">${productPrice}</strong>` +
+                            `<small class="product-price-no-discount">${productPriceNoDiscount}</small>` +
+                            '</span>' +
+                        '</div>' +
+                        `<button data-urlparam="${searchResult[i]['url-param']}">` +
+                            `<img src="/src/img/buttons/heart-${wishlist.indexOf(searchResult[i]['url-param']) !== -1 ? 'orange' : 'white'}.png">` +
+                        '</button>' +
+                    '</div>';
             }
+
+            const heartButtons = document.querySelectorAll('.search-product button');
+            for (let button of heartButtons) button.onclick = function () {
+                const productUrlParam = this.dataset.urlparam;
+                const arrayWishlist = JSON.parse(wishlist);
+
+                if (arrayWishlist.indexOf(productUrlParam) === -1) {
+                    arrayWishlist.push(productUrlParam);
+                    localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
+                    return loadProducts();
+                }
+
+                if (arrayWishlist.length === 1) {
+                    localStorage.removeItem('wishlistProducts');
+                } else {
+                    for (let i in arrayWishlist) if (arrayWishlist[i] === productUrlParam) arrayWishlist.splice(i, 1);
+                    localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
+                }
+                return loadProducts();
+            };
         }
         loadProducts();
 

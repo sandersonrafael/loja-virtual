@@ -48,25 +48,24 @@ fetch('/src/db/products.json')
                         '</button>' +
                     '</div>';
             }
+
             const heartButtons = document.querySelectorAll('.collection-product button');
             for (let button of heartButtons) button.onclick = function () {
                 const productUrlParam = this.dataset.urlparam;
                 const arrayWishlist = JSON.parse(wishlist);
-                const testIndex = arrayWishlist.indexOf(productUrlParam) === -1;
 
-                if (testIndex) {
+                if (arrayWishlist.indexOf(productUrlParam) === -1) {
                     arrayWishlist.push(productUrlParam);
                     localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
                     return loadProducts();
                 }
 
-                if (!testIndex && arrayWishlist.length === 1) {
+                if (arrayWishlist.length === 1) {
                     localStorage.removeItem('wishlistProducts');
                 } else {
                     for (let i in arrayWishlist) if (arrayWishlist[i] === productUrlParam) arrayWishlist.splice(i, 1);
                     localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
                 }
-
                 return loadProducts();
             };
         }
@@ -192,4 +191,4 @@ fetch('/src/db/products.json')
             if (pageButtons.length > 0) pageButtons[0].onclick();
         }
     })
-    .catch(err => console.log(err, 'Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'));
+    .catch(err => console.log('Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'));

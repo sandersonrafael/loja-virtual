@@ -225,11 +225,13 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
         // write suggestions htmls
 
         const getSuggestions = (productsArray, suggestionElement, name, url) => {
+            const wishlist = localStorage.getItem('wishlistProducts') || '[]';
             const getItens = () => {
                 const randomProducts = randomIndexesNoRepeat(3, productsArray.length - 1)
                     .map((randomIndex) => productsArray[randomIndex]);
 
                 let itens = '';
+
                 for (let i in randomProducts) {
                     itens += 
                         '<div class="suggestion-item">' +
@@ -239,6 +241,9 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
                                 `<strong>${randomProducts[i].price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong>` +
                                 `<small>${randomProducts[i]['price-no-discount'] && randomProducts[i]['price-no-discount'] > randomProducts[i].price ? ' ' + randomProducts[i]['price-no-discount'].toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) : ''}</small>` +
                             '</p>' +
+                            `<button data-urlparam="${randomProducts[i]['url-param']}">` +
+                                `<img src="/src/img/buttons/heart-${wishlist.indexOf(randomProducts[i]['url-param']) !== -1 ? 'orange' : 'white'}.png">` +
+                            '</button>' +
                         '</div>';
                 }
                 return itens;
@@ -249,7 +254,8 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
                     getItens() +
                     '<div class="suggestion-item">' +
                         `<a href="${url}">Ver Todos os ${name}...</a>` +
-                    '</div>';
+                    '</div>' +
+                '</div>';
         };
 
         // get on sale suggestion
@@ -270,6 +276,30 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
             const skatesCollectionName = 'Skates';
             const skatesUrl = '/collections/?collection=skates';
             getSuggestions(skatesProducts, skatesElement, skatesCollectionName, skatesUrl);
+        }
+
+        // set wishlist buttons and heart images
+
+        const heartButtons = document.querySelectorAll('.suggestion-item > button');
+        const heartImgs = document.querySelectorAll('.suggestion-item > button > img');
+
+        for (let i in heartButtons) heartButtons[i].onclick = () => {
+            const productUrlParam = heartButtons[i].dataset.urlparam;
+            const arrayWishlist = JSON.parse(localStorage.getItem('wishlistProducts') || '[]');
+            const indexOfProduct = arrayWishlist.indexOf(productUrlParam);
+
+            if (indexOfProduct === -1) {
+                heartImgs[i].src = '/src/img/buttons/heart-orange.png';
+                arrayWishlist.push(productUrlParam);
+                return localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
+            } else if (arrayWishlist.length === 1) {
+                heartImgs[i].src = '/src/img/buttons/heart-white.png';
+                return localStorage.removeItem('wishlistProducts');
+            } else {
+                heartImgs[i].src = '/src/img/buttons/heart-white.png';
+                arrayWishlist.splice(arrayWishlist.indexOf(productUrlParam), 1);
+                return localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
+            }
         }
     })
     .catch(err => console.log('Falha na conexão... Necessário habilitar o JavaScript para acessar o conteúdo completo do site.'));
