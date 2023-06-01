@@ -2,16 +2,26 @@ const loadWishlist = () => fetch('/src/db/products.json')
     .then(res => res.json())
     .then(products => {
         const wishlist = localStorage.getItem('wishlistProducts');
-        const wishlistProductsSection = document.querySelector('.wishlist-products');
-        
+        const wishlistContainer = document.querySelector('.container');
+
         if (!wishlist) {
-            return wishlistProductsSection.innerHTML =
-                '<p>Parece que ainda não há nenhum produto no seu carrinho...</p>' +
-                '<p>Temos uma imensa variedade de produtos para os mais diversos gostos e estilos.</p>' +
-                '<a href="/collections/?collection=all">Ver produtos...</a>';
+            return wishlistContainer.innerHTML =
+                '<h1>Lista de Desejos</h1>' +
+                '<div class="wishlist-no-results">' +
+                    '<p>Parece que ainda não há nenhum produto na sua lista de desejos...</p>' +
+                    '<p>Temos uma imensa variedade de produtos para os mais diversos gostos e estilos.</p>' +
+                    '<a href="/collections/?collection=all">Ver produtos...</a>' +
+                '</div>';
+        }
+
+        const clearWishlist = document.querySelector('.clear-wishlist > button');
+        clearWishlist.onclick = () => {
+            localStorage.removeItem('wishlistProducts');
+            return loadWishlist();
         }
 
         const arrayWishlist = JSON.parse(wishlist);
+        const wishlistProductsSection = document.querySelector('.wishlist-products');
         const wishlistProducts = [];
 
         for (let item of arrayWishlist) wishlistProducts.push(products.find(product => product['url-param'] === item));
@@ -49,7 +59,7 @@ const loadWishlist = () => fetch('/src/db/products.json')
                     '</div>';
             }
             const wishlistProductsWishlistButtons = document.querySelectorAll('.wishlist-product > button');
-            console.log(wishlistProductsWishlistButtons)
+
             for (let button of wishlistProductsWishlistButtons) button.onclick = function() {
                 const urlParam = this.dataset.urlparam;
                 const index = arrayWishlist.indexOf(urlParam);

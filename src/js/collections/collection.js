@@ -23,6 +23,7 @@ fetch('/src/db/products.json')
         let actualPage = 1;
 
         const loadProducts = () => {
+            const wishlist = localStorage.getItem('wishlistProducts') || '[]';
             collectionProducts.innerHTML = '';
 
             const lastPage = actualPage <= Math.floor(collection.length / 12) ? (actualPage * 12) : ((actualPage - 1) * 12) + collection.length % 12;
@@ -30,8 +31,44 @@ fetch('/src/db/products.json')
             for (let i = (actualPage - 1) * 12; i < lastPage; i++) {
                 const productPrice = collection[i].price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
                 const productPriceNoDiscount = collection[i]['price-no-discount'] ? collection[i]['price-no-discount'].toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) : '';
-                collectionProducts.innerHTML += `<div class="collection-product"><a class="product-url" href="${collection[i].url}"><img class="product-img" src="${collection[i]['main-img']}" alt="${collection[i].name}"></a><div class="product-infos"><a class="product-name" href="${collection[i].url}">${collection[i].name}</a><span class="product-price"><strong class="product-real-price">${productPrice}</strong><small class="product-price-no-discount">${productPriceNoDiscount}</small></span></div></div>`;
+                collectionProducts.innerHTML += 
+                    '<div class="collection-product">' +
+                        `<a class="product-url" href="${collection[i].url}">` +
+                            `<img class="product-img" src="${collection[i]['main-img']}" alt="${collection[i].name}">` +
+                        '</a>' +
+                        '<div class="product-infos">' +
+                            `<a class="product-name" href="${collection[i].url}">${collection[i].name}</a>` +
+                            '<span class="product-price">' +
+                                `<strong class="product-real-price">${productPrice}</strong>` +
+                                `<small class="product-price-no-discount">${productPriceNoDiscount}</small>` +
+                            '</span>' +
+                        '</div>' +
+                        `<button data-urlparam="${collection[i]['url-param']}">` +
+                            `<img src="/src/img/buttons/heart-${wishlist.indexOf(collection[i]['url-param']) !== -1 ? 'orange' : 'white'}.png">` +
+                        '</button>' +
+                    '</div>';
             }
+            const heartButtons = document.querySelectorAll('.collection-product button');
+            for (let button of heartButtons) button.onclick = function () {
+                const productUrlParam = this.dataset.urlparam;
+                const arrayWishlist = JSON.parse(wishlist);
+                const testIndex = arrayWishlist.indexOf(productUrlParam) === -1;
+
+                if (testIndex) {
+                    arrayWishlist.push(productUrlParam);
+                    localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
+                    return loadProducts();
+                }
+
+                if (!testIndex && arrayWishlist.length === 1) {
+                    localStorage.removeItem('wishlistProducts');
+                } else {
+                    for (let i in arrayWishlist) if (arrayWishlist[i] === productUrlParam) arrayWishlist.splice(i, 1);
+                    localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
+                }
+
+                return loadProducts();
+            };
         }
         loadProducts();
 
@@ -155,4 +192,4 @@ fetch('/src/db/products.json')
             if (pageButtons.length > 0) pageButtons[0].onclick();
         }
     })
-    .catch(err => console.log('Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'));
+    .catch(err => console.log(err, 'Falha na conexão...\nVerifique se a base de dados está conectada corretamente.'));
