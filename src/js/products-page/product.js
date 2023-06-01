@@ -23,15 +23,22 @@ const loadProduct = () => fetch('/src/db/products.json')
         const mainImg = document.querySelector('.product-main-img');
         const aditionalImgs = document.querySelectorAll('.product-aditional-img');
 
-        mainImg.innerHTML = `<img src="${product['main-img']}" alt="${product.name}"><div class="add-to-wishlist"><button>♥</button></div>`;
+        mainImg.innerHTML = 
+            `<img src="${product['main-img']}" alt="${product.name}">` +
+            `<div class="add-to-wishlist">` +
+                '<button><img src="/src/img/buttons/heart-white.png"></button>' +
+            '</div>';
 
         const wishlistButton = document.querySelector('.add-to-wishlist button');
+        const wishlistButtonImg = document.querySelector('.add-to-wishlist button img');
+        const whiteHeart = '/src/img/buttons/heart-white.png';
+        const orangeHeart = '/src/img/buttons/heart-orange.png';
 
         const checkWishlist = () => localStorage.getItem('wishlistProducts') ? 
             localStorage.getItem('wishlistProducts').indexOf(urlParam) !== -1 ?
-            wishlistButton.style.color = '#DE560B' :
-            wishlistButton.style.color = 'white' :
-            wishlistButton.style.color = 'white';
+            wishlistButtonImg.src = orangeHeart :
+            wishlistButtonImg.src = whiteHeart :
+            wishlistButtonImg.src = whiteHeart;
         checkWishlist();
 
         wishlistButton.onclick = () => {

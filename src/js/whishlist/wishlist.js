@@ -5,17 +5,16 @@ const loadWishlist = () => fetch('/src/db/products.json')
         const wishlistProductsSection = document.querySelector('.wishlist-products');
         
         if (!wishlist) {
-            wishlistProductsSection.innerHTML =
+            return wishlistProductsSection.innerHTML =
                 '<p>Parece que ainda não há nenhum produto no seu carrinho...</p>' +
                 '<p>Temos uma imensa variedade de produtos para os mais diversos gostos e estilos.</p>' +
                 '<a href="/collections/?collection=all">Ver produtos...</a>';
-            return;
         }
 
-        const objWishlist = JSON.parse(wishlist);
+        const arrayWishlist = JSON.parse(wishlist);
         const wishlistProducts = [];
 
-        for (let item of objWishlist) wishlistProducts.push(products.find(product => product['url-param'] === item));
+        for (let item of arrayWishlist) wishlistProducts.push(products.find(product => product['url-param'] === item));
 
         // copiado do search
 
@@ -44,7 +43,22 @@ const loadWishlist = () => fetch('/src/db/products.json')
                             `<small class="product-price-no-discount">${productPriceNoDiscount}</small>`+ 
                             '</span>' +
                         '</div>' +
+                        `<button data-urlparam="${wishlistProducts[i]['url-param']}">` +
+                        '<img src="/src/img/buttons/heart-orange.png">' +
+                        '</button>' +
                     '</div>';
+            }
+            const wishlistProductsWishlistButtons = document.querySelectorAll('.wishlist-product > button');
+            console.log(wishlistProductsWishlistButtons)
+            for (let button of wishlistProductsWishlistButtons) button.onclick = function() {
+                const urlParam = this.dataset.urlparam;
+                const index = arrayWishlist.indexOf(urlParam);
+                arrayWishlist.splice(index, 1);
+
+                localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
+                if (arrayWishlist.length === 0) localStorage.removeItem('wishlistProducts');
+
+                return loadWishlist();
             }
         }
         loadProducts();

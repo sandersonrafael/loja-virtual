@@ -70,14 +70,16 @@
     position: absolute;
     top: 0;
     right: 0;
+    width: 48px;
     background-color: transparent;
     border: none;
     outline: none;
-    padding: 0 15px;
-    font-size: 60px;
+    padding: 6px;
     cursor: pointer;
-    color: rgba(255, 255, 255);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.add-to-wishlist button img {
+    width: 100%;
 }
 
 .product-aditional-imgs {

@@ -1,3 +1,7 @@
+.container {
+    margin-bottom: 40px;
+}
+
 .container h1 {
     text-align: center;
     margin: 40px 30px 0;
@@ -17,8 +21,25 @@
 }
 
 .wishlist-product {
-    margin: 30px;
+    margin: 15px;
     text-align: center;
+    position: relative;
+}
+
+.wishlist-product > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.wishlist-product > button > img {
+    width: 100%;
 }
 
 .wishlist-product * {
