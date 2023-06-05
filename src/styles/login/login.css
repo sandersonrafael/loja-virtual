@@ -1,0 +1,75 @@
+.container {
+    min-height: 50vh;
+}
+.container h1 {
+    text-align: center;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.sign-in-or-create-account {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* background-color: aqua; */
+}
+
+.sign-in-or-create-account > div > form {
+    max-width: 290px;
+    margin: 0 15px;
+    background-color: rgb(252, 237, 217);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.sign-in-or-create-account > div > form > h2 {
+    padding: 15px;
+    text-align: center;
+}
+
+.sign-in-or-create-account > div > form > input {
+    width: calc(100% - 30px);
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin: 5px auto 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.sign-in-or-create-account > div > form > input:focus {
+    box-shadow: 0 0 10px rgba(222, 85, 11, 0.4);
+}
+
+.sign-in-or-create-account > div > form > button {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(13, 114, 177);
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.sign-in-or-create-account > div > form > button:hover {
+    background-color: rgb(13, 114, 177, 0.9);
+
+}
+
+.sign-in-or-create-account > div > form > button:active {
+    background-color: rgb(13, 114, 177, 0.95);
+}
+
+@media (max-width: 680px) {
+    .sign-in-or-create-account {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sign-in-or-create-account > div > form {
+        margin: 15px 0;
+    }
+}
