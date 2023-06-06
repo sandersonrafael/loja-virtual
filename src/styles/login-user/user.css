@@ -1,0 +1,82 @@
+.container {
+    min-height: 50vh;
+    margin-bottom: 30px;
+    padding: 0 15px
+}
+
+.container > h1 {
+    margin: 30px 0 5px;
+    text-align: center;
+}
+.container > p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container > p > button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.container > p > button:hover {
+    color: #DE560B;
+}
+
+.user-infos {
+    padding: 15px 30px;
+    border-radius: 6px;
+    margin: 0 auto;
+    width: calc(100% - 60px);
+    max-width: 440px;
+    background-color: rgb(255, 249, 241);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-infos h2 {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.user-infos h3 {
+    margin: 20px 0 5px;
+}
+
+.user-infos input,
+.user-infos select {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 5px 0;
+    width: calc(100% - 30px);
+}
+.user-infos select {
+    width: 100%;
+    background-color: white;
+}
+
+.user-infos button {
+    margin: 10px 0 5px;
+    width: 100%;
+    background-color: rgb(13, 114, 177);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-infos button:hover {
+    background-color: rgb(13, 114, 177, .9);
+}
+
+.user-infos button:active {
+    background-color: rgb(13, 114, 177, .95);
+}

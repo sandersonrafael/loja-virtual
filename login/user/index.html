@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário | SK8 Lifestyle</title>
+    <link rel="shortcut icon" href="/src/img/brand/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/src/styles/all-pages/global.css">
+    <link rel="stylesheet" href="/src/styles/all-pages/header.css">
+    <link rel="stylesheet" href="/src/styles/all-pages/footer.css">
+    <script src="/src/js/index.js" defer></script>
+
+    <link rel="stylesheet" href="/src/styles/login-user/user.css">
+    <script src="/src/js/login-user/user.js" defer></script>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="top-header">
+            <div class="header-top-bar">
+                <div class="header-logo">
+                    <a href="/"><img class="logo" src="/src/img/brand/logo.png" alt="SK8 Lifestyle"></a>
+                </div>
+                <nav class="header-user">
+                    <ul class="user-options">
+                        <li><a href="/login/"><img class="user-img" src="/src/img/user/login-white.png"
+                                    alt="Entrar">Entrar</a></li>
+                        <li><a href="/contact/"><img class="user-img" src="/src/img/user/support-white.png"
+                                    alt="Suporte">Suporte</a></li>
+                        <li><a href="/wishlist/"><img class="user-img" src="/src/img/user/favorites-white.png"
+                                    alt="Favoritos">Favoritos</a></li>
+                        <li class="header-cart"><a href="/cart/"><img class="user-img" src="/src/img/user/cart-white.png"
+                                    alt="Carrinho">Carrinho <span>(<span>0</span>)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="header-menu">
+                <div class="header-hamburguer">☰</div>
+                <nav class="header-navigation">
+                    <div class="header-back">➜</div>
+                    <ul class="header-nav">
+                        <li><a href="/">Início</a></li>
+                        <li class="menu-expand">
+                            <p>Categorias</p> <span class="span-categorias">❯</span>
+                            <ul class="sub-menu">
+                                <li><a href="/collections/?collection=skates">Skates</a></li>
+                                <li class="sub-menu-expand">
+                                    <p>Peças</p> <span class="span-pecas">❯</span>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="/collections/?collection=pranchas">Pranchas</a></li>
+                                        <li><a href="/collections/?collection=rodas">Rodas</a></li>
+                                        <li><a href="/collections/?collection=lixas">Lixas</a></li>
+                                        <li><a href="/collections/?collection=trucks">Trucks</a></li>
+                                        <li><a href="/collections/?collection=rolamentos">Rolamentos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-expand">
+                                    <p>Acessórios</p> <span class="span-acessorios">❯</span>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="/collections/?collection=capacetes">Capacetes</a></li>
+                                        <li><a href="/collections/?collection=cotoveleiras">Cotoveleiras</a></li>
+                                        <li><a href="/collections/?collection=joelheiras">Joelheiras</a></li>
+                                        <li><a href="/collections/?collection=kits">Kits</a></li>
+                                        <li><a href="/collections/?collection=bags">Bags</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/collections/?collection=manutenção">Manutenção</a></li>
+                                <li><a href="/collections/?collection=diversos">Diversos</a></li>
+                                <li><a href="/collections/?collection=all">Ver Tudo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/tracking/">Rastreamento</a></li>
+                        <li><a href="/pages/?page=perguntas-frequentes">Perguntas Frequentes</a></li>
+                        <li><a href="/pages/?page=sobre-nos">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+                <form action="/search/" class="header-search">
+                    <input class="search-bar" type="search" name="search" id="search-bar"
+                        placeholder="Busque em nossa loja..." required>
+                    <button class="search-button"><img src="/src/img/buttons/search.png" alt="Pesquisar"></button>
+                </form>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container">
+        <h1>Bem vindo(a), <span class="user-name-title">nome de usuário</span>!</h1>
+        <p>Não é <span class="user-name-title">nome de usuário</span>? <button>Sair</button>...</p>
+        <section class="user-infos">
+            <h2>Dados de usuário</h2>
+
+            <h3>Informações de contato</h3>
+            <div class="user-contact">
+                <input type="text" class="user-name" placeholder="Nome completo">
+
+                <input type="email" class="user-email" placeholder="E-mail">
+
+                <input type="tel" class="user-phone" placeholder="Celular">
+
+                <input type="text" class="user-cpf" placeholder="CPF">
+            </div>
+
+            <h3>Endereço de entrega</h3>
+            <div class="user-address">
+                <input type="text" class="address-cep" placeholder="CEP">
+
+                <div class="user-address-hidden">
+                    <select class="contact-estado">
+                        <option value="">Estado</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+
+                    <input type="text" class="address-cidade" placeholder="Cidade">
+
+                    <input type="text" class="address-logradouro" placeholder="Rua">
+
+                    <input type="text" class="address-numero" placeholder="Número">
+
+                    <input type="text" class="address-complemento" placeholder="Complemento">
+
+                    <input type="text" class="address-bairro" placeholder="Bairro">
+                </div>
+            </div>
+            <button>Editar informações</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+
+            <div class="footer-newsletter footer-block">
+                <p class="no-wrap footer-title">Assine Nossa Newsletter</p>
+                <p>Temos um carinho especial pelos nossos clientes fiéis. Ao assinar nossa newsletter, você recebe de
+                    primeira mão nossas ofertas e cupons promocionais!</p>
+                <form class="newsletter-form">
+                    <input class="newsletter-input" type="email" placeholder="Seu melhor e-mail..." required>
+                    <button class="newsletter-button">➞</button>
+                </form>
+            </div>
+
+            <nav class="footer-customer-area footer-block">
+                <p class="footer-title footer-title-desktop">Área do Cliente</p>
+                <p class="footer-title footer-title-mobile"><a class="footer-customer-area-expand">Área do Cliente
+                        <span>❯</span></a></p>
+                <ul class="footer-customer-area-sub">
+                    <li><a href="/pages/?page=sobre-nos">Quem Somos</a></li>
+                    <li><a href="/pages/?page=nossos-envios">Nossos Envios</a></li>
+                    <li><a href="/pages/?page=garantia">Garantia</a></li>
+                    <li><a href="/tracking/">Rastrear Encomenda</a></li>
+                    <li><a href="/pages/?page=perguntas-frequentes">Perguntas Frequentes</a></li>
+                    <li><a href="/contact/">Fale Conosco</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-policy footer-block">
+                <p class="footer-title footer-title-desktop">Nossas Políticas</p>
+                <p class="footer-title footer-title-mobile"><a class="footer-policy-expand">Nossas Políticas
+                        <span>❯</span></a></p>
+                <ul class="footer-policy-sub">
+                    <li><a href="/pages/?page=termos-de-uso">Termos de Uso</a></li>
+                    <li><a href="/pages/?page=politica-de-privacidade">Política de Privacidade</a></li>
+                    <li><a href="/pages/?page=politica-de-cookies">Política de Cookies</a></li>
+                    <li><a href="/pages/?page=politica-de-reembolso">Política de Reembolso</a></li>
+                    <li><a href="/pages/?page=politica-de-envio">Política de Envio</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-contact footer-block">
+                <p class="footer-title">Canais de Atendimento</p>
+                <p>Atendimento de segunda a sexta, das 08:00 às 12:00 e das 14:00 às 18:00. Aos sábados, das 08:00 às
+                    12:00.</p>
+                <p>Rua General Fictício, 355, Sala 05 - Centro, Ficticiliana - FC, 59600-000.</p>
+                <p><a href="mailto:email@sk8lifestyle.com"><img src="/src/img/social/email-white.png" alt="email">
+                        email@sk8lifestyle.com</a></p>
+                <p><a href="https://wa.me/5534934343434" target="_blank" rel="noopener noreferrer"><img
+                            src="/src/img/social/whatsapp.png" alt="whatsapp"> (34) 93434-3434</a></p>
+                <p><a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><img
+                            src="/src/img/social/instagram.png" alt="SK8 Lifestyle Instagram"> SK8 Lifestyle</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2023 <a href="/">SK8 Lifestyle</a>, todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+    
+    <div class="no-element"></div>
+
+    <div class="cookie-consent-bar">
+        <p class="cookie-information">Este site trata-se de um projeto web. Os produtos aqui cadastrados são fictícios e não podem ser adquiridos. Utilizamos Cookies para implementar algumas funcionalidades.</p>
+        <button class="cookie-acept">Aceitar</button>
+    </div>
+
+</body>
+
+</html>
