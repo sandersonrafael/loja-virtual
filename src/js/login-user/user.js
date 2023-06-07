@@ -33,6 +33,7 @@ const loggedUserComplemento = document.querySelector('.address-complemento');
 const loggedUserBairro = document.querySelector('.address-bairro');
 
 const errorMessages = document.querySelectorAll('.error-message');
+const successMessage = document.querySelector('.success-message');
 
 const disableItens = document.querySelectorAll('.disabled');
 for (let item of disableItens) item.disabled = true;
@@ -82,7 +83,7 @@ const validateCpf = (cpf) => {
         return total = total + Number(digit) * (multiplier + 1);
     }, 0);
     const digit10 = 11 - (checkLastDigits1 % 11) > 9 ? 0 : 11 - (checkLastDigits1 % 11);
-    
+
     multiplier = 11;
     const checkLastDigits2 = Array.from(cpfNineDigits + String(digit10)).reduce((total, digit) => {
         multiplier--;
@@ -152,8 +153,6 @@ loggedUserCep.oninput = async () => {
     if (loggedUserCep.value.length === 9) loggedUserCep.value = loggedUserCep.value.slice(0, -1);
     else if (loggedUserCep.value.length > 9) loggedUserCep.value = loggedUserCep.value.slice(7);
 
-    
-
     if (loggedUserCep.value.length === 8) {
         validateCep(loggedUserCep.value);
         loggedUserCep.value = loggedUserCep.value.slice(0, 5) + '-' + loggedUserCep.value.slice(5);
@@ -163,91 +162,85 @@ loggedUserCep.oninput = async () => {
 
 loggedUserNumero.oninput = () => loggedUserNumero.value = loggedUserNumero.value.replaceAll(/[^0-9]/g, '');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// edit and save infos
 
 const editUserInfosButton = document.querySelector('.edit-user-infos');
 editUserInfosButton.onclick = () => {
-    for (let item of disableItens) item.disabled = !item.disabled;
+    const changeDisabled = () => {
+        for (let item of disableItens) item.disabled = !item.disabled;
+    };
 
+    const clearMessages = () => {
+        for (let i = 4; i <= 11; i++) errorMessages[i].innerHTML = '';
+        successMessage.innerHTML = '';
+    };
+
+    clearMessages();
     const editInfos = () => {
         editUserInfosButton.innerHTML = 'Salvar';
+        changeDisabled();
     };
 
     const saveInfos = () => {
-
-        // fazer validações
-
-
         const arrayLocalAccounts = loadLocalAccounts();
         const i = arrayLocalAccounts.findIndex(account => account.loggedIn === true);
 
-        if (loggedUserName.value) arrayLocalAccounts[i].name = loggedUserName.value;
-        if (loggedUserEmail.value) arrayLocalAccounts[i].email = loggedUserEmail.value;
+        // contact infos
+
+        if (loggedUserName.value) {
+            errorMessages[0].innerHTML = '';
+            arrayLocalAccounts[i].name = loggedUserName.value;
+        } else {
+            return errorMessages[0].innerHTML = 'Nome deve ser informado.';
+        }
+        if (loggedUserEmail.value) {
+            errorMessages[1].innerHTML = '';
+            for (let account of arrayLocalAccounts)
+                if (account.email === loggedUserEmail.value && account.loggedIn === false)
+                    return errorMessages[1].innerHTML = 'E-mail informado já está em uso.'
+            arrayLocalAccounts[i].email = loggedUserEmail.value;
+        }
         if (loggedUserPhone.value) arrayLocalAccounts[i].phone = loggedUserPhone.value;
         if (loggedUserCpf.value) arrayLocalAccounts[i].cpf = loggedUserCpf.value;
 
+        localStorage.setItem('localAccounts', JSON.stringify(arrayLocalAccounts));
+
+        // address infos
+
         if (loggedUserCep.value) arrayLocalAccounts[i].address.cep = loggedUserCep.value;
+        else return errorMessages[4].innerHTML = 'CEP deve ser informado.'
+
         if (loggedUserEstado.value) arrayLocalAccounts[i].address.estado = loggedUserEstado.value;
+        else return errorMessages[5].innerHTML = 'Estado deve ser informado.'
+
         if (loggedUserCidade.value) arrayLocalAccounts[i].address.cidade = loggedUserCidade.value;
+        else return errorMessages[6].innerHTML = 'Cidade deve ser informada.'
+
         if (loggedUserLogradouro.value) arrayLocalAccounts[i].address.logradouro = loggedUserLogradouro.value;
+        else return errorMessages[7].innerHTML = 'Rua deve ser informada.'
+
         arrayLocalAccounts[i].address.numero = loggedUserNumero.value || 'S/N';
         arrayLocalAccounts[i].address.complemento = loggedUserComplemento.value;
+        if (!loggedUserNumero.value && !loggedUserComplemento.value)
+        return errorMessages[8].innerHTML = 'Um número ou complemento deve ser informado.';
+
         if (loggedUserBairro.value) arrayLocalAccounts[i].address.bairro = loggedUserBairro.value;
+        else return errorMessages[10].innerHTML = 'Bairro deve ser informado';
+
+        for (let error of errorMessages) if (error.innerHTML !== '')
+            return errorMessages[11].innerHTML = 'Falha ao atualizar dados. Revise todos os campos e tente novamente.'
+
 
         localStorage.setItem('localAccounts', JSON.stringify(arrayLocalAccounts));
 
         editUserInfosButton.innerHTML = 'Editar informações';
+        changeDisabled();
+        successMessage.innerHTML = 'Dados de usuário atualizados com êxito.'
+        setTimeout(() => successMessage.innerHTML = '', 3000);
     };
     editUserInfosButton.innerHTML === 'Editar informações' ? editInfos() : saveInfos();
     return window.onload();
-}
-
-
-
-
-
-
-
-
-
-
-
+};
 
 // load user data
 
@@ -274,4 +267,4 @@ window.onload = () => {
     if (userInfos.address.numero) loggedUserNumero.value = userInfos.address.numero;
     if (userInfos.address.complemento) loggedUserComplemento.value = userInfos.address.complemento;
     if (userInfos.address.bairro) loggedUserBairro.value = userInfos.address.bairro;
-}
+};

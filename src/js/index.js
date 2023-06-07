@@ -166,7 +166,7 @@ const attHeaderCart = () => {
     const sumQuantity = () => JSON.parse(cartProducts).reduce((sum, product) => sum += product.quantity, 0);
     onCartQuantity.innerHTML = cartProducts ? sumQuantity() : 0;
     onCartQuantity.style.color = cartProducts ? '#DE560B' : '';
-}
+};
 attHeaderCart();
 
 // cookies
@@ -175,7 +175,7 @@ cookieExpires = (days) => {
     const date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
     return date.toUTCString();
-}
+};
 
 // cookie consent bar
 
@@ -184,12 +184,25 @@ const cookieAcept = document.querySelector('.cookie-acept');
 
 if (document.cookie.indexOf('aceptCookies') === -1) {
     setTimeout(() => cookieConsentBar.style.display = 'flex', 1200);
-}
+};
 
 cookieAcept.onclick = () => {
     cookieConsentBar.style.display = 'none';
     document.cookie = "aceptCookies=" + "true" + "; expires=" + cookieExpires(1) + "; path=/";
+};
+
+// user is loggedIn? 
+
+const checkUserIsLoggedIn = () => {
+    const loginButton = document.querySelector('.user-options > li > a');
+    const users = localStorage.getItem('localAccounts') || '[]';
+    const arrayUsers = JSON.parse(users);
+    for (let user of arrayUsers)
+        if (user.loggedIn === true)
+            loginButton.innerHTML = '<img class="user-img" src="/src/img/user/login-white.png" alt="Usuário">Usuário';
 }
+checkUserIsLoggedIn();
+
 
 // get suggestions
 
@@ -276,7 +289,7 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
             const skatesCollectionName = 'Skates';
             const skatesUrl = '/collections/?collection=skates';
             getSuggestions(skatesProducts, skatesElement, skatesCollectionName, skatesUrl);
-        }
+        };
 
         // set wishlist buttons and heart images
 
@@ -299,7 +312,7 @@ if (document.querySelector('.products-suggestion')) fetch('/src/db/products.json
                 heartImgs[i].src = '/src/img/buttons/heart-white.png';
                 arrayWishlist.splice(arrayWishlist.indexOf(productUrlParam), 1);
                 return localStorage.setItem('wishlistProducts', JSON.stringify(arrayWishlist));
-            }
+            };
         }
     })
     .catch(err => console.log('Falha na conexão... Necessário habilitar o JavaScript para acessar o conteúdo completo do site.'));

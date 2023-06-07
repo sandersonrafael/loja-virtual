@@ -76,12 +76,12 @@
     color: rgb(248, 79, 79);
 }
 
-.user-infos div:last-child {
-    font-size: 1em;
+.user-infos > div:last-child {
+    font-size:.91em;
 }
 
 .success-message {
-    font-size: 1em;
+    font-size:.91em;
     color: rgb(26, 136, 26)
 }
 
