@@ -1,12 +1,11 @@
 const checkLogin = () => {
-    return alert('Descomentar redirect');
-    /* const localAccounts = localStorage.getItem('localAccounts');
+    const localAccounts = localStorage.getItem('localAccounts');
     const arrayLocalAccounts = JSON.parse(localAccounts) || [];
 
     if (localAccounts)
         for (let array of arrayLocalAccounts)
             if (array.loggedIn === true)
-                return location.href = '/login/user/'; */
+                return location.href = '/login/user/';
 };
 checkLogin();
 

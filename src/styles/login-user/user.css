@@ -32,7 +32,7 @@
     margin: 0 auto;
     width: calc(100% - 60px);
     max-width: 440px;
-    background-color: rgb(255, 249, 241);
+    background-color: rgb(252, 237, 217);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -41,9 +41,15 @@
     text-align: center;
 }
 
+
 .user-infos h3 {
     margin: 20px 0 5px;
 }
+
+.user-infos *:disabled {
+    background-color: white;
+}
+
 
 .user-infos input,
 .user-infos select {
@@ -60,8 +66,13 @@
     background-color: white;
 }
 
+.user-infos input:focus,
+.user-infos select:focus {
+    box-shadow: 0 0 10px rgba(222, 85, 11, 0.4);
+}
+
 .user-infos button {
-    margin: 10px 0 5px;
+    margin: 15px 0 10px;
     width: 100%;
     background-color: rgb(13, 114, 177);
     color: white;
@@ -70,7 +81,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .user-infos button:hover {
@@ -79,4 +90,8 @@
 
 .user-infos button:active {
     background-color: rgb(13, 114, 177, .95);
+}
+
+.user-address-hidden {
+    display: none;
 }

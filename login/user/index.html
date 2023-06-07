@@ -89,28 +89,33 @@
     </header>
 
     <main class="container">
-        <h1>Bem vindo(a), <span class="user-name-title">nome de usuário</span>!</h1>
-        <p>Não é <span class="user-name-title">nome de usuário</span>? <button>Sair</button>...</p>
+        <h1>Bem vindo(a), <span class="user-name-title"></span>!</h1>
+        <p>Não é <span class="user-name-title"></span>? <button>Sair</button>...</p>
         <section class="user-infos">
             <h2>Dados de usuário</h2>
 
             <h3>Informações de contato</h3>
             <div class="user-contact">
-                <input type="text" class="user-name" placeholder="Nome completo">
+                <input type="text" class="user-name disabled" placeholder="Nome completo">
+                <div class="error-message"></div>
 
-                <input type="email" class="user-email" placeholder="E-mail">
+                <input type="email" class="user-email disabled" placeholder="E-mail">
+                <div class="error-message"></div>
 
-                <input type="tel" class="user-phone" placeholder="Celular">
+                <input type="tel" class="user-phone disabled" placeholder="Celular">
+                <div class="error-message"></div>
 
-                <input type="text" class="user-cpf" placeholder="CPF">
+                <input type="text" class="user-cpf disabled" placeholder="CPF">
+                <div class="error-message"></div>
             </div>
 
-            <h3>Endereço de entrega</h3>
+            <h3>Endereço</h3>
             <div class="user-address">
-                <input type="text" class="address-cep" placeholder="CEP">
+                <input type="text" class="address-cep disabled" placeholder="CEP">
+                <div class="error-message">Cep não encontrado. Preencha o endereço manualmente. <p>setTimeout(() => {})</p></div>
 
                 <div class="user-address-hidden">
-                    <select class="contact-estado">
+                    <select class="address-estado disabled">
                         <option value="">Estado</option>
                         <option value="AC">AC</option>
                         <option value="AL">AL</option>
@@ -141,18 +146,25 @@
                         <option value="TO">TO</option>
                     </select>
 
-                    <input type="text" class="address-cidade" placeholder="Cidade">
+                    <input type="text" class="address-cidade disabled" placeholder="Cidade">
+                    <div class="error-message"></div>
 
-                    <input type="text" class="address-logradouro" placeholder="Rua">
+                    <input type="text" class="address-logradouro disabled" placeholder="Rua">
+                    <div class="error-message"></div>
 
-                    <input type="text" class="address-numero" placeholder="Número">
+                    <input type="text" class="address-numero disabled" placeholder="Número | Se não possui, digite 0">
+                    <div class="error-message"></div>
 
-                    <input type="text" class="address-complemento" placeholder="Complemento">
+                    <input type="text" class="address-complemento disabled" placeholder="Complemento">
+                    <div class="error-message"></div>
 
-                    <input type="text" class="address-bairro" placeholder="Bairro">
+                    <input type="text" class="address-bairro disabled" placeholder="Bairro">
+                    <div class="error-message"></div>
                 </div>
             </div>
-            <button>Editar informações</button>
+            <button class="edit-user-infos">Editar informações</button>
+            <div class="error-message">Necessário corrigir ou limpar campos antes de salvar.</div>
+            <div class="success-message">Informações de usuário atualizadas com êxito.</div>
         </section>
     </main>
 
