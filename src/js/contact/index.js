@@ -8,10 +8,7 @@ contactPhone.oninput = () => {
     contactPhone.value = contactPhone.value.replaceAll(/[^0-9]/g, '');
 
     if (contactPhone.value.length === 12) contactPhone.value = contactPhone.value.slice(0, -1);
-    else if (contactPhone.value.length > 12) {
-        contactPhone.value = contactPhone.value.slice(0, 12);
-        contactPhone.oninput();
-    };
+    else if (contactPhone.value.length > 12) contactPhone.value = contactPhone.value.slice(0, 11);
 
     if (contactPhone.value.length === 11) {
         contactPhone.value = '(' 

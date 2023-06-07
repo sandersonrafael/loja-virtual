@@ -22,6 +22,9 @@ const loggedUserPhone = document.querySelector('.user-phone');
 const loggedUserCpf = document.querySelector('.user-cpf');
 
 const loggedUserCep = document.querySelector('.address-cep');
+
+const addressDisplay = document.querySelector('.user-address-hidden');
+
 const loggedUserEstado = document.querySelector('.address-estado');
 const loggedUserCidade = document.querySelector('.address-cidade');
 const loggedUserLogradouro = document.querySelector('.address-logradouro');
@@ -34,7 +37,7 @@ const errorMessages = document.querySelectorAll('.error-message');
 const disableItens = document.querySelectorAll('.disabled');
 for (let item of disableItens) item.disabled = true;
 
-// inputs rules
+// inputs rules -> contact infos
 
 loggedUserName.oninput = () => loggedUserName.value = loggedUserName.value.replaceAll(/[^a-zA-ZÁ-ÿ`´^~ ]/g, '');
 
@@ -57,10 +60,7 @@ loggedUserPhone.oninput = () => {
     loggedUserPhone.value = loggedUserPhone.value.replaceAll(/[^0-9]/g, '');
     
     if (loggedUserPhone.value.length === 12) loggedUserPhone.value = loggedUserPhone.value.slice(0, -1);
-    else if (loggedUserPhone.value.length > 12) {
-        loggedUserPhone.value = loggedUserPhone.value.slice(0, 12);
-        loggedUserPhone.oninput();
-    };
+    else if (loggedUserPhone.value.length > 12) loggedUserPhone.value = loggedUserPhone.value.slice(0, 11);
 
     if (loggedUserPhone.value.length === 11) {
         loggedUserPhone.value = '(' 
@@ -100,12 +100,9 @@ const validateCpf = (cpf) => {
 
 loggedUserCpf.oninput = () => {
     loggedUserCpf.value = loggedUserCpf.value.replaceAll(/[^0-9]/g, '');
-    
+
     if (loggedUserCpf.value.length === 12) loggedUserCpf.value = loggedUserCpf.value.slice(0, -1);
-    else if (loggedUserCpf.value.length > 12) {
-        loggedUserCpf.value = loggedUserCpf.value.slice(0, 12);
-        loggedUserCpf.oninput();
-    };
+    else if (loggedUserCpf.value.length > 12) loggedUserCpf.value = loggedUserCpf.value.slice(0, 1);
 
     if (loggedUserCpf.value.length !== 0 && loggedUserCpf.value.length !== 11) errorMessages[3].innerHTML = 'Informe um CPF com 11 dígitos.';
     else errorMessages[3].innerHTML = '';
@@ -123,10 +120,45 @@ loggedUserCpf.oninput = () => {
     };
 };
 
+// inputs rules -> address infos
 
+const validateCep = (cep) => {
+    addressDisplay.style.display = 'block';
 
+    const cepError = () => {
+        errorMessages[4].innerHTML = 'Cep não encontrado. Preencha o endereço manualmente...';
+        setTimeout(() => errorMessages[4].innerHTML = '', 2000);
+    }
 
+    fetch(`https://viacep.com.br/ws/${cep}/json`)
+        .then(res => res.json())
+        .then(endereco => {
+            if (endereco.erro) return cepError();
 
+            if (endereco.cep) loggedUserCep.value = endereco.cep;
+            if (endereco.uf) loggedUserEstado.value = endereco.uf;
+            if (endereco.localidade) loggedUserCidade.value = endereco.localidade;
+            if (endereco.logradouro) loggedUserLogradouro.value = endereco.logradouro;
+            if (endereco.numero) loggedUserNumero.value = endereco.numero;
+            if (endereco.bairro) loggedUserBairro.value = endereco.bairro;
+        })
+        .catch(err => cepError(err));
+}
+
+loggedUserCep.oninput = async () => {
+    loggedUserCep.value = loggedUserCep.value.replaceAll(/[^0-9]/g, '');
+
+    if (loggedUserCep.value.length === 9) loggedUserCep.value = loggedUserCep.value.slice(0, -1);
+    else if (loggedUserCep.value.length > 9) loggedUserCep.value = loggedUserCep.value.slice(7);
+
+    
+
+    if (loggedUserCep.value.length === 8) {
+        validateCep(loggedUserCep.value);
+        loggedUserCep.value = loggedUserCep.value.slice(0, 5) + '-' + loggedUserCep.value.slice(5);
+    }
+    
+}
 
 
 
@@ -230,7 +262,11 @@ window.onload = () => {
     if (userInfos.phone) loggedUserPhone.value = userInfos.phone;
     if (userInfos.cpf) loggedUserCpf.value = userInfos.cpf;
 
-    if (userInfos.address.cep) loggedUserCep.value = userInfos.address.cep;
+    if (userInfos.address.cep) {
+        addressDisplay.style.display = 'block';
+        loggedUserCep.value = userInfos.address.cep;
+    }
+
     if (userInfos.address.estado) loggedUserEstado.value = userInfos.address.estado;
     if (userInfos.address.cidade) loggedUserCidade.value = userInfos.address.cidade;
     if (userInfos.address.logradouro) loggedUserLogradouro.value = userInfos.address.logradouro;
