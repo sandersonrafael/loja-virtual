@@ -71,6 +71,20 @@
     box-shadow: 0 0 10px rgba(222, 85, 11, 0.4);
 }
 
+.error-message {
+    font-size: .8em;
+    color: rgb(248, 79, 79);
+}
+
+.user-infos div:last-child {
+    font-size: 1em;
+}
+
+.success-message {
+    font-size: 1em;
+    color: rgb(26, 136, 26)
+}
+
 .user-infos button {
     margin: 15px 0 10px;
     width: 100%;

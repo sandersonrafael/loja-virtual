@@ -89,7 +89,7 @@
     </header>
 
     <main class="container">
-        <h1>Bem vindo(a), <span class="user-name-title"></span>!</h1>
+        <h1>Boa vindas, <span class="user-name-title"></span>!</h1>
         <p>Não é <span class="user-name-title"></span>? <button>Sair</button>...</p>
         <section class="user-infos">
             <h2>Dados de usuário</h2>
@@ -145,6 +145,8 @@
                         <option value="SE">SE</option>
                         <option value="TO">TO</option>
                     </select>
+                    <div class="error-message"></div>
+
 
                     <input type="text" class="address-cidade disabled" placeholder="Cidade">
                     <div class="error-message"></div>
@@ -152,7 +154,7 @@
                     <input type="text" class="address-logradouro disabled" placeholder="Rua">
                     <div class="error-message"></div>
 
-                    <input type="text" class="address-numero disabled" placeholder="Número | Se não possui, digite 0">
+                    <input type="text" class="address-numero disabled" placeholder="Número">
                     <div class="error-message"></div>
 
                     <input type="text" class="address-complemento disabled" placeholder="Complemento">
@@ -163,8 +165,8 @@
                 </div>
             </div>
             <button class="edit-user-infos">Editar informações</button>
-            <div class="error-message">Necessário corrigir ou limpar campos antes de salvar.</div>
-            <div class="success-message">Informações de usuário atualizadas com êxito.</div>
+            <div class="success-message"></div>
+            <div class="error-message"></div>
         </section>
     </main>
 

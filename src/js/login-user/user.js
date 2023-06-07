@@ -52,7 +52,7 @@ const validatePhone = () => {
         loggedUserPhone.value[1] ===  '0' ||
         loggedUserPhone.value[2] === '0' ||
         loggedUserPhone.value[5] !== '9'))
-        errorMessages[2].innerHTML = 'Telefone informado é inválido';
+        errorMessages[2].innerHTML = 'Informe um telefone válido.';
     else errorMessages[2].innerHTML = '';
 };
 
@@ -108,7 +108,7 @@ loggedUserCpf.oninput = () => {
     else errorMessages[3].innerHTML = '';
 
     if (loggedUserCpf.value.length === 11) {
-        validateCpf(loggedUserCpf.value) ? errorMessages[3].innerHTML = '' : errorMessages[3].innerHTML = 'O CPF informado é inválido.'
+        validateCpf(loggedUserCpf.value) ? errorMessages[3].innerHTML = '' : errorMessages[3].innerHTML = 'Informe um CPF válido.'
 
         loggedUserCpf.value = loggedUserCpf.value.slice(0, 3) 
         + '.' 
@@ -127,7 +127,7 @@ const validateCep = (cep) => {
 
     const cepError = () => {
         errorMessages[4].innerHTML = 'Cep não encontrado. Preencha o endereço manualmente...';
-        setTimeout(() => errorMessages[4].innerHTML = '', 2000);
+        setTimeout(() => errorMessages[4].innerHTML = '', 3000);
     }
 
     fetch(`https://viacep.com.br/ws/${cep}/json`)
@@ -135,6 +135,7 @@ const validateCep = (cep) => {
         .then(endereco => {
             if (endereco.erro) return cepError();
 
+            errorMessages[4].innerHTML = '';
             if (endereco.cep) loggedUserCep.value = endereco.cep;
             if (endereco.uf) loggedUserEstado.value = endereco.uf;
             if (endereco.localidade) loggedUserCidade.value = endereco.localidade;
@@ -160,7 +161,7 @@ loggedUserCep.oninput = async () => {
     
 }
 
-
+loggedUserNumero.oninput = () => loggedUserNumero.value = loggedUserNumero.value.replaceAll(/[^0-9]/g, '');
 
 
 
@@ -225,8 +226,8 @@ editUserInfosButton.onclick = () => {
         if (loggedUserEstado.value) arrayLocalAccounts[i].address.estado = loggedUserEstado.value;
         if (loggedUserCidade.value) arrayLocalAccounts[i].address.cidade = loggedUserCidade.value;
         if (loggedUserLogradouro.value) arrayLocalAccounts[i].address.logradouro = loggedUserLogradouro.value;
-        if (loggedUserNumero.value) arrayLocalAccounts[i].address.numero = loggedUserNumero.value;
-        if (loggedUserComplemento.value) arrayLocalAccounts[i].address.complemento = loggedUserComplemento.value;
+        arrayLocalAccounts[i].address.numero = loggedUserNumero.value || 'S/N';
+        arrayLocalAccounts[i].address.complemento = loggedUserComplemento.value;
         if (loggedUserBairro.value) arrayLocalAccounts[i].address.bairro = loggedUserBairro.value;
 
         localStorage.setItem('localAccounts', JSON.stringify(arrayLocalAccounts));
