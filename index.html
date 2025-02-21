@@ -16,14 +16,22 @@
     <script src="/src/js/front-page/banners.js" defer></script>
 
     <!-- Google tag (gtag.js) - Google Ads: AW-16848587085 -->
-  <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-16848587085"></script>
-  <script async defer>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-16848587085"></script>
+    <script async defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config','AW-16848587085');
-  </script>
+        gtag('config','AW-16848587085');
+    </script>
+
+    <script async defer>
+        gtag('event', 'page_view', {
+            'page_title': 'SK8 Lifestyle',
+            'page_location': 'https://sk8-lifestyle.netlify.app/',
+            'page_path': '/'
+        });
+    </script>
 </head>
 
 <body class="body">
